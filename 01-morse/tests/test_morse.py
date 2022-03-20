@@ -1,37 +1,99 @@
+from io import StringIO
 from src.morse import morse
 
 
-def test_one_letter():
-    pass
+def test_one_letter_1():
+    fp = StringIO(
+        "A\n"
+    )
+    assert morse(fp) == ".-\n"
+
+
+def test_one_letter_2():
+    fp = StringIO(
+        "K\n"
+    )
+    assert morse(fp) == "-.-\n"
 
 
 def test_one_letter_lowercase():
-    pass
+    fp = StringIO(
+        "s\n"
+    )
+    assert morse(fp) == "...\n"
 
 
 def test_word():
-    pass
+    fp = StringIO(
+        "ALA\n"
+    )
+    assert morse(fp) == ".- .-.. .-\n"
 
 
 def test_word_lowercase():
-    pass
+    fp = StringIO(
+        "ala\n"
+    )
+    assert morse(fp) == ".- .-.. .-\n"
 
 
 def test_sentence_1():
-    pass
+    fp = StringIO(
+        "ALA MA KOTA\n"
+    )
+    assert morse(fp) == ".- .-.. .- / -- .- / -.- --- - .-\n"
 
 
-def test_sentence_lowercase():
-    pass
+def test_sentence_2():
+    fp = StringIO(
+        "LOREM IPSUM\n"
+    )
+    assert morse(fp) == ".-.. --- .-. . -- / .. .--. ... ..- --\n"
 
 
-def test_sentence_capitalize():
-    pass
+def test_sentence_lowercase_1():
+    fp = StringIO(
+        "ala ma kota\n"
+    )
+    assert morse(fp) == ".- .-.. .- / -- .- / -.- --- - .-\n"
+
+
+def test_sentence_lowercase_2():
+    fp = StringIO(
+        "lorem ipsum\n"
+    )
+    assert morse(fp) == ".-.. --- .-. . -- / .. .--. ... ..- --\n"
+
+
+def test_sentence_other_symbols():
+    fp = StringIO(
+        "Ala34 ma* kota|"
+    )
+    assert morse(fp) == ".- .-.. .- / -- .- / -.- --- - .-\n"
+
+
+def test_sentence_other_symbols_word():
+    fp = StringIO(
+        "Ala34 ma* () \\ kota|"
+    )
+    assert morse(fp) == ".- .-.. .- / -- .- / -.- --- - .-\n"
 
 
 def test_multiline_1():
-    pass
+    fp = StringIO(
+        "Ala ma kota\n"
+        + "a kot ma Ale\n"
+        + "a12b 3 c\n"
+    )
+    assert morse(fp) == (".- .-.. .- / -- .- / -.- --- - .-\n" +
+                         ".- / -.- --- - / -- .- / .- .-.. .\n" +
+                         ".- -... / -.-.\n")
 
 
 def test_multiline_2():
-    pass
+    fp = StringIO(
+        "Lorem ipsum\n"
+        + "dolor sit amet,\n"
+    )
+    assert morse(fp) == (".-.. --- .-. . -- / .. .--. ... ..- --\n" +
+                         "-.. --- .-.. --- .-. / ... .. - / .- -- . -\n")
