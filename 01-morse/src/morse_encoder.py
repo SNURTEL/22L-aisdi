@@ -9,7 +9,7 @@ class MorseEncoder(ABC):
 
     @staticmethod
     def filter_invalid_characters(plaintext: str):
-        return re.sub('( ){2,}', ' ', re.sub('[^a-zA-z\n ]', '', plaintext))
+        return re.sub('( ){2,}', ' ', re.sub('[^a-zA-z\n ]|\\\\', '', plaintext))
 
     @abstractmethod
     def encode_string(self, plaintext: str) -> str:
