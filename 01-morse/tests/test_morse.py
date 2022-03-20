@@ -67,14 +67,14 @@ def test_sentence_lowercase_2():
 
 def test_sentence_other_symbols():
     fp = StringIO(
-        "Ala34 ma* kota|"
+        "Ala34 ma* kota|\n"
     )
     assert morse(fp) == ".- .-.. .- / -- .- / -.- --- - .-\n"
 
 
 def test_sentence_other_symbols_word():
     fp = StringIO(
-        "Ala34 ma* () \\ kota|"
+        "Ala34 ma* () \\ kota|\n"
     )
     assert morse(fp) == ".- .-.. .- / -- .- / -.- --- - .-\n"
 

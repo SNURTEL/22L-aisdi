@@ -18,7 +18,7 @@ def main(args):
 
 
 def morse(fp) -> str:
-    plaintext = '\n'.join(fp.readlines())
+    plaintext = ''.join(fp.readlines())
 
     dme = DictMorseEncoder(' ', '/')
     encoded = dme.encode_string(plaintext)
