@@ -1,7 +1,7 @@
 import sys
 import argparse
 
-from morse_encoder import DictMorseEncoder
+from .morse_encoder import DictMorseEncoder
 
 
 def main(args):
