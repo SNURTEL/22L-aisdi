@@ -1,5 +1,5 @@
 from io import StringIO
-from src.morse import morse
+from lab01_morse.src.morse import morse
 
 
 def test_one_letter_1():
