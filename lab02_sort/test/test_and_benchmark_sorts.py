@@ -3,6 +3,7 @@ import random
 import time
 
 from .conftest import *
+from ..util import BenchmarkPlotter
 
 
 # region randomized control runs
@@ -24,6 +25,7 @@ def build_single_dataset():
     sorted_data = list(sorted(randomized_data.copy()))
     return randomized_data, sorted_data
 
+
 # endregion
 
 
@@ -35,11 +37,12 @@ def build_single_dataset():
 )
 @pytest.mark.parametrize('num_words', BENCHMARK_SAMPLE_SIZES)
 @pytest.mark.parametrize('sorting_function', BENCHMARKED_FUNCTIONS)
-def test_benchmark_the_tadeusz(num_words, sorting_function, benchmark):
+def test_benchmark_the_tadeusz(num_words, sorting_function, benchmark, plot_results):
     unsorted = load_the_tadeusz(TEST_FILE_PATH)[:num_words]
     expected_result = list(sorted(unsorted.copy()))
 
-    sort_result = benchmark.pedantic(sorting_function, [unsorted], warmup_rounds=10)
+    sort_result = benchmark.pedantic(sorting_function, [unsorted],
+                                     warmup_rounds=10)  # warmup rounds can probably be disabled
     assert sort_result == expected_result
 
 
