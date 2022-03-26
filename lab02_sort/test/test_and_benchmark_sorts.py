@@ -3,7 +3,6 @@ import random
 import time
 
 from .conftest import *
-from ..util import BenchmarkPlotter
 
 
 # region randomized control runs
