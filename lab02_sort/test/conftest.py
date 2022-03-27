@@ -3,8 +3,7 @@ from ..src import insertion_sort, quicksort, merge_sort, bubble_sort
 from ..util import BenchmarkPlotter
 
 # benchmark
-BENCHMARKED_FUNCTIONS = [insertion_sort, quicksort]
-# BENCHMARKED_FUNCTIONS = [insertion_sort, bubble_sort, merge_sort, quicksort]  # TODO enable after implementing
+BENCHMARKED_FUNCTIONS = [insertion_sort, quicksort, merge_sort, bubble_sort]
 TEST_FILE_PATH = '../pan-tadeusz-unix.txt'
 BENCHMARK_SAMPLE_SIZES = list(range(1000, 11000, 1000))
 
