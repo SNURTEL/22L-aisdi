@@ -19,14 +19,14 @@ class BenchmarkPlotter:
         self._make_plot(benchmark_data)
         self._save_results_to_file("plot.png")
 
-    def _make_plot(self, benchmark_data: dict) -> None:
+    def _make_plot(self, benchmark_data: dict[str, dict]) -> None:
         """Builds and configures the plot"""
-        for func, results in benchmark_data.values():
+        for func, results in benchmark_data.items():
             keys = results.keys()
             values = results.values()
             plt.plot(keys, values, label=func)
         plt.legend()
-        plt.title(label=f"{STAT} values statistics")
+        plt.title(label=f"Function benchmark: {STAT} stat")
 
     def _save_results_to_file(self, filename: str) -> None:
         """Saves the plot to a .png file"""
