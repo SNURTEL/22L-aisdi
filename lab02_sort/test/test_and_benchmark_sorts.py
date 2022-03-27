@@ -7,7 +7,7 @@ from .conftest import *
 
 # region randomized control runs
 
-# alternatively, this can be parametrized with the generated datasets
+# alternatively, this can be parametrized with generated datasets
 @pytest.mark.parametrize("sorting_function", BENCHMARKED_FUNCTIONS)
 def test_control_runs(sorting_function):
     test_data = get_test_datasets()
@@ -24,7 +24,6 @@ def build_single_dataset():
     sorted_data = list(sorted(randomized_data.copy()))
     return randomized_data, sorted_data
 
-
 # endregion
 
 
@@ -36,12 +35,11 @@ def build_single_dataset():
 )
 @pytest.mark.parametrize('num_words', BENCHMARK_SAMPLE_SIZES)
 @pytest.mark.parametrize('sorting_function', BENCHMARKED_FUNCTIONS)
-def test_benchmark_the_tadeusz(num_words, sorting_function, benchmark, plot_results):
+def test_benchmark_the_tadeusz(num_words, sorting_function, benchmark):
     unsorted = load_the_tadeusz(TEST_FILE_PATH)[:num_words]
     expected_result = list(sorted(unsorted.copy()))
 
-    sort_result = benchmark.pedantic(sorting_function, [unsorted],
-                                     warmup_rounds=10)  # warmup rounds can probably be disabled
+    sort_result = benchmark.pedantic(sorting_function, [unsorted])
     assert sort_result == expected_result
 
 

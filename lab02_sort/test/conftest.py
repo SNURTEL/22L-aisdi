@@ -15,12 +15,12 @@ NUM_SAMPLES = 1000
 
 # plotting results
 RESULTS_JSON_PATH = './.benchmarks/report.json'  # must match pytest.ini
+STAT = 'mean'
 
 
-@pytest.fixture(scope='module')
-def plot_results():
-    """Plot benchmark results from a specified file"""
-    bp = BenchmarkPlotter(RESULTS_JSON_PATH)
+def pytest_unconfigure(config):
+    """Runs after executing all tests, plot benchmark results from a specified file"""
+    bp = BenchmarkPlotter(RESULTS_JSON_PATH, STAT)
     with open(RESULTS_JSON_PATH, mode='r'):
-        pass  # throw exception if file was not created
+        pass  # throw exception if results file was not created
     bp.plot_results()
