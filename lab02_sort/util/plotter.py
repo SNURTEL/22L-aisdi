@@ -5,22 +5,32 @@ from types import SimpleNamespace
 from operator import attrgetter
 
 
+STAT = "mean"
+
 class BenchmarkPlotter:
     def __init__(self, results_json_path: str):
         self._results_filepath = results_json_path
+        self.stat = "mean"
 
     def plot_results(self) -> None:
         """Plots benchmark results"""
         print("success!")
-        pass  # TODO implement
+        benchmark_data = self._get_benchmark_data_from_json(STAT)
+        self._make_plot(benchmark_data)
+        self._save_results_to_file("plot.png")
 
     def _make_plot(self, benchmark_data: dict) -> None:
         """Builds and configures the plot"""
-        pass  # TODO implement
+        for func, results in benchmark_data.values():
+            keys = results.keys()
+            values = results.values()
+            plt.plot(keys, values, label=func)
+        plt.legend()
+        plt.title(label=f"{STAT} values statistics")
 
     def _save_results_to_file(self, filename: str) -> None:
         """Saves the plot to a .png file"""
-        pass  # TODO implement
+        plt.savefig(filename)
 
     def _get_benchmark_data_from_json(self, stat: str = "mean") -> dict:
         """Extracts benchmark results from a .json file"""

@@ -167,4 +167,4 @@ cython_debug/
 # All IDE garbage
 .idea/
 
-*/.vscode/*
+**/.vscode/*
