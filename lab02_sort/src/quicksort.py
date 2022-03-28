@@ -1,7 +1,4 @@
-from typing import Any, List
-
-
-def quicksort(array: List[Any], start=0, end=None) -> List[Any]:
+def quicksort(array: list, start=0, end=None) -> list:
     if len(array) < 2:
         return array
 

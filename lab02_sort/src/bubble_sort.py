@@ -1,7 +1,4 @@
-from typing import Any, List
-
-
-def bubble_sort(array: List[Any]) -> List[Any]:
+def bubble_sort(array: list) -> list:
     swapped = True
     while swapped:
         swapped = False

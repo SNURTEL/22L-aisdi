@@ -27,6 +27,8 @@ class BenchmarkPlotter:
             plt.plot(keys, values, label=func)
         plt.legend()
         plt.title(label=f"Function benchmark: {self.stat} stat")
+        plt.xlabel("Number of words")
+        plt.ylabel("Time [ms]")
 
     def _save_results_to_file(self, filename: str) -> None:
         """Saves the plot to a .png file"""
@@ -37,11 +39,12 @@ class BenchmarkPlotter:
         with open(self._results_filepath, mode='r', encoding='utf-8') as fp:
             raw_data = BenchmarkPlotter._deserialize_json(fp)
         a = attrgetter(stat)
-        extracted = {tuple(record.param.split('-')): a(record.stats) for record in raw_data.benchmarks}
+        extracted = {tuple(record.param.split('-')): a(record.stats)
+                     for record in raw_data.benchmarks}
         function_names = {k[0] for k, v in extracted.items()}
-        results = {func.replace("_", " ").capitalize(): {int(k[1]): v for k, v in extracted.items() if k[0] == func} for
-                   func
-                   in function_names}
+        results = {func.replace("_", " ").capitalize(): {int(k[1]): v
+                   for k, v in extracted.items() if k[0] == func}
+                   for func in function_names}
         return results
 
     @staticmethod

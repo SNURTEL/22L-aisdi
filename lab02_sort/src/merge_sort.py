@@ -1,8 +1,8 @@
 from typing import Any, List
 
 
-def merge_sort(array: List[Any]) -> List[Any]:
-    if len(array) == 1:
+def merge_sort(array: list) -> list:
+    if len(array) <= 1:
         return array
 
     div_point = len(array)//2
