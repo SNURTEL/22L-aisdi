@@ -2,10 +2,11 @@ import pytest
 import random
 import time
 
-from .conftest import *
-
-
+from .conftest import (BENCHMARKED_FUNCTIONS, CONTROL_REPS, SAMPLE_RANGE_LOWER,
+                       SAMPLE_RANGE_UPPER, NUM_SAMPLES, BENCHMARK_SAMPLE_SIZES,
+                       TEST_FILE_PATH)
 # region randomized control runs
+
 
 # alternatively, this can be parametrized with generated datasets
 @pytest.mark.parametrize("sorting_function", BENCHMARKED_FUNCTIONS)
@@ -20,7 +21,8 @@ def get_test_datasets():
 
 
 def build_single_dataset():
-    randomized_data = random.sample(range(SAMPLE_RANGE_LOWER, SAMPLE_RANGE_UPPER), NUM_SAMPLES)
+    randomized_data = random.sample(
+        range(SAMPLE_RANGE_LOWER, SAMPLE_RANGE_UPPER), NUM_SAMPLES)
     sorted_data = list(sorted(randomized_data.copy()))
     return randomized_data, sorted_data
 
@@ -45,6 +47,7 @@ def test_benchmark_the_tadeusz(num_words, sorting_function, benchmark):
 
 def load_the_tadeusz(filepath):
     with open(filepath, mode='r', encoding='utf-8') as fp:
-        words = [word for line in [line.split(' ') for line in fp.readlines()] for word in line]
+        words = [word for line in [line.split(' ')
+                 for line in fp.readlines()] for word in line]
     return words
 # endregion

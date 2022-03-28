@@ -1,4 +1,3 @@
-import pytest
 from ..src import insertion_sort, quicksort, merge_sort, bubble_sort
 from ..util import BenchmarkPlotter
 
