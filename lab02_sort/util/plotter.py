@@ -19,7 +19,7 @@ class BenchmarkPlotter:
         print("Success! Saving results to ./plot.png")
         self._save_results_to_file("plot.png")
 
-    def _make_plot(self, benchmark_data: Dict[str: Dict[int: float]]) -> None:
+    def _make_plot(self, benchmark_data: Dict[str, Dict[int, float]]) -> None:
         """Builds and configures the plot"""
         for func, results in benchmark_data.items():
             keys = results.keys()
@@ -32,7 +32,7 @@ class BenchmarkPlotter:
         """Saves the plot to a .png file"""
         plt.savefig(filename)
 
-    def _get_benchmark_data_from_json(self, stat: str = "mean") -> Dict[str: Dict[int: float]]:
+    def _get_benchmark_data_from_json(self, stat: str = "mean") -> Dict[str, Dict[int, float]]:
         """Extracts benchmark results from a .json file"""
         with open(self._results_filepath, mode='r', encoding='utf-8') as fp:
             raw_data = BenchmarkPlotter._deserialize_json(fp)

@@ -13,7 +13,7 @@ example_benchmark_data = {"Insertion sort": {1000: 0.0234234, 2000: 0.0523423,
 
 
 def save_example_to_png():
-    bp = BenchmarkPlotter("")
+    bp = BenchmarkPlotter("","mean")
     bp._make_plot(example_benchmark_data)
     bp._save_results_to_file("example.png")
 
