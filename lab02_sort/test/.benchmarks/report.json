@@ -1,20 +1,20 @@
 {
     "machine_info": {
-        "node": "DESKTOP-0FO8O0U",
+        "node": "tomek-zenbook",
         "processor": "x86_64",
         "machine": "x86_64",
         "python_compiler": "GCC 9.3.0",
         "python_implementation": "CPython",
-        "python_implementation_version": "3.9.5",
-        "python_version": "3.9.5",
+        "python_implementation_version": "3.8.10",
+        "python_version": "3.8.10",
         "python_build": [
             "default",
-            "May 19 2021 11:32:47"
+            "Nov 26 2021 20:14:08"
         ],
-        "release": "5.10.60.1-microsoft-standard-WSL2",
+        "release": "5.13.0-35-generic",
         "system": "Linux",
         "cpu": {
-            "python_version": "3.9.5.final.0 (64 bit)",
+            "python_version": "3.8.10.final.0 (64 bit)",
             "cpuinfo_version": [
                 8,
                 0,
@@ -26,81 +26,144 @@
             "count": 8,
             "arch_string_raw": "x86_64",
             "vendor_id_raw": "GenuineIntel",
-            "brand_raw": "Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz",
-            "hz_advertised_friendly": "1.6000 GHz",
-            "hz_actual_friendly": "1.8000 GHz",
+            "brand_raw": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+            "hz_advertised_friendly": "2.4000 GHz",
+            "hz_actual_friendly": "2.4000 GHz",
             "hz_advertised": [
-                1600000000,
+                2400000000,
                 0
             ],
             "hz_actual": [
-                1800004000,
+                2400000000,
                 0
             ],
-            "stepping": 11,
-            "model": 142,
+            "stepping": 1,
+            "model": 140,
             "family": 6,
             "flags": [
                 "3dnowprefetch",
                 "abm",
+                "acpi",
                 "adx",
                 "aes",
+                "aperfmperf",
                 "apic",
+                "arat",
                 "arch_capabilities",
+                "arch_perfmon",
+                "art",
                 "avx",
                 "avx2",
+                "avx512_bitalg",
+                "avx512_vbmi2",
+                "avx512_vnni",
+                "avx512_vp2intersect",
+                "avx512_vpopcntdq",
+                "avx512bitalg",
+                "avx512bw",
+                "avx512cd",
+                "avx512dq",
+                "avx512f",
+                "avx512ifma",
+                "avx512vbmi",
+                "avx512vbmi2",
+                "avx512vl",
+                "avx512vnni",
+                "avx512vpopcntdq",
                 "bmi1",
                 "bmi2",
+                "bts",
+                "cat_l2",
+                "cdp_l2",
                 "clflush",
                 "clflushopt",
+                "clwb",
                 "cmov",
                 "constant_tsc",
                 "cpuid",
+                "cpuid_fault",
                 "cx16",
                 "cx8",
                 "de",
+                "ds_cpl",
+                "dtes64",
+                "dtherm",
+                "dts",
+                "epb",
+                "ept",
+                "ept_ad",
                 "erms",
+                "est",
                 "f16c",
+                "flexpriority",
                 "flush_l1d",
                 "fma",
                 "fpu",
                 "fsgsbase",
+                "fsrm",
                 "fxsr",
+                "gfni",
                 "ht",
-                "hypervisor",
+                "hwp",
+                "hwp_act_window",
+                "hwp_epp",
+                "hwp_notify",
+                "hwp_pkg_req",
                 "ibpb",
                 "ibrs",
+                "ibrs_enhanced",
+                "ida",
+                "intel_pt",
                 "invpcid",
                 "invpcid_single",
                 "lahf_lm",
                 "lm",
                 "mca",
                 "mce",
+                "md_clear",
                 "mmx",
+                "monitor",
                 "movbe",
+                "movdir64b",
+                "movdiri",
                 "msr",
                 "mtrr",
+                "nonstop_tsc",
                 "nopl",
                 "nx",
+                "ospke",
                 "osxsave",
                 "pae",
                 "pat",
+                "pbe",
                 "pcid",
                 "pclmulqdq",
+                "pdcm",
                 "pdpe1gb",
+                "pebs",
                 "pge",
+                "pku",
+                "pln",
                 "pni",
                 "popcnt",
+                "pqe",
                 "pse",
                 "pse36",
+                "pts",
+                "rdpid",
                 "rdrand",
                 "rdrnd",
                 "rdseed",
+                "rdt_a",
                 "rdtscp",
                 "rep_good",
+                "sdbg",
                 "sep",
+                "sha",
+                "sha_ni",
                 "smap",
                 "smep",
+                "split_lock_detect",
                 "ss",
                 "ssbd",
                 "sse",
@@ -110,27 +173,40 @@
                 "ssse3",
                 "stibp",
                 "syscall",
+                "tm",
+                "tm2",
+                "tpr_shadow",
                 "tsc",
+                "tsc_adjust",
+                "tsc_deadline_timer",
+                "tsc_known_freq",
+                "tscdeadline",
+                "umip",
+                "vaes",
                 "vme",
+                "vmx",
+                "vnmi",
+                "vpclmulqdq",
+                "vpid",
+                "x2apic",
                 "xgetbv1",
                 "xsave",
                 "xsavec",
                 "xsaveopt",
                 "xsaves",
-                "xtopology"
+                "xtopology",
+                "xtpr"
             ],
-            "l3_cache_size": 6291456,
-            "l2_cache_size": "1 MiB",
-            "l1_data_cache_size": "128 KiB",
-            "l1_instruction_cache_size": "128 KiB",
+            "l3_cache_size": 8388608,
+            "l2_cache_size": 65536,
             "l2_cache_line_size": 256,
-            "l2_cache_associativity": 6
+            "l2_cache_associativity": 7
         }
     },
     "commit_info": {
-        "id": "9250ec43e69fed3731ac4a2e514343f18f9c21f9",
-        "time": "2022-03-28T17:28:29+02:00",
-        "author_time": "2022-03-28T17:28:29+02:00",
+        "id": "7381f4b03e9d8ef330538cc55f8e84935196f059",
+        "time": "2022-03-28T17:45:13+02:00",
+        "author_time": "2022-03-28T17:45:13+02:00",
         "dirty": true,
         "project": "22l-aisdi-kowalczewski-owienko",
         "branch": "various-fixes"
@@ -141,38 +217,42 @@
             "name": "test_benchmark_the_tadeusz[selection_sort-1000]",
             "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[selection_sort-1000]",
             "params": {
-                "sorting_function": "UNSERIALIZABLE[<function selection_sort at 0x7fdefe3141f0>]",
+                "sorting_function": "UNSERIALIZABLE[<function selection_sort at 0x7f5e5df2e820>]",
                 "num_words": 1000
             },
             "param": "selection_sort-1000",
             "extra_info": {},
             "options": {
                 "disable_gc": true,
-                "timer": "time",
+                "timer": "perf_counter",
                 "min_rounds": 5,
                 "max_time": 1.0,
                 "min_time": 5e-06,
-                "warmup": false
+                "warmup": 100000
             },
             "stats": {
-                "min": 0.037570953369140625,
-                "max": 0.037570953369140625,
-                "mean": 0.037570953369140625,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.037570953369140625,
-                "iqr": 0.0,
-                "q1": 0.037570953369140625,
-                "q3": 0.037570953369140625,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.037570953369140625,
-                "hd15iqr": 0.037570953369140625,
-                "ops": 26.61630622398213,
-                "total": 0.037570953369140625,
+                "min": 0.026692501996876672,
+                "max": 0.028976302011869848,
+                "mean": 0.027250437007751316,
+                "stddev": 0.0009704097384931979,
+                "rounds": 5,
+                "median": 0.02691759800654836,
+                "iqr": 0.0007108947393135168,
+                "q1": 0.026727821765234694,
+                "q3": 0.02743871650454821,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.026692501996876672,
+                "hd15iqr": 0.028976302011869848,
+                "ops": 36.69665920276994,
+                "total": 0.13625218503875658,
                 "data": [
-                    0.037570953369140625
+                    0.028976302011869848,
+                    0.026739595021354035,
+                    0.026926188002107665,
+                    0.026692501996876672,
+                    0.02691759800654836
                 ],
                 "iterations": 1
             }
@@ -182,38 +262,42 @@
             "name": "test_benchmark_the_tadeusz[selection_sort-2000]",
             "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[selection_sort-2000]",
             "params": {
-                "sorting_function": "UNSERIALIZABLE[<function selection_sort at 0x7fdefe3141f0>]",
+                "sorting_function": "UNSERIALIZABLE[<function selection_sort at 0x7f5e5df2e820>]",
                 "num_words": 2000
             },
             "param": "selection_sort-2000",
             "extra_info": {},
             "options": {
                 "disable_gc": true,
-                "timer": "time",
+                "timer": "perf_counter",
                 "min_rounds": 5,
                 "max_time": 1.0,
                 "min_time": 5e-06,
-                "warmup": false
+                "warmup": 100000
             },
             "stats": {
-                "min": 0.16832733154296875,
-                "max": 0.16832733154296875,
-                "mean": 0.16832733154296875,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.16832733154296875,
-                "iqr": 0.0,
-                "q1": 0.16832733154296875,
-                "q3": 0.16832733154296875,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.16832733154296875,
-                "hd15iqr": 0.16832733154296875,
-                "ops": 5.9408058740878396,
-                "total": 0.16832733154296875,
+                "min": 0.10681711998768151,
+                "max": 0.11370374300167896,
+                "mean": 0.10868318239809013,
+                "stddev": 0.0028301150583444124,
+                "rounds": 5,
+                "median": 0.10760720999678597,
+                "iqr": 0.0019117949923384003,
+                "q1": 0.10734215000411496,
+                "q3": 0.10925394499645336,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.10681711998768151,
+                "hd15iqr": 0.11370374300167896,
+                "ops": 9.201055562921875,
+                "total": 0.5434159119904507,
                 "data": [
-                    0.16832733154296875
+                    0.11370374300167896,
+                    0.10760720999678597,
+                    0.10681711998768151,
+                    0.10777067899471149,
+                    0.10751716000959277
                 ],
                 "iterations": 1
             }
@@ -223,38 +307,42 @@
             "name": "test_benchmark_the_tadeusz[selection_sort-3000]",
             "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[selection_sort-3000]",
             "params": {
-                "sorting_function": "UNSERIALIZABLE[<function selection_sort at 0x7fdefe3141f0>]",
+                "sorting_function": "UNSERIALIZABLE[<function selection_sort at 0x7f5e5df2e820>]",
                 "num_words": 3000
             },
             "param": "selection_sort-3000",
             "extra_info": {},
             "options": {
                 "disable_gc": true,
-                "timer": "time",
+                "timer": "perf_counter",
                 "min_rounds": 5,
                 "max_time": 1.0,
                 "min_time": 5e-06,
-                "warmup": false
+                "warmup": 100000
             },
             "stats": {
-                "min": 0.3666551113128662,
-                "max": 0.3666551113128662,
-                "mean": 0.3666551113128662,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.3666551113128662,
-                "iqr": 0.0,
-                "q1": 0.3666551113128662,
-                "q3": 0.3666551113128662,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.3666551113128662,
-                "hd15iqr": 0.3666551113128662,
-                "ops": 2.727358678894024,
-                "total": 0.3666551113128662,
+                "min": 0.23982054000953212,
+                "max": 0.2579831720213406,
+                "mean": 0.24421647080453113,
+                "stddev": 0.007729645318385672,
+                "rounds": 5,
+                "median": 0.24106153601314873,
+                "iqr": 0.005530815498786978,
+                "q1": 0.24029147099645343,
+                "q3": 0.2458222864952404,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.23982054000953212,
+                "hd15iqr": 0.2579831720213406,
+                "ops": 4.0947279137466195,
+                "total": 1.2210823540226556,
                 "data": [
-                    0.3666551113128662
+                    0.2579831720213406,
+                    0.23982054000953212,
+                    0.24106153601314873,
+                    0.24044844799209386,
+                    0.24176865798654035
                 ],
                 "iterations": 1
             }
@@ -264,38 +352,42 @@
             "name": "test_benchmark_the_tadeusz[selection_sort-4000]",
             "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[selection_sort-4000]",
             "params": {
-                "sorting_function": "UNSERIALIZABLE[<function selection_sort at 0x7fdefe3141f0>]",
+                "sorting_function": "UNSERIALIZABLE[<function selection_sort at 0x7f5e5df2e820>]",
                 "num_words": 4000
             },
             "param": "selection_sort-4000",
             "extra_info": {},
             "options": {
                 "disable_gc": true,
-                "timer": "time",
+                "timer": "perf_counter",
                 "min_rounds": 5,
                 "max_time": 1.0,
                 "min_time": 5e-06,
-                "warmup": false
+                "warmup": 100000
             },
             "stats": {
-                "min": 0.6489179134368896,
-                "max": 0.6489179134368896,
-                "mean": 0.6489179134368896,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.6489179134368896,
-                "iqr": 0.0,
-                "q1": 0.6489179134368896,
-                "q3": 0.6489179134368896,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.6489179134368896,
-                "hd15iqr": 0.6489179134368896,
-                "ops": 1.5410269608734646,
-                "total": 0.6489179134368896,
+                "min": 0.4267704740050249,
+                "max": 0.46110839999164455,
+                "mean": 0.43476999359554613,
+                "stddev": 0.014762149380813888,
+                "rounds": 5,
+                "median": 0.4290890219854191,
+                "iqr": 0.009924194477207493,
+                "q1": 0.4273535390093457,
+                "q3": 0.4372777334865532,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.4267704740050249,
+                "hd15iqr": 0.46110839999164455,
+                "ops": 2.3000667358158826,
+                "total": 2.1738499679777306,
                 "data": [
-                    0.6489179134368896
+                    0.46110839999164455,
+                    0.42754789401078597,
+                    0.4290890219854191,
+                    0.42933417798485607,
+                    0.4267704740050249
                 ],
                 "iterations": 1
             }
@@ -305,243 +397,42 @@
             "name": "test_benchmark_the_tadeusz[selection_sort-5000]",
             "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[selection_sort-5000]",
             "params": {
-                "sorting_function": "UNSERIALIZABLE[<function selection_sort at 0x7fdefe3141f0>]",
+                "sorting_function": "UNSERIALIZABLE[<function selection_sort at 0x7f5e5df2e820>]",
                 "num_words": 5000
             },
             "param": "selection_sort-5000",
             "extra_info": {},
             "options": {
                 "disable_gc": true,
-                "timer": "time",
+                "timer": "perf_counter",
                 "min_rounds": 5,
                 "max_time": 1.0,
                 "min_time": 5e-06,
-                "warmup": false
+                "warmup": 100000
             },
             "stats": {
-                "min": 1.0616779327392578,
-                "max": 1.0616779327392578,
-                "mean": 1.0616779327392578,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 1.0616779327392578,
-                "iqr": 0.0,
-                "q1": 1.0616779327392578,
-                "q3": 1.0616779327392578,
+                "min": 0.662625812983606,
+                "max": 1.0529144320171326,
+                "mean": 0.9035842543991748,
+                "stddev": 0.18877028446012076,
+                "rounds": 5,
+                "median": 1.0243366420036182,
+                "iqr": 0.3279361224922468,
+                "q1": 0.7172411137507879,
+                "q3": 1.0451772362430347,
                 "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 1.0616779327392578,
-                "hd15iqr": 1.0616779327392578,
-                "ops": 0.941905232427577,
-                "total": 1.0616779327392578,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.662625812983606,
+                "hd15iqr": 1.0529144320171326,
+                "ops": 1.106703658382068,
+                "total": 4.517921271995874,
                 "data": [
-                    1.0616779327392578
-                ],
-                "iterations": 1
-            }
-        },
-        {
-            "group": null,
-            "name": "test_benchmark_the_tadeusz[selection_sort-6000]",
-            "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[selection_sort-6000]",
-            "params": {
-                "sorting_function": "UNSERIALIZABLE[<function selection_sort at 0x7fdefe3141f0>]",
-                "num_words": 6000
-            },
-            "param": "selection_sort-6000",
-            "extra_info": {},
-            "options": {
-                "disable_gc": true,
-                "timer": "time",
-                "min_rounds": 5,
-                "max_time": 1.0,
-                "min_time": 5e-06,
-                "warmup": false
-            },
-            "stats": {
-                "min": 1.5428056716918945,
-                "max": 1.5428056716918945,
-                "mean": 1.5428056716918945,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 1.5428056716918945,
-                "iqr": 0.0,
-                "q1": 1.5428056716918945,
-                "q3": 1.5428056716918945,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 1.5428056716918945,
-                "hd15iqr": 1.5428056716918945,
-                "ops": 0.6481697717012961,
-                "total": 1.5428056716918945,
-                "data": [
-                    1.5428056716918945
-                ],
-                "iterations": 1
-            }
-        },
-        {
-            "group": null,
-            "name": "test_benchmark_the_tadeusz[selection_sort-7000]",
-            "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[selection_sort-7000]",
-            "params": {
-                "sorting_function": "UNSERIALIZABLE[<function selection_sort at 0x7fdefe3141f0>]",
-                "num_words": 7000
-            },
-            "param": "selection_sort-7000",
-            "extra_info": {},
-            "options": {
-                "disable_gc": true,
-                "timer": "time",
-                "min_rounds": 5,
-                "max_time": 1.0,
-                "min_time": 5e-06,
-                "warmup": false
-            },
-            "stats": {
-                "min": 2.0005407333374023,
-                "max": 2.0005407333374023,
-                "mean": 2.0005407333374023,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 2.0005407333374023,
-                "iqr": 0.0,
-                "q1": 2.0005407333374023,
-                "q3": 2.0005407333374023,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 2.0005407333374023,
-                "hd15iqr": 2.0005407333374023,
-                "ops": 0.4998648532048382,
-                "total": 2.0005407333374023,
-                "data": [
-                    2.0005407333374023
-                ],
-                "iterations": 1
-            }
-        },
-        {
-            "group": null,
-            "name": "test_benchmark_the_tadeusz[selection_sort-8000]",
-            "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[selection_sort-8000]",
-            "params": {
-                "sorting_function": "UNSERIALIZABLE[<function selection_sort at 0x7fdefe3141f0>]",
-                "num_words": 8000
-            },
-            "param": "selection_sort-8000",
-            "extra_info": {},
-            "options": {
-                "disable_gc": true,
-                "timer": "time",
-                "min_rounds": 5,
-                "max_time": 1.0,
-                "min_time": 5e-06,
-                "warmup": false
-            },
-            "stats": {
-                "min": 2.666710138320923,
-                "max": 2.666710138320923,
-                "mean": 2.666710138320923,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 2.666710138320923,
-                "iqr": 0.0,
-                "q1": 2.666710138320923,
-                "q3": 2.666710138320923,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 2.666710138320923,
-                "hd15iqr": 2.666710138320923,
-                "ops": 0.37499388689827523,
-                "total": 2.666710138320923,
-                "data": [
-                    2.666710138320923
-                ],
-                "iterations": 1
-            }
-        },
-        {
-            "group": null,
-            "name": "test_benchmark_the_tadeusz[selection_sort-9000]",
-            "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[selection_sort-9000]",
-            "params": {
-                "sorting_function": "UNSERIALIZABLE[<function selection_sort at 0x7fdefe3141f0>]",
-                "num_words": 9000
-            },
-            "param": "selection_sort-9000",
-            "extra_info": {},
-            "options": {
-                "disable_gc": true,
-                "timer": "time",
-                "min_rounds": 5,
-                "max_time": 1.0,
-                "min_time": 5e-06,
-                "warmup": false
-            },
-            "stats": {
-                "min": 3.523691415786743,
-                "max": 3.523691415786743,
-                "mean": 3.523691415786743,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 3.523691415786743,
-                "iqr": 0.0,
-                "q1": 3.523691415786743,
-                "q3": 3.523691415786743,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 3.523691415786743,
-                "hd15iqr": 3.523691415786743,
-                "ops": 0.2837932957238617,
-                "total": 3.523691415786743,
-                "data": [
-                    3.523691415786743
-                ],
-                "iterations": 1
-            }
-        },
-        {
-            "group": null,
-            "name": "test_benchmark_the_tadeusz[selection_sort-10000]",
-            "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[selection_sort-10000]",
-            "params": {
-                "sorting_function": "UNSERIALIZABLE[<function selection_sort at 0x7fdefe3141f0>]",
-                "num_words": 10000
-            },
-            "param": "selection_sort-10000",
-            "extra_info": {},
-            "options": {
-                "disable_gc": true,
-                "timer": "time",
-                "min_rounds": 5,
-                "max_time": 1.0,
-                "min_time": 5e-06,
-                "warmup": false
-            },
-            "stats": {
-                "min": 4.23669958114624,
-                "max": 4.23669958114624,
-                "mean": 4.23669958114624,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 4.23669958114624,
-                "iqr": 0.0,
-                "q1": 4.23669958114624,
-                "q3": 4.23669958114624,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 4.23669958114624,
-                "hd15iqr": 4.23669958114624,
-                "ops": 0.23603278468223365,
-                "total": 4.23669958114624,
-                "data": [
-                    4.23669958114624
+                    0.7354462140065152,
+                    0.662625812983606,
+                    1.0243366420036182,
+                    1.0529144320171326,
+                    1.042598170985002
                 ],
                 "iterations": 1
             }
@@ -551,38 +442,42 @@
             "name": "test_benchmark_the_tadeusz[quicksort-1000]",
             "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[quicksort-1000]",
             "params": {
-                "sorting_function": "UNSERIALIZABLE[<function quicksort at 0x7fdefe3145e0>]",
+                "sorting_function": "UNSERIALIZABLE[<function quicksort at 0x7f5e5df2ea60>]",
                 "num_words": 1000
             },
             "param": "quicksort-1000",
             "extra_info": {},
             "options": {
                 "disable_gc": true,
-                "timer": "time",
+                "timer": "perf_counter",
                 "min_rounds": 5,
                 "max_time": 1.0,
                 "min_time": 5e-06,
-                "warmup": false
+                "warmup": 100000
             },
             "stats": {
-                "min": 0.0018656253814697266,
-                "max": 0.0018656253814697266,
-                "mean": 0.0018656253814697266,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.0018656253814697266,
-                "iqr": 0.0,
-                "q1": 0.0018656253814697266,
-                "q3": 0.0018656253814697266,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.0018656253814697266,
-                "hd15iqr": 0.0018656253814697266,
-                "ops": 536.0132907348243,
-                "total": 0.0018656253814697266,
+                "min": 0.001166999980341643,
+                "max": 0.0020679930166807026,
+                "mean": 0.0013652159948833286,
+                "stddev": 0.00039346082470161645,
+                "rounds": 5,
+                "median": 0.0011832239979412407,
+                "iqr": 0.00025731602363521233,
+                "q1": 0.0011786647301050834,
+                "q3": 0.0014359807537402958,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.001166999980341643,
+                "hd15iqr": 0.0020679930166807026,
+                "ops": 732.4848256597375,
+                "total": 0.006826079974416643,
                 "data": [
-                    0.0018656253814697266
+                    0.0020679930166807026,
+                    0.0012253099994268268,
+                    0.0011832239979412407,
+                    0.001166999980341643,
+                    0.0011825529800262302
                 ],
                 "iterations": 1
             }
@@ -592,38 +487,42 @@
             "name": "test_benchmark_the_tadeusz[quicksort-2000]",
             "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[quicksort-2000]",
             "params": {
-                "sorting_function": "UNSERIALIZABLE[<function quicksort at 0x7fdefe3145e0>]",
+                "sorting_function": "UNSERIALIZABLE[<function quicksort at 0x7f5e5df2ea60>]",
                 "num_words": 2000
             },
             "param": "quicksort-2000",
             "extra_info": {},
             "options": {
                 "disable_gc": true,
-                "timer": "time",
+                "timer": "perf_counter",
                 "min_rounds": 5,
                 "max_time": 1.0,
                 "min_time": 5e-06,
-                "warmup": false
+                "warmup": 100000
             },
             "stats": {
-                "min": 0.004139900207519531,
-                "max": 0.004139900207519531,
-                "mean": 0.004139900207519531,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.004139900207519531,
-                "iqr": 0.0,
-                "q1": 0.004139900207519531,
-                "q3": 0.004139900207519531,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.004139900207519531,
-                "hd15iqr": 0.004139900207519531,
-                "ops": 241.55171619442524,
-                "total": 0.004139900207519531,
+                "min": 0.0026717449945863336,
+                "max": 0.004696320014772937,
+                "mean": 0.0031246270053088667,
+                "stddev": 0.0008829805737543659,
+                "rounds": 5,
+                "median": 0.0026858060155063868,
+                "iqr": 0.0006544112839037552,
+                "q1": 0.0026822764848475344,
+                "q3": 0.0033366877687512897,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.0026717449945863336,
+                "hd15iqr": 0.004696320014772937,
+                "ops": 320.0381992157656,
+                "total": 0.015623135026544333,
                 "data": [
-                    0.004139900207519531
+                    0.004696320014772937,
+                    0.0026858060155063868,
+                    0.0026717449945863336,
+                    0.002685786981601268,
+                    0.0028834770200774074
                 ],
                 "iterations": 1
             }
@@ -633,38 +532,42 @@
             "name": "test_benchmark_the_tadeusz[quicksort-3000]",
             "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[quicksort-3000]",
             "params": {
-                "sorting_function": "UNSERIALIZABLE[<function quicksort at 0x7fdefe3145e0>]",
+                "sorting_function": "UNSERIALIZABLE[<function quicksort at 0x7f5e5df2ea60>]",
                 "num_words": 3000
             },
             "param": "quicksort-3000",
             "extra_info": {},
             "options": {
                 "disable_gc": true,
-                "timer": "time",
+                "timer": "perf_counter",
                 "min_rounds": 5,
                 "max_time": 1.0,
                 "min_time": 5e-06,
-                "warmup": false
+                "warmup": 100000
             },
             "stats": {
-                "min": 0.005886077880859375,
-                "max": 0.005886077880859375,
-                "mean": 0.005886077880859375,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.005886077880859375,
-                "iqr": 0.0,
-                "q1": 0.005886077880859375,
-                "q3": 0.005886077880859375,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.005886077880859375,
-                "hd15iqr": 0.005886077880859375,
-                "ops": 169.89241736876215,
-                "total": 0.005886077880859375,
+                "min": 0.004111530986847356,
+                "max": 0.006601405009860173,
+                "mean": 0.004634001606609673,
+                "stddev": 0.0011002533450211673,
+                "rounds": 5,
+                "median": 0.0041440780041739345,
+                "iqr": 0.0006758355157217011,
+                "q1": 0.004118572003790177,
+                "q3": 0.0047944075195118785,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.004111530986847356,
+                "hd15iqr": 0.006601405009860173,
+                "ops": 215.79621348720676,
+                "total": 0.02317000803304836,
                 "data": [
-                    0.005886077880859375
+                    0.006601405009860173,
+                    0.004192075022729114,
+                    0.004111530986847356,
+                    0.0041440780041739345,
+                    0.0041209190094377846
                 ],
                 "iterations": 1
             }
@@ -674,38 +577,42 @@
             "name": "test_benchmark_the_tadeusz[quicksort-4000]",
             "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[quicksort-4000]",
             "params": {
-                "sorting_function": "UNSERIALIZABLE[<function quicksort at 0x7fdefe3145e0>]",
+                "sorting_function": "UNSERIALIZABLE[<function quicksort at 0x7f5e5df2ea60>]",
                 "num_words": 4000
             },
             "param": "quicksort-4000",
             "extra_info": {},
             "options": {
                 "disable_gc": true,
-                "timer": "time",
+                "timer": "perf_counter",
                 "min_rounds": 5,
                 "max_time": 1.0,
                 "min_time": 5e-06,
-                "warmup": false
+                "warmup": 100000
             },
             "stats": {
-                "min": 0.009221076965332031,
-                "max": 0.009221076965332031,
-                "mean": 0.009221076965332031,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.009221076965332031,
-                "iqr": 0.0,
-                "q1": 0.009221076965332031,
-                "q3": 0.009221076965332031,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.009221076965332031,
-                "hd15iqr": 0.009221076965332031,
-                "ops": 108.44720239942083,
-                "total": 0.009221076965332031,
+                "min": 0.005581617006100714,
+                "max": 0.009648962004575878,
+                "mean": 0.006429632398067042,
+                "stddev": 0.0017999507324751663,
+                "rounds": 5,
+                "median": 0.005637196998577565,
+                "iqr": 0.0010604952476569451,
+                "q1": 0.005603719495411497,
+                "q3": 0.006664214743068442,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.005581617006100714,
+                "hd15iqr": 0.009648962004575878,
+                "ops": 155.52988694977844,
+                "total": 0.03214816199033521,
                 "data": [
-                    0.009221076965332031
+                    0.009648962004575878,
+                    0.0056692989892326295,
+                    0.005611086991848424,
+                    0.005581617006100714,
+                    0.005637196998577565
                 ],
                 "iterations": 1
             }
@@ -715,243 +622,42 @@
             "name": "test_benchmark_the_tadeusz[quicksort-5000]",
             "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[quicksort-5000]",
             "params": {
-                "sorting_function": "UNSERIALIZABLE[<function quicksort at 0x7fdefe3145e0>]",
+                "sorting_function": "UNSERIALIZABLE[<function quicksort at 0x7f5e5df2ea60>]",
                 "num_words": 5000
             },
             "param": "quicksort-5000",
             "extra_info": {},
             "options": {
                 "disable_gc": true,
-                "timer": "time",
+                "timer": "perf_counter",
                 "min_rounds": 5,
                 "max_time": 1.0,
                 "min_time": 5e-06,
-                "warmup": false
+                "warmup": 100000
             },
             "stats": {
-                "min": 0.01182413101196289,
-                "max": 0.01182413101196289,
-                "mean": 0.01182413101196289,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.01182413101196289,
-                "iqr": 0.0,
-                "q1": 0.01182413101196289,
-                "q3": 0.01182413101196289,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.01182413101196289,
-                "hd15iqr": 0.01182413101196289,
-                "ops": 84.57281122716458,
-                "total": 0.01182413101196289,
+                "min": 0.007314774993574247,
+                "max": 0.012021898000966758,
+                "mean": 0.00833323219558224,
+                "stddev": 0.0020651033104547496,
+                "rounds": 5,
+                "median": 0.007397574983770028,
+                "iqr": 0.0013760820220340975,
+                "q1": 0.007328510488150641,
+                "q3": 0.008704592510184739,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.007314774993574247,
+                "hd15iqr": 0.012021898000966758,
+                "ops": 120.00145640129139,
+                "total": 0.041666160977911204,
                 "data": [
-                    0.01182413101196289
-                ],
-                "iterations": 1
-            }
-        },
-        {
-            "group": null,
-            "name": "test_benchmark_the_tadeusz[quicksort-6000]",
-            "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[quicksort-6000]",
-            "params": {
-                "sorting_function": "UNSERIALIZABLE[<function quicksort at 0x7fdefe3145e0>]",
-                "num_words": 6000
-            },
-            "param": "quicksort-6000",
-            "extra_info": {},
-            "options": {
-                "disable_gc": true,
-                "timer": "time",
-                "min_rounds": 5,
-                "max_time": 1.0,
-                "min_time": 5e-06,
-                "warmup": false
-            },
-            "stats": {
-                "min": 0.022818565368652344,
-                "max": 0.022818565368652344,
-                "mean": 0.022818565368652344,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.022818565368652344,
-                "iqr": 0.0,
-                "q1": 0.022818565368652344,
-                "q3": 0.022818565368652344,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.022818565368652344,
-                "hd15iqr": 0.022818565368652344,
-                "ops": 43.82396455886655,
-                "total": 0.022818565368652344,
-                "data": [
-                    0.022818565368652344
-                ],
-                "iterations": 1
-            }
-        },
-        {
-            "group": null,
-            "name": "test_benchmark_the_tadeusz[quicksort-7000]",
-            "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[quicksort-7000]",
-            "params": {
-                "sorting_function": "UNSERIALIZABLE[<function quicksort at 0x7fdefe3145e0>]",
-                "num_words": 7000
-            },
-            "param": "quicksort-7000",
-            "extra_info": {},
-            "options": {
-                "disable_gc": true,
-                "timer": "time",
-                "min_rounds": 5,
-                "max_time": 1.0,
-                "min_time": 5e-06,
-                "warmup": false
-            },
-            "stats": {
-                "min": 0.01592564582824707,
-                "max": 0.01592564582824707,
-                "mean": 0.01592564582824707,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.01592564582824707,
-                "iqr": 0.0,
-                "q1": 0.01592564582824707,
-                "q3": 0.01592564582824707,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.01592564582824707,
-                "hd15iqr": 0.01592564582824707,
-                "ops": 62.79180202703714,
-                "total": 0.01592564582824707,
-                "data": [
-                    0.01592564582824707
-                ],
-                "iterations": 1
-            }
-        },
-        {
-            "group": null,
-            "name": "test_benchmark_the_tadeusz[quicksort-8000]",
-            "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[quicksort-8000]",
-            "params": {
-                "sorting_function": "UNSERIALIZABLE[<function quicksort at 0x7fdefe3145e0>]",
-                "num_words": 8000
-            },
-            "param": "quicksort-8000",
-            "extra_info": {},
-            "options": {
-                "disable_gc": true,
-                "timer": "time",
-                "min_rounds": 5,
-                "max_time": 1.0,
-                "min_time": 5e-06,
-                "warmup": false
-            },
-            "stats": {
-                "min": 0.017874717712402344,
-                "max": 0.017874717712402344,
-                "mean": 0.017874717712402344,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.017874717712402344,
-                "iqr": 0.0,
-                "q1": 0.017874717712402344,
-                "q3": 0.017874717712402344,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.017874717712402344,
-                "hd15iqr": 0.017874717712402344,
-                "ops": 55.944939444059116,
-                "total": 0.017874717712402344,
-                "data": [
-                    0.017874717712402344
-                ],
-                "iterations": 1
-            }
-        },
-        {
-            "group": null,
-            "name": "test_benchmark_the_tadeusz[quicksort-9000]",
-            "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[quicksort-9000]",
-            "params": {
-                "sorting_function": "UNSERIALIZABLE[<function quicksort at 0x7fdefe3145e0>]",
-                "num_words": 9000
-            },
-            "param": "quicksort-9000",
-            "extra_info": {},
-            "options": {
-                "disable_gc": true,
-                "timer": "time",
-                "min_rounds": 5,
-                "max_time": 1.0,
-                "min_time": 5e-06,
-                "warmup": false
-            },
-            "stats": {
-                "min": 0.02088451385498047,
-                "max": 0.02088451385498047,
-                "mean": 0.02088451385498047,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.02088451385498047,
-                "iqr": 0.0,
-                "q1": 0.02088451385498047,
-                "q3": 0.02088451385498047,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.02088451385498047,
-                "hd15iqr": 0.02088451385498047,
-                "ops": 47.88236905794785,
-                "total": 0.02088451385498047,
-                "data": [
-                    0.02088451385498047
-                ],
-                "iterations": 1
-            }
-        },
-        {
-            "group": null,
-            "name": "test_benchmark_the_tadeusz[quicksort-10000]",
-            "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[quicksort-10000]",
-            "params": {
-                "sorting_function": "UNSERIALIZABLE[<function quicksort at 0x7fdefe3145e0>]",
-                "num_words": 10000
-            },
-            "param": "quicksort-10000",
-            "extra_info": {},
-            "options": {
-                "disable_gc": true,
-                "timer": "time",
-                "min_rounds": 5,
-                "max_time": 1.0,
-                "min_time": 5e-06,
-                "warmup": false
-            },
-            "stats": {
-                "min": 0.025040864944458008,
-                "max": 0.025040864944458008,
-                "mean": 0.025040864944458008,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.025040864944458008,
-                "iqr": 0.0,
-                "q1": 0.025040864944458008,
-                "q3": 0.025040864944458008,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.025040864944458008,
-                "hd15iqr": 0.025040864944458008,
-                "ops": 39.93472279084824,
-                "total": 0.025040864944458008,
-                "data": [
-                    0.025040864944458008
+                    0.012021898000966758,
+                    0.007598824013257399,
+                    0.007397574983770028,
+                    0.007333088986342773,
+                    0.007314774993574247
                 ],
                 "iterations": 1
             }
@@ -961,38 +667,42 @@
             "name": "test_benchmark_the_tadeusz[merge_sort-1000]",
             "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[merge_sort-1000]",
             "params": {
-                "sorting_function": "UNSERIALIZABLE[<function merge_sort at 0x7fdefe314820>]",
+                "sorting_function": "UNSERIALIZABLE[<function merge_sort at 0x7f5e5df2eca0>]",
                 "num_words": 1000
             },
             "param": "merge_sort-1000",
             "extra_info": {},
             "options": {
                 "disable_gc": true,
-                "timer": "time",
+                "timer": "perf_counter",
                 "min_rounds": 5,
                 "max_time": 1.0,
                 "min_time": 5e-06,
-                "warmup": false
+                "warmup": 100000
             },
             "stats": {
-                "min": 0.004160165786743164,
-                "max": 0.004160165786743164,
-                "mean": 0.004160165786743164,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.004160165786743164,
-                "iqr": 0.0,
-                "q1": 0.004160165786743164,
-                "q3": 0.004160165786743164,
+                "min": 0.003869569016387686,
+                "max": 0.0039998500142246485,
+                "mean": 0.003923393605509773,
+                "stddev": 4.8694011567861095e-05,
+                "rounds": 5,
+                "median": 0.003912207001121715,
+                "iqr": 5.74702862650156e-05,
+                "q1": 0.0038931954841245897,
+                "q3": 0.003950665770389605,
                 "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.004160165786743164,
-                "hd15iqr": 0.004160165786743164,
-                "ops": 240.37503581867156,
-                "total": 0.004160165786743164,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.003869569016387686,
+                "hd15iqr": 0.0039998500142246485,
+                "ops": 254.88138600105313,
+                "total": 0.019616968027548864,
                 "data": [
-                    0.004160165786743164
+                    0.0039998500142246485,
+                    0.0039010709733702242,
+                    0.003934271022444591,
+                    0.003912207001121715,
+                    0.003869569016387686
                 ],
                 "iterations": 1
             }
@@ -1002,38 +712,42 @@
             "name": "test_benchmark_the_tadeusz[merge_sort-2000]",
             "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[merge_sort-2000]",
             "params": {
-                "sorting_function": "UNSERIALIZABLE[<function merge_sort at 0x7fdefe314820>]",
+                "sorting_function": "UNSERIALIZABLE[<function merge_sort at 0x7f5e5df2eca0>]",
                 "num_words": 2000
             },
             "param": "merge_sort-2000",
             "extra_info": {},
             "options": {
                 "disable_gc": true,
-                "timer": "time",
+                "timer": "perf_counter",
                 "min_rounds": 5,
                 "max_time": 1.0,
                 "min_time": 5e-06,
-                "warmup": false
+                "warmup": 100000
             },
             "stats": {
-                "min": 0.009503602981567383,
-                "max": 0.009503602981567383,
-                "mean": 0.009503602981567383,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.009503602981567383,
-                "iqr": 0.0,
-                "q1": 0.009503602981567383,
-                "q3": 0.009503602981567383,
+                "min": 0.010256048000883311,
+                "max": 0.010454136005137116,
+                "mean": 0.01037029200233519,
+                "stddev": 8.424553027394299e-05,
+                "rounds": 5,
+                "median": 0.010368365998147056,
+                "iqr": 0.00014308602112578228,
+                "q1": 0.010307071243005339,
+                "q3": 0.010450157264131121,
                 "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.009503602981567383,
-                "hd15iqr": 0.009503602981567383,
-                "ops": 105.2232507965179,
-                "total": 0.009503602981567383,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.010256048000883311,
+                "hd15iqr": 0.010454136005137116,
+                "ops": 96.42930013685431,
+                "total": 0.051851460011675954,
                 "data": [
-                    0.009503602981567383
+                    0.010448831017129123,
+                    0.010368365998147056,
+                    0.010256048000883311,
+                    0.010454136005137116,
+                    0.010324078990379348
                 ],
                 "iterations": 1
             }
@@ -1043,38 +757,42 @@
             "name": "test_benchmark_the_tadeusz[merge_sort-3000]",
             "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[merge_sort-3000]",
             "params": {
-                "sorting_function": "UNSERIALIZABLE[<function merge_sort at 0x7fdefe314820>]",
+                "sorting_function": "UNSERIALIZABLE[<function merge_sort at 0x7f5e5df2eca0>]",
                 "num_words": 3000
             },
             "param": "merge_sort-3000",
             "extra_info": {},
             "options": {
                 "disable_gc": true,
-                "timer": "time",
+                "timer": "perf_counter",
                 "min_rounds": 5,
                 "max_time": 1.0,
                 "min_time": 5e-06,
-                "warmup": false
+                "warmup": 100000
             },
             "stats": {
-                "min": 0.013565540313720703,
-                "max": 0.013565540313720703,
-                "mean": 0.013565540313720703,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.013565540313720703,
-                "iqr": 0.0,
-                "q1": 0.013565540313720703,
-                "q3": 0.013565540313720703,
+                "min": 0.019662150007206947,
+                "max": 0.020129486976657063,
+                "mean": 0.019851144193671642,
+                "stddev": 0.0001780645843696885,
+                "rounds": 5,
+                "median": 0.01984850098961033,
+                "iqr": 0.00022220098617253825,
+                "q1": 0.019718697752978187,
+                "q3": 0.019940898739150725,
                 "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.013565540313720703,
-                "hd15iqr": 0.013565540313720703,
-                "ops": 73.71619389082217,
-                "total": 0.013565540313720703,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.019662150007206947,
+                "hd15iqr": 0.020129486976657063,
+                "ops": 50.37493004150313,
+                "total": 0.09925572096835822,
                 "data": [
-                    0.013565540313720703
+                    0.01984850098961033,
+                    0.020129486976657063,
+                    0.01987803599331528,
+                    0.0197375470015686,
+                    0.019662150007206947
                 ],
                 "iterations": 1
             }
@@ -1084,38 +802,42 @@
             "name": "test_benchmark_the_tadeusz[merge_sort-4000]",
             "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[merge_sort-4000]",
             "params": {
-                "sorting_function": "UNSERIALIZABLE[<function merge_sort at 0x7fdefe314820>]",
+                "sorting_function": "UNSERIALIZABLE[<function merge_sort at 0x7f5e5df2eca0>]",
                 "num_words": 4000
             },
             "param": "merge_sort-4000",
             "extra_info": {},
             "options": {
                 "disable_gc": true,
-                "timer": "time",
+                "timer": "perf_counter",
                 "min_rounds": 5,
                 "max_time": 1.0,
                 "min_time": 5e-06,
-                "warmup": false
+                "warmup": 100000
             },
             "stats": {
-                "min": 0.030075550079345703,
-                "max": 0.030075550079345703,
-                "mean": 0.030075550079345703,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.030075550079345703,
-                "iqr": 0.0,
-                "q1": 0.030075550079345703,
-                "q3": 0.030075550079345703,
+                "min": 0.03135725000174716,
+                "max": 0.03151942900149152,
+                "mean": 0.03145599139970727,
+                "stddev": 6.510645789618588e-05,
+                "rounds": 5,
+                "median": 0.031474160990910605,
+                "iqr": 9.570199472364038e-05,
+                "q1": 0.03141015275468817,
+                "q3": 0.03150585474941181,
                 "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.030075550079345703,
-                "hd15iqr": 0.030075550079345703,
-                "ops": 33.24959967022339,
-                "total": 0.030075550079345703,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.03135725000174716,
+                "hd15iqr": 0.03151942900149152,
+                "ops": 31.79044612815179,
+                "total": 0.15727995699853636,
                 "data": [
-                    0.030075550079345703
+                    0.031501329998718575,
+                    0.031427787005668506,
+                    0.031474160990910605,
+                    0.03135725000174716,
+                    0.03151942900149152
                 ],
                 "iterations": 1
             }
@@ -1125,243 +847,42 @@
             "name": "test_benchmark_the_tadeusz[merge_sort-5000]",
             "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[merge_sort-5000]",
             "params": {
-                "sorting_function": "UNSERIALIZABLE[<function merge_sort at 0x7fdefe314820>]",
+                "sorting_function": "UNSERIALIZABLE[<function merge_sort at 0x7f5e5df2eca0>]",
                 "num_words": 5000
             },
             "param": "merge_sort-5000",
             "extra_info": {},
             "options": {
                 "disable_gc": true,
-                "timer": "time",
+                "timer": "perf_counter",
                 "min_rounds": 5,
                 "max_time": 1.0,
                 "min_time": 5e-06,
-                "warmup": false
+                "warmup": 100000
             },
             "stats": {
-                "min": 0.02462172508239746,
-                "max": 0.02462172508239746,
-                "mean": 0.02462172508239746,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.02462172508239746,
-                "iqr": 0.0,
-                "q1": 0.02462172508239746,
-                "q3": 0.02462172508239746,
+                "min": 0.04669931001262739,
+                "max": 0.046945206995587796,
+                "mean": 0.04680231400416233,
+                "stddev": 0.000104652930962832,
+                "rounds": 5,
+                "median": 0.04674755400628783,
+                "iqr": 0.00016578349459450692,
+                "q1": 0.046729985006095376,
+                "q3": 0.04689576850068988,
                 "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.02462172508239746,
-                "hd15iqr": 0.02462172508239746,
-                "ops": 40.614538447386,
-                "total": 0.02462172508239746,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.04669931001262739,
+                "hd15iqr": 0.046945206995587796,
+                "ops": 21.366464912633717,
+                "total": 0.23401157002081163,
                 "data": [
-                    0.02462172508239746
-                ],
-                "iterations": 1
-            }
-        },
-        {
-            "group": null,
-            "name": "test_benchmark_the_tadeusz[merge_sort-6000]",
-            "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[merge_sort-6000]",
-            "params": {
-                "sorting_function": "UNSERIALIZABLE[<function merge_sort at 0x7fdefe314820>]",
-                "num_words": 6000
-            },
-            "param": "merge_sort-6000",
-            "extra_info": {},
-            "options": {
-                "disable_gc": true,
-                "timer": "time",
-                "min_rounds": 5,
-                "max_time": 1.0,
-                "min_time": 5e-06,
-                "warmup": false
-            },
-            "stats": {
-                "min": 0.04543805122375488,
-                "max": 0.04543805122375488,
-                "mean": 0.04543805122375488,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.04543805122375488,
-                "iqr": 0.0,
-                "q1": 0.04543805122375488,
-                "q3": 0.04543805122375488,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.04543805122375488,
-                "hd15iqr": 0.04543805122375488,
-                "ops": 22.00798610564537,
-                "total": 0.04543805122375488,
-                "data": [
-                    0.04543805122375488
-                ],
-                "iterations": 1
-            }
-        },
-        {
-            "group": null,
-            "name": "test_benchmark_the_tadeusz[merge_sort-7000]",
-            "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[merge_sort-7000]",
-            "params": {
-                "sorting_function": "UNSERIALIZABLE[<function merge_sort at 0x7fdefe314820>]",
-                "num_words": 7000
-            },
-            "param": "merge_sort-7000",
-            "extra_info": {},
-            "options": {
-                "disable_gc": true,
-                "timer": "time",
-                "min_rounds": 5,
-                "max_time": 1.0,
-                "min_time": 5e-06,
-                "warmup": false
-            },
-            "stats": {
-                "min": 0.03358316421508789,
-                "max": 0.03358316421508789,
-                "mean": 0.03358316421508789,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.03358316421508789,
-                "iqr": 0.0,
-                "q1": 0.03358316421508789,
-                "q3": 0.03358316421508789,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.03358316421508789,
-                "hd15iqr": 0.03358316421508789,
-                "ops": 29.77682488747533,
-                "total": 0.03358316421508789,
-                "data": [
-                    0.03358316421508789
-                ],
-                "iterations": 1
-            }
-        },
-        {
-            "group": null,
-            "name": "test_benchmark_the_tadeusz[merge_sort-8000]",
-            "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[merge_sort-8000]",
-            "params": {
-                "sorting_function": "UNSERIALIZABLE[<function merge_sort at 0x7fdefe314820>]",
-                "num_words": 8000
-            },
-            "param": "merge_sort-8000",
-            "extra_info": {},
-            "options": {
-                "disable_gc": true,
-                "timer": "time",
-                "min_rounds": 5,
-                "max_time": 1.0,
-                "min_time": 5e-06,
-                "warmup": false
-            },
-            "stats": {
-                "min": 0.040350914001464844,
-                "max": 0.040350914001464844,
-                "mean": 0.040350914001464844,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.040350914001464844,
-                "iqr": 0.0,
-                "q1": 0.040350914001464844,
-                "q3": 0.040350914001464844,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.040350914001464844,
-                "hd15iqr": 0.040350914001464844,
-                "ops": 24.782586088723974,
-                "total": 0.040350914001464844,
-                "data": [
-                    0.040350914001464844
-                ],
-                "iterations": 1
-            }
-        },
-        {
-            "group": null,
-            "name": "test_benchmark_the_tadeusz[merge_sort-9000]",
-            "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[merge_sort-9000]",
-            "params": {
-                "sorting_function": "UNSERIALIZABLE[<function merge_sort at 0x7fdefe314820>]",
-                "num_words": 9000
-            },
-            "param": "merge_sort-9000",
-            "extra_info": {},
-            "options": {
-                "disable_gc": true,
-                "timer": "time",
-                "min_rounds": 5,
-                "max_time": 1.0,
-                "min_time": 5e-06,
-                "warmup": false
-            },
-            "stats": {
-                "min": 0.052992820739746094,
-                "max": 0.052992820739746094,
-                "mean": 0.052992820739746094,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.052992820739746094,
-                "iqr": 0.0,
-                "q1": 0.052992820739746094,
-                "q3": 0.052992820739746094,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.052992820739746094,
-                "hd15iqr": 0.052992820739746094,
-                "ops": 18.870480680979718,
-                "total": 0.052992820739746094,
-                "data": [
-                    0.052992820739746094
-                ],
-                "iterations": 1
-            }
-        },
-        {
-            "group": null,
-            "name": "test_benchmark_the_tadeusz[merge_sort-10000]",
-            "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[merge_sort-10000]",
-            "params": {
-                "sorting_function": "UNSERIALIZABLE[<function merge_sort at 0x7fdefe314820>]",
-                "num_words": 10000
-            },
-            "param": "merge_sort-10000",
-            "extra_info": {},
-            "options": {
-                "disable_gc": true,
-                "timer": "time",
-                "min_rounds": 5,
-                "max_time": 1.0,
-                "min_time": 5e-06,
-                "warmup": false
-            },
-            "stats": {
-                "min": 0.053078413009643555,
-                "max": 0.053078413009643555,
-                "mean": 0.053078413009643555,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.053078413009643555,
-                "iqr": 0.0,
-                "q1": 0.053078413009643555,
-                "q3": 0.053078413009643555,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.053078413009643555,
-                "hd15iqr": 0.053078413009643555,
-                "ops": 18.840050847381494,
-                "total": 0.053078413009643555,
-                "data": [
-                    0.053078413009643555
+                    0.04674755400628783,
+                    0.04674021000391804,
+                    0.04687928900239058,
+                    0.046945206995587796,
+                    0.04669931001262739
                 ],
                 "iterations": 1
             }
@@ -1371,38 +892,42 @@
             "name": "test_benchmark_the_tadeusz[bubble_sort-1000]",
             "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[bubble_sort-1000]",
             "params": {
-                "sorting_function": "UNSERIALIZABLE[<function bubble_sort at 0x7fdefe314430>]",
+                "sorting_function": "UNSERIALIZABLE[<function bubble_sort at 0x7f5e5df2e9d0>]",
                 "num_words": 1000
             },
             "param": "bubble_sort-1000",
             "extra_info": {},
             "options": {
                 "disable_gc": true,
-                "timer": "time",
+                "timer": "perf_counter",
                 "min_rounds": 5,
                 "max_time": 1.0,
                 "min_time": 5e-06,
-                "warmup": false
+                "warmup": 100000
             },
             "stats": {
-                "min": 0.15794754028320312,
-                "max": 0.15794754028320312,
-                "mean": 0.15794754028320312,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.15794754028320312,
-                "iqr": 0.0,
-                "q1": 0.15794754028320312,
-                "q3": 0.15794754028320312,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.15794754028320312,
-                "hd15iqr": 0.15794754028320312,
-                "ops": 6.331216036710543,
-                "total": 0.15794754028320312,
+                "min": 0.0001011179992929101,
+                "max": 0.12994931198772974,
+                "mean": 0.02607504780171439,
+                "stddev": 0.05806747936058211,
+                "rounds": 5,
+                "median": 0.00010368498624302447,
+                "iqr": 0.03247352349717403,
+                "q1": 0.00010246351303067058,
+                "q3": 0.0325759870102047,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.0001011179992929101,
+                "hd15iqr": 0.12994931198772974,
+                "ops": 38.35084052786479,
+                "total": 0.13037523900857195,
                 "data": [
-                    0.15794754028320312
+                    0.12994931198772974,
+                    0.00011821201769635081,
+                    0.00010291201760992408,
+                    0.00010368498624302447,
+                    0.0001011179992929101
                 ],
                 "iterations": 1
             }
@@ -1412,38 +937,42 @@
             "name": "test_benchmark_the_tadeusz[bubble_sort-2000]",
             "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[bubble_sort-2000]",
             "params": {
-                "sorting_function": "UNSERIALIZABLE[<function bubble_sort at 0x7fdefe314430>]",
+                "sorting_function": "UNSERIALIZABLE[<function bubble_sort at 0x7f5e5df2e9d0>]",
                 "num_words": 2000
             },
             "param": "bubble_sort-2000",
             "extra_info": {},
             "options": {
                 "disable_gc": true,
-                "timer": "time",
+                "timer": "perf_counter",
                 "min_rounds": 5,
                 "max_time": 1.0,
                 "min_time": 5e-06,
-                "warmup": false
+                "warmup": 100000
             },
             "stats": {
-                "min": 0.6059730052947998,
-                "max": 0.6059730052947998,
-                "mean": 0.6059730052947998,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 0.6059730052947998,
-                "iqr": 0.0,
-                "q1": 0.6059730052947998,
-                "q3": 0.6059730052947998,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 0.6059730052947998,
-                "hd15iqr": 0.6059730052947998,
-                "ops": 1.6502385275619826,
-                "total": 0.6059730052947998,
+                "min": 0.00020884201512672007,
+                "max": 0.5628487200010568,
+                "mean": 0.11273791040293872,
+                "stddev": 0.25161959192126465,
+                "rounds": 5,
+                "median": 0.0002099999983329326,
+                "iqr": 0.14066234249185072,
+                "q1": 0.00020927025616401806,
+                "q3": 0.14087161274801474,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.00020884201512672007,
+                "hd15iqr": 0.5628487200010568,
+                "ops": 8.870130698944843,
+                "total": 0.5636895520146936,
                 "data": [
-                    0.6059730052947998
+                    0.5628487200010568,
+                    0.0002099999983329326,
+                    0.00021257699700072408,
+                    0.00020941300317645073,
+                    0.00020884201512672007
                 ],
                 "iterations": 1
             }
@@ -1453,38 +982,42 @@
             "name": "test_benchmark_the_tadeusz[bubble_sort-3000]",
             "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[bubble_sort-3000]",
             "params": {
-                "sorting_function": "UNSERIALIZABLE[<function bubble_sort at 0x7fdefe314430>]",
+                "sorting_function": "UNSERIALIZABLE[<function bubble_sort at 0x7f5e5df2e9d0>]",
                 "num_words": 3000
             },
             "param": "bubble_sort-3000",
             "extra_info": {},
             "options": {
                 "disable_gc": true,
-                "timer": "time",
+                "timer": "perf_counter",
                 "min_rounds": 5,
                 "max_time": 1.0,
                 "min_time": 5e-06,
-                "warmup": false
+                "warmup": 100000
             },
             "stats": {
-                "min": 1.3208935260772705,
-                "max": 1.3208935260772705,
-                "mean": 1.3208935260772705,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 1.3208935260772705,
-                "iqr": 0.0,
-                "q1": 1.3208935260772705,
-                "q3": 1.3208935260772705,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 1.3208935260772705,
-                "hd15iqr": 1.3208935260772705,
-                "ops": 0.7570632910661275,
-                "total": 1.3208935260772705,
+                "min": 0.000317419006023556,
+                "max": 1.272902149008587,
+                "mean": 0.2548374478064943,
+                "stddev": 0.5691154693600813,
+                "rounds": 5,
+                "median": 0.00032179401023313403,
+                "iqr": 0.3181534522518632,
+                "q1": 0.0003179237537551671,
+                "q3": 0.31847137600561837,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.000317419006023556,
+                "hd15iqr": 1.272902149008587,
+                "ops": 3.92407006351488,
+                "total": 1.2741872390324716,
                 "data": [
-                    1.3208935260772705
+                    1.272902149008587,
+                    0.0003180920029990375,
+                    0.000317419006023556,
+                    0.00032179401023313403,
+                    0.0003277850046288222
                 ],
                 "iterations": 1
             }
@@ -1494,38 +1027,42 @@
             "name": "test_benchmark_the_tadeusz[bubble_sort-4000]",
             "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[bubble_sort-4000]",
             "params": {
-                "sorting_function": "UNSERIALIZABLE[<function bubble_sort at 0x7fdefe314430>]",
+                "sorting_function": "UNSERIALIZABLE[<function bubble_sort at 0x7f5e5df2e9d0>]",
                 "num_words": 4000
             },
             "param": "bubble_sort-4000",
             "extra_info": {},
             "options": {
                 "disable_gc": true,
-                "timer": "time",
+                "timer": "perf_counter",
                 "min_rounds": 5,
                 "max_time": 1.0,
                 "min_time": 5e-06,
-                "warmup": false
+                "warmup": 100000
             },
             "stats": {
-                "min": 2.454069137573242,
-                "max": 2.454069137573242,
-                "mean": 2.454069137573242,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 2.454069137573242,
-                "iqr": 0.0,
-                "q1": 2.454069137573242,
-                "q3": 2.454069137573242,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 2.454069137573242,
-                "hd15iqr": 2.454069137573242,
-                "ops": 0.4074864822222861,
-                "total": 2.454069137573242,
+                "min": 0.0004292239900678396,
+                "max": 2.2500136109883897,
+                "mean": 0.45034996399190275,
+                "stddev": 1.0060425628404148,
+                "rounds": 5,
+                "median": 0.0004360229941084981,
+                "iqr": 0.5624038832320366,
+                "q1": 0.00043002350139431655,
+                "q3": 0.5628339067334309,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.0004292239900678396,
+                "hd15iqr": 2.2500136109883897,
+                "ops": 2.2204953479644995,
+                "total": 2.251749819959514,
                 "data": [
-                    2.454069137573242
+                    2.2500136109883897,
+                    0.00043029000516980886,
+                    0.0004360229941084981,
+                    0.0004406719817779958,
+                    0.0004292239900678396
                 ],
                 "iterations": 1
             }
@@ -1535,248 +1072,47 @@
             "name": "test_benchmark_the_tadeusz[bubble_sort-5000]",
             "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[bubble_sort-5000]",
             "params": {
-                "sorting_function": "UNSERIALIZABLE[<function bubble_sort at 0x7fdefe314430>]",
+                "sorting_function": "UNSERIALIZABLE[<function bubble_sort at 0x7f5e5df2e9d0>]",
                 "num_words": 5000
             },
             "param": "bubble_sort-5000",
             "extra_info": {},
             "options": {
                 "disable_gc": true,
-                "timer": "time",
+                "timer": "perf_counter",
                 "min_rounds": 5,
                 "max_time": 1.0,
                 "min_time": 5e-06,
-                "warmup": false
+                "warmup": 100000
             },
             "stats": {
-                "min": 5.554620027542114,
-                "max": 5.554620027542114,
-                "mean": 5.554620027542114,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 5.554620027542114,
-                "iqr": 0.0,
-                "q1": 5.554620027542114,
-                "q3": 5.554620027542114,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 5.554620027542114,
-                "hd15iqr": 5.554620027542114,
-                "ops": 0.18003031621273544,
-                "total": 5.554620027542114,
+                "min": 0.0005554280069191009,
+                "max": 3.5694621250149794,
+                "mean": 0.7143395348044578,
+                "stddev": 1.5960620489570028,
+                "rounds": 5,
+                "median": 0.0005585809994954616,
+                "iqr": 0.8922342567529995,
+                "q1": 0.0005556432515732013,
+                "q3": 0.8927899000045727,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.0005554280069191009,
+                "hd15iqr": 3.5694621250149794,
+                "ops": 1.3998945197310666,
+                "total": 3.571697674022289,
                 "data": [
-                    5.554620027542114
-                ],
-                "iterations": 1
-            }
-        },
-        {
-            "group": null,
-            "name": "test_benchmark_the_tadeusz[bubble_sort-6000]",
-            "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[bubble_sort-6000]",
-            "params": {
-                "sorting_function": "UNSERIALIZABLE[<function bubble_sort at 0x7fdefe314430>]",
-                "num_words": 6000
-            },
-            "param": "bubble_sort-6000",
-            "extra_info": {},
-            "options": {
-                "disable_gc": true,
-                "timer": "time",
-                "min_rounds": 5,
-                "max_time": 1.0,
-                "min_time": 5e-06,
-                "warmup": false
-            },
-            "stats": {
-                "min": 6.954524278640747,
-                "max": 6.954524278640747,
-                "mean": 6.954524278640747,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 6.954524278640747,
-                "iqr": 0.0,
-                "q1": 6.954524278640747,
-                "q3": 6.954524278640747,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 6.954524278640747,
-                "hd15iqr": 6.954524278640747,
-                "ops": 0.14379128750348524,
-                "total": 6.954524278640747,
-                "data": [
-                    6.954524278640747
-                ],
-                "iterations": 1
-            }
-        },
-        {
-            "group": null,
-            "name": "test_benchmark_the_tadeusz[bubble_sort-7000]",
-            "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[bubble_sort-7000]",
-            "params": {
-                "sorting_function": "UNSERIALIZABLE[<function bubble_sort at 0x7fdefe314430>]",
-                "num_words": 7000
-            },
-            "param": "bubble_sort-7000",
-            "extra_info": {},
-            "options": {
-                "disable_gc": true,
-                "timer": "time",
-                "min_rounds": 5,
-                "max_time": 1.0,
-                "min_time": 5e-06,
-                "warmup": false
-            },
-            "stats": {
-                "min": 9.457864999771118,
-                "max": 9.457864999771118,
-                "mean": 9.457864999771118,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 9.457864999771118,
-                "iqr": 0.0,
-                "q1": 9.457864999771118,
-                "q3": 9.457864999771118,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 9.457864999771118,
-                "hd15iqr": 9.457864999771118,
-                "ops": 0.10573210761881251,
-                "total": 9.457864999771118,
-                "data": [
-                    9.457864999771118
-                ],
-                "iterations": 1
-            }
-        },
-        {
-            "group": null,
-            "name": "test_benchmark_the_tadeusz[bubble_sort-8000]",
-            "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[bubble_sort-8000]",
-            "params": {
-                "sorting_function": "UNSERIALIZABLE[<function bubble_sort at 0x7fdefe314430>]",
-                "num_words": 8000
-            },
-            "param": "bubble_sort-8000",
-            "extra_info": {},
-            "options": {
-                "disable_gc": true,
-                "timer": "time",
-                "min_rounds": 5,
-                "max_time": 1.0,
-                "min_time": 5e-06,
-                "warmup": false
-            },
-            "stats": {
-                "min": 11.234768867492676,
-                "max": 11.234768867492676,
-                "mean": 11.234768867492676,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 11.234768867492676,
-                "iqr": 0.0,
-                "q1": 11.234768867492676,
-                "q3": 11.234768867492676,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 11.234768867492676,
-                "hd15iqr": 11.234768867492676,
-                "ops": 0.08900939679261737,
-                "total": 11.234768867492676,
-                "data": [
-                    11.234768867492676
-                ],
-                "iterations": 1
-            }
-        },
-        {
-            "group": null,
-            "name": "test_benchmark_the_tadeusz[bubble_sort-9000]",
-            "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[bubble_sort-9000]",
-            "params": {
-                "sorting_function": "UNSERIALIZABLE[<function bubble_sort at 0x7fdefe314430>]",
-                "num_words": 9000
-            },
-            "param": "bubble_sort-9000",
-            "extra_info": {},
-            "options": {
-                "disable_gc": true,
-                "timer": "time",
-                "min_rounds": 5,
-                "max_time": 1.0,
-                "min_time": 5e-06,
-                "warmup": false
-            },
-            "stats": {
-                "min": 13.94234323501587,
-                "max": 13.94234323501587,
-                "mean": 13.94234323501587,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 13.94234323501587,
-                "iqr": 0.0,
-                "q1": 13.94234323501587,
-                "q3": 13.94234323501587,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 13.94234323501587,
-                "hd15iqr": 13.94234323501587,
-                "ops": 0.07172395508730006,
-                "total": 13.94234323501587,
-                "data": [
-                    13.94234323501587
-                ],
-                "iterations": 1
-            }
-        },
-        {
-            "group": null,
-            "name": "test_benchmark_the_tadeusz[bubble_sort-10000]",
-            "fullname": "test_and_benchmark_sorts.py::test_benchmark_the_tadeusz[bubble_sort-10000]",
-            "params": {
-                "sorting_function": "UNSERIALIZABLE[<function bubble_sort at 0x7fdefe314430>]",
-                "num_words": 10000
-            },
-            "param": "bubble_sort-10000",
-            "extra_info": {},
-            "options": {
-                "disable_gc": true,
-                "timer": "time",
-                "min_rounds": 5,
-                "max_time": 1.0,
-                "min_time": 5e-06,
-                "warmup": false
-            },
-            "stats": {
-                "min": 14.735281705856323,
-                "max": 14.735281705856323,
-                "mean": 14.735281705856323,
-                "stddev": 0,
-                "rounds": 1,
-                "median": 14.735281705856323,
-                "iqr": 0.0,
-                "q1": 14.735281705856323,
-                "q3": 14.735281705856323,
-                "iqr_outliers": 0,
-                "stddev_outliers": 0,
-                "outliers": "0;0",
-                "ld15iqr": 14.735281705856323,
-                "hd15iqr": 14.735281705856323,
-                "ops": 0.06786432862037273,
-                "total": 14.735281705856323,
-                "data": [
-                    14.735281705856323
+                    3.5694621250149794,
+                    0.0005554280069191009,
+                    0.0005585809994954616,
+                    0.0005658250011038035,
+                    0.0005557149997912347
                 ],
                 "iterations": 1
             }
         }
     ],
-    "datetime": "2022-03-28T15:44:22.529019",
+    "datetime": "2022-03-28T16:05:18.941732",
     "version": "3.4.1"
 }

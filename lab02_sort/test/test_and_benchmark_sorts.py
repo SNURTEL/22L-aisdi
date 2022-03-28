@@ -33,7 +33,7 @@ def build_single_dataset():
 @pytest.mark.benchmark(
     timer=time.time,
     disable_gc=True,
-    # warmup=True,  # produces unreliable results
+    warmup=True,  # produces unreliable results
 )
 @pytest.mark.parametrize('num_words', BENCHMARK_SAMPLE_SIZES)
 @pytest.mark.parametrize('sorting_function', BENCHMARKED_FUNCTIONS)
@@ -41,7 +41,7 @@ def test_benchmark_the_tadeusz(num_words, sorting_function, benchmark):
     unsorted = load_the_tadeusz(TEST_FILE_PATH)[:num_words]
     expected_result = list(sorted(unsorted.copy()))
 
-    sort_result = benchmark.pedantic(sorting_function, [unsorted])
+    sort_result = benchmark.pedantic(sorting_function, [unsorted], rounds=5)
     assert sort_result == expected_result
 
 

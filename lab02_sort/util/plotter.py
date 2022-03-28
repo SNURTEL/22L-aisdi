@@ -27,7 +27,7 @@ class BenchmarkPlotter:
             plt.plot(keys, values, label=func)
         plt.legend()
         plt.title(label=f"Function benchmark: {self.stat} stat")
-        plt.xlabel("Number of words from Tadeusz")
+        plt.xlabel("Number of words")
         plt.ylabel("Time [ms]")
 
     def _save_results_to_file(self, filename: str) -> None:
