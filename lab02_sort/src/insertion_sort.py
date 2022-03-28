@@ -1,7 +1,4 @@
-from typing import Any, List
-
-
-def insertion_sort(array: List[Any]) -> List[Any]:
+def insertion_sort(array: list) -> list:
     for i in range(1, len(array)):
         current = array[i]
 
