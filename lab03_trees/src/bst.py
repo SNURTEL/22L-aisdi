@@ -1,7 +1,11 @@
+from typing import List
+
+
 class Node:
     """
     Class representing a node in a binary search tree
     """
+
     def __init__(self, key):
         """
         Inits class Node
@@ -111,7 +115,13 @@ def bst_delete(root: Node, key) -> None:
     elif to_delete.r_child:
         transfer_data(to_delete.r_child, to_delete)
     else:
-        del to_delete
+        if to_delete == root:
+            del root
+
+        if to_delete.parent.l_child == to_delete:
+            to_delete.parent.l_child = None
+        else:
+            to_delete.parent.r_child = None
 
 
 def transfer_data(source: Node, target: Node) -> None:
@@ -123,6 +133,20 @@ def transfer_data(source: Node, target: Node) -> None:
     target.key = source.key
     target.l_child = source.l_child
     target.r_child = source.r_child
+
+
+def bst_traverse_inorder(root: Node) -> List[Node]:
+    """
+    Traverses a BST in order
+    :param root: BST's root node
+    :return: All nodes in the BST sorted in a non-descending order
+    """
+    result = []
+    if root:
+        result = bst_traverse_inorder(root.l_child)
+        result.append(root)
+        result = result + bst_traverse_inorder(root.r_child)
+    return result
 
 
 if __name__ == '__main__':
