@@ -15,7 +15,7 @@ class Node:
         self.r_child = None
         self.parent = None
         self.key = key
-        # self.value = value  # TODO lmao later
+        # self.value = value
 
     def __repr__(self):
         if self.l_child:
