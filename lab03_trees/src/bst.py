@@ -1,9 +1,17 @@
 class Node:
+    """
+    Class representing a node in a binary search tree
+    """
     def __init__(self, key):
+        """
+        Inits class Node
+        :param key: Node's key
+        """
         self.l_child = None
         self.r_child = None
         self.parent = None
         self.key = key
+        # self.value = value  # TODO lmao later
 
     def __repr__(self):
         if self.l_child:
@@ -18,10 +26,29 @@ class Node:
             parent_key = self.parent.key
         else:
             parent_key = 'null'
-        return f"{l_key} <= {self.key} < {r_key}        parent: {parent_key}"
+        return f"{l_key} <= {self.key} < {r_key}  (parent: {parent_key})"
 
 
-def bst_insert(root: Node, key) -> None:
+def make_bst(array) -> Node:
+    """
+    Builds a BST from a given array and return's its root
+    :param array: An array of items supporting __le__, __ge__, __lt__, and __gt__
+    :return: New BST's root node
+    """
+    root = Node(array[0])
+    for key in array[1:]:
+        bst_insert(root, key)
+
+    return root
+
+
+def bst_insert(root: Node, key) -> Node:
+    """
+    Creates a new node with a given key and insert's it into a BST rooted at the given node
+    :param root: BST's root node
+    :param key: A key for the new node
+    :return: BST's root node
+    """
     parent = None
     current = root
 
@@ -41,8 +68,16 @@ def bst_insert(root: Node, key) -> None:
     else:
         parent.r_child = new_node
 
+    return root
 
-def bst_find(root: Node, key):  # should this be wrapped in a try / except?
+
+def bst_find(root: Node, key) -> Node:  # should this be wrapped in a try / except?
+    """
+    Searches for a node with a particular key in the BST rooted at a given node. Throws an exception if nothing was found
+    :param root: BST's root node
+    :param key: A key to search for
+    :return: A node with a matching key (if the tree contains duplicates, the closest node to the root will be returned)
+    """
     current = root
     while current.key != key:
         if key < current.key:
@@ -53,13 +88,12 @@ def bst_find(root: Node, key):  # should this be wrapped in a try / except?
     return current
 
 
-def bst_lowest(root: Node) -> Node:
-    while root.l_child:
-        root = root.l_child
-    return root
-
-
-def bst_delete(root: Node, key):  # FIXME consider deleting root with a single child
+def bst_delete(root: Node, key) -> None:
+    """
+    Deletes a node with a particular key from the BST rooted at the given node
+    :param root: BST's root node
+    :param key: A key indicating which node should be deleted (a matching node will be searched for using bst_find())
+    """
     to_delete = bst_find(root, key)
 
     if to_delete.l_child:
@@ -73,41 +107,34 @@ def bst_delete(root: Node, key):  # FIXME consider deleting root with a single c
             bst_delete(next, next.key)
 
         else:
-            if to_delete.parent.l_child == to_delete:
-                to_delete.parent.l_child = to_delete.l_child
-            else:
-                to_delete.parent.r_child = to_delete.l_child
-
+            transfer_data(to_delete.l_child, to_delete)
     elif to_delete.r_child:
-        if to_delete.parent.l_child == to_delete:
-            to_delete.parent.l_child = to_delete.r_child
-        else:
-            to_delete.parent.r_child = to_delete.r_child
+        transfer_data(to_delete.r_child, to_delete)
     else:
         del to_delete
 
 
+def transfer_data(source: Node, target: Node) -> None:
+    """
+    Transfers all data from one node to another
+    :param source: Source node
+    :param target: Target node
+    """
+    target.key = source.key
+    target.l_child = source.l_child
+    target.r_child = source.r_child
+
+
 if __name__ == '__main__':
-    n = Node(10)
-    bst_insert(n, 3)
-    bst_insert(n, 12)
-    bst_insert(n, 1)
-    bst_insert(n, 99)
-    bst_insert(n, 5)
-    bst_insert(n, 7)
-    bst_insert(n, 11)
-    bst_insert(n, 4)
-    bst_insert(n, 9)
-    bst_insert(n, 0)
-    bst_insert(n, 57)
-    bst_insert(n, 15)
-    bst_insert(n, 2)
-    bst_insert(n, 13)
-    bst_insert(n, 45)
-    bst_insert(n, 111)
+    n = make_bst([10, 3, 12, 1, 99, 5, 7, 11, 4, 9, 0, 57, 15, 2, 13, 45, 111])
 
     bst_find(n, 57)
 
     bst_delete(n, 5)
+
+    n1 = Node(5)
+    bst_insert(n1, 3)
+
+    bst_delete(n1, 5)
 
     print('aaa')
