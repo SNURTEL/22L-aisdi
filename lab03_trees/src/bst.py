@@ -1,4 +1,5 @@
 from __future__ import annotations
+from abc import abstractmethod
 from typing import List
 
 
@@ -40,13 +41,15 @@ class Node:
             else:
                 current = current.r_child
 
-        new_node = Node(key)
+        new_node = type(self)(key)
         new_node.parent = parent
 
         if key < parent.key:
             parent.l_child = new_node
         else:
             parent.r_child = new_node
+
+        parent.recalculate_height()
 
         return self
 
@@ -91,6 +94,8 @@ class Node:
                 to_delete.parent.l_child = None
             else:
                 to_delete.parent.r_child = None
+        if to_delete.parent:
+            to_delete.parent.recalculate_height()
 
     def traverse_inorder(self) -> List[Node]:
         """
@@ -105,6 +110,10 @@ class Node:
             if self.r_child:
                 result = result + self.r_child.traverse_inorder()
         return result
+
+    @abstractmethod
+    def recalculate_height(self):
+        pass
 
 
 def transfer_data(source: Node, target: Node) -> None:
@@ -124,6 +133,9 @@ def make_bst(array) -> Node:
     :param array: An array of items supporting __le__, __ge__, __lt__, and __gt__
     :return: New BST's root node
     """
+    if len(array) == 0:
+        raise AttributeError("Cannot create a tree from an empty list")
+
     root = Node(array[0])
     for key in array[1:]:
         root.insert(key)
