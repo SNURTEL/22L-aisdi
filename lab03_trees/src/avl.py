@@ -1,4 +1,5 @@
-from bst import Node
+from copy import copy
+from bst import Node, transfer_data
 
 
 class AVLNode(Node):
@@ -28,43 +29,44 @@ class AVLNode(Node):
         return self.get_r_child_height() - self.get_l_child_height()
 
     def rotate_right(self):
-        self = self
-        z: AVLNode = self.l_child
-        t23 = z.r_child
-        z.r_child = self
-        self.l_child = t23
-        z.parent = self.parent
-        self.parent = z
-        self.recalculate_height()
-        z.recalculate_height()
-        return z
+        old_self = copy(self)
+        new_root: AVLNode = old_self.l_child
+        t23 = new_root.r_child
+        new_root.r_child = old_self
+        old_self.l_child = t23
+        new_root.parent = old_self.parent
+        old_self.parent = new_root
+        old_self.recalculate_height()
+        new_root.recalculate_height()
+        transfer_data(new_root, self)
 
     def rotate_left(self):
-        self = self
-        new_root: AVLNode = self.r_child
+        old_self = copy(self)
+        new_root: AVLNode = old_self.r_child
         t23 = new_root.l_child
-        new_root.l_child = self
-        self.r_child = t23
-        new_root.parent = self.parent
-        self.parent = new_root
-        self.recalculate_height()
+        new_root.l_child = old_self
+        old_self.r_child = t23
+        new_root.parent = old_self.parent
+        old_self.parent = new_root
+        old_self.recalculate_height()
         new_root.recalculate_height()
-        return new_root
+        transfer_data(new_root, self)
 
     def balance(self):
         balance_factor = self.get_balance_factor()
         if balance_factor >= 2:
             if self.r_child.get_balance_factor() <= 0:
-                self.r_child = self.r_child.rotate_right()
-            self = self.rotate_left()
+                self.r_child.rotate_right()
+            self.rotate_left()
         elif balance_factor <= -2:
             if self.l_child.get_balance_factor() >= 0:
-                self.l_child = self.l_child.rotate_left()
-            self = self.rotate_right()
-        return self
+                self.l_child.rotate_left()
+            self.rotate_right()
 
     def insert(self, key):
         super().insert(key)
         self = self.balance()
-        return self
 
+    def delete(self, key):
+        super().delete(key)
+        self = self.balance()
