@@ -1,7 +1,7 @@
 import pytest
 import random
 
-from lab03_trees.src import Node, make_bst, bst_traverse_inorder, bst_find, bst_delete
+from lab03_trees.src import Node, make_bst
 
 from .conftest import BST_RANDOM_RANGE_LOWER, BST_RANDOM_RANGE_UPPER, BST_RANDOM_NUM_SAMPLES, BST_RANDOM_NUM_DATASETS, \
     BST_INVALID_FIND_TEST_ITERATIONS
@@ -14,7 +14,7 @@ def make_random_datasets(num_samples=BST_RANDOM_NUM_SAMPLES):
 
 
 def assert_is_tree_valid(root: Node):
-    inorder = bst_traverse_inorder(root)
+    inorder = root.traverse_inorder()
     assert inorder == sorted(inorder, key=(lambda n: n.key))
 
 
@@ -28,7 +28,7 @@ def test_insert_make_random_bsts(bst_and_keys):
 def test_bst_find(bst_and_keys):
     bst, keys = bst_and_keys
     key = random.choice(keys)
-    found = bst_find(bst, key)
+    found = bst.find(key)
     assert found.key == key
 
 
@@ -37,66 +37,65 @@ def test_bst_find_non_existent(bst_and_keys):
     bst, keys = bst_and_keys
     invalid_key = random.choice([x for x in range(BST_RANDOM_RANGE_LOWER, BST_RANDOM_RANGE_UPPER) if x not in keys])
     with pytest.raises(AttributeError):  # should this be a KeyError?
-        bst_find(bst, invalid_key)
+        bst.find(invalid_key)
 
 
 def test_bst_delete_leaf():
     n = make_bst([10, 3, 12, 1, 99, 5, 7, 11, 4, 9, 0, 57, 15, 2, 13, 45, 111])
-    bst_find(n, 45)
-
-    bst_delete(n, 45)
+    n.find(45)
+    n.delete(45)
     with pytest.raises(AttributeError):
-        bst_find(n, 45)
+        n.find(45)
     assert_is_tree_valid(n)
 
 
 def test_bst_delete_with_single_child():
     n = make_bst([10, 3, 12, 1, 99, 5, 7, 11, 4, 9, 0, 57, 15, 2, 13, 45, 111])
-    bst_find(n, 7)
+    n.find(7)
 
-    bst_delete(n, 7)
+    n.delete(7)
     with pytest.raises(AttributeError):
-        bst_find(n, 7)
+        n.find(7)
     assert_is_tree_valid(n)
 
 
 def test_bst_delete_intermediate():
     n = make_bst([10, 3, 12, 1, 99, 5, 7, 11, 4, 9, 0, 57, 15, 2, 13, 45, 111])
-    bst_find(n, 5)
+    n.find(5)
 
-    bst_delete(n, 5)
+    n.delete(5)
     with pytest.raises(AttributeError):
-        bst_find(n, 5)
+        n.find(5)
     assert_is_tree_valid(n)
 
 
 def test_bst_delete_root_single_child():
     n = make_bst((5, 3))
-    bst_find(n, 5)
+    n.find(5)
 
-    bst_delete(n, 5)
+    n.delete(5)
     with pytest.raises(AttributeError):
-        bst_find(n, 5)
+        n.find(5)
     assert_is_tree_valid(n)
 
 
 @pytest.mark.xfail  # this will not work in Python!
 def test_bst_delete_root_no_children():
     n = make_bst((17,))
-    bst_find(n, 17)
+    n.find(17)
 
-    bst_delete(n, 17)
+    n.delete(17)
     with pytest.raises(AttributeError):
-        bst_find(n, 17)
+        n.find(17)
     with pytest.raises(AssertionError):
         assert_is_tree_valid(n)
 
 
 def test_delete_root_two_children():
     n = make_bst([10, 3, 12, 1, 99, 5, 7, 11, 4, 9, 0, 57, 15, 2, 13, 45, 111])
-    bst_find(n, 10)
+    n.find(10)
 
-    bst_delete(n, 10)
+    n.delete(10)
     with pytest.raises(AttributeError):
-        bst_find(n, 10)
+        n.find(10)
     assert_is_tree_valid(n)
