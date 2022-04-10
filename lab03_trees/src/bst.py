@@ -25,8 +25,7 @@ class Node:
 
     def insert(self, key) -> Node:
         """
-        Creates a new node with a given key and insert's it into a BST rooted at the given node
-        :param root: BST's root node
+        Creates a new node with a given key and inserts it into a BST rooted at the given node
         :param key: A key for the new node
         :return: BST's root node
         """
@@ -54,7 +53,6 @@ class Node:
     def find(self, key) -> Node:  # should this be wrapped in a try / except?
         """
         Searches for a node with a particular key in the BST rooted at a given node. Throws an exception if nothing was found
-        :param root: BST's root node
         :param key: A key to search for
         :return: A node with a matching key (if the tree contains duplicates, the closest node to the root will be returned)
         """
@@ -70,7 +68,6 @@ class Node:
     def delete(self, key) -> None:
         """
         Deletes a node with a particular key from the BST rooted at the given node
-        :param root: BST's root node
         :param key: A key indicating which node should be deleted (a matching node will be searched for using bst_find())
         """
         to_delete = self.find(key)
@@ -101,14 +98,15 @@ class Node:
     def traverse_inorder(self) -> List[Node]:
         """
         Traverses a BST in order
-        :param root: BST's root node
         :return: All nodes in the BST sorted in a non-descending order
         """
         result: list = []
         if self:
-            result = self.l_child.traverse_inorder()
+            if self.l_child:
+                result = self.l_child.traverse_inorder()
             result.append(self)
-            result = result + self.r_child.traverse_inorder()
+            if self.r_child:
+                result = result + self.r_child.traverse_inorder()
         return result
 
 
