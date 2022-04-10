@@ -1,30 +1,17 @@
 import pytest
 import random
-
-from lab03_trees.src import Node, make_bst
-
-from .conftest import BST_RANDOM_RANGE_LOWER, BST_RANDOM_RANGE_UPPER, BST_RANDOM_NUM_SAMPLES, BST_RANDOM_NUM_DATASETS, \
-    BST_INVALID_FIND_TEST_ITERATIONS
+from lab03_trees.src import make_bst
+from lab03_trees.test.util import assert_is_tree_valid, make_random_datasets
+from .conftest import BST_RANDOM_RANGE_LOWER, BST_RANDOM_RANGE_UPPER, BST_INVALID_FIND_TEST_ITERATIONS
 
 
-def make_random_datasets(num_samples=BST_RANDOM_NUM_SAMPLES):
-    return [(make_bst(keys), keys) for keys in
-            [random.sample(range(BST_RANDOM_RANGE_LOWER, BST_RANDOM_RANGE_UPPER), num_samples)
-             for _ in range(BST_RANDOM_NUM_DATASETS)]]
-
-
-def assert_is_tree_valid(root: Node):
-    inorder = root.traverse_inorder()
-    assert inorder == sorted(inorder, key=(lambda n: n.key))
-
-
-@pytest.mark.parametrize('bst_and_keys', make_random_datasets())
+@pytest.mark.parametrize('bst_and_keys', make_random_datasets(make_bst))
 def test_insert_make_random_bsts(bst_and_keys):
     bst, keys = bst_and_keys
     assert_is_tree_valid(bst)
 
 
-@pytest.mark.parametrize('bst_and_keys', make_random_datasets())
+@pytest.mark.parametrize('bst_and_keys', make_random_datasets(make_bst))
 def test_bst_find(bst_and_keys):
     bst, keys = bst_and_keys
     key = random.choice(keys)
@@ -32,7 +19,7 @@ def test_bst_find(bst_and_keys):
     assert found.key == key
 
 
-@pytest.mark.parametrize('bst_and_keys', make_random_datasets(BST_INVALID_FIND_TEST_ITERATIONS))
+@pytest.mark.parametrize('bst_and_keys', make_random_datasets(make_bst, BST_INVALID_FIND_TEST_ITERATIONS))
 def test_bst_find_non_existent(bst_and_keys):
     bst, keys = bst_and_keys
     invalid_key = random.choice([x for x in range(BST_RANDOM_RANGE_LOWER, BST_RANDOM_RANGE_UPPER) if x not in keys])

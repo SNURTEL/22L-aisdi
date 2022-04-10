@@ -94,7 +94,8 @@ class Node:
                 to_delete.parent.l_child = None
             else:
                 to_delete.parent.r_child = None
-        to_delete.parent.recalculate_height()
+        if to_delete.parent:
+            to_delete.parent.recalculate_height()
 
     def traverse_inorder(self) -> List[Node]:
         """

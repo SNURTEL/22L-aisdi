@@ -1,5 +1,5 @@
 from copy import copy
-from bst import Node, transfer_data
+from lab03_trees.src.bst import Node, transfer_data
 
 
 class AVLNode(Node):
