@@ -43,8 +43,10 @@ class TreeGrapher:
         :param parent_y: Parent node's y coordinate
         :return: A tuple of (x, y) tuples
         """
-        l_coords = self._get_node_and_children_coords(node.l_child, parent_y + 1) if node.l_child else ()
-        r_coords = self._get_node_and_children_coords(node.r_child, parent_y + 1) if node.r_child else ()
+        l_coords = self._get_node_and_children_coords(
+            node.l_child, parent_y + 1) if node.l_child else ()
+        r_coords = self._get_node_and_children_coords(
+            node.r_child, parent_y + 1) if node.r_child else ()
 
         return (node.key, parent_y + 1), *l_coords, *r_coords  # pycharm u ok?
 
@@ -58,7 +60,8 @@ class TreeGrapher:
         nodes_x_y = tuple(zip(*self._node_coords))
 
         # converts to ((x11, x12, None, x21, x22, None, ...) (y11, y12, None, y21, y22, None, ...))
-        flattened_lines_x_y = [pos for pair in self._get_line_coords() for pos in pair]
+        flattened_lines_x_y = [
+            pos for pair in self._get_line_coords() for pos in pair]
         lines_x_y = tuple(zip(*flattened_lines_x_y))
 
         # lines
@@ -82,8 +85,10 @@ class TreeGrapher:
 
         # self._fig['layout']['yaxis']['autorange'] = "reversed"
 
-        xaxis = dict(showline=False, zeroline=False, showgrid=False, showticklabels=False)
-        yaxis = dict(showline=False, zeroline=False, showgrid=False, showticklabels=False, autorange='reversed')
+        xaxis = dict(showline=False, zeroline=False,
+                     showgrid=False, showticklabels=False)
+        yaxis = dict(showline=False, zeroline=False, showgrid=False,
+                     showticklabels=False, autorange='reversed')
 
         self._fig.update_layout(annotations=self._get_annotations(),
                                 font_size=18,
@@ -109,7 +114,8 @@ class TreeGrapher:
         for i in range(1, len(self._node_coords)):
             end_coords = self._node_coords[i]
             last_y_occurrences[end_coords[1]] = i
-            line_coords.append((self._node_coords[last_y_occurrences[end_coords[1] - 1]], end_coords))
+            line_coords.append(
+                (self._node_coords[last_y_occurrences[end_coords[1] - 1]], end_coords))
 
         for i in range(len(line_coords), 0, -1):
             line_coords.insert(i, ((None, None),))
