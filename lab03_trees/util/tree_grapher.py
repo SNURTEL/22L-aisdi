@@ -1,7 +1,6 @@
 import plotly.graph_objects as go
 from typing import Tuple, List, Union
-
-from lab03_trees.src import Node, make_bst
+from src import Node
 
 
 class TreeGrapher:
@@ -135,12 +134,3 @@ class TreeGrapher:
         Renders the fig using a default renderer
         """
         self._fig.show()
-
-
-if __name__ == '__main__':
-    import random
-
-    n = make_bst(random.sample(range(0, 500), 100))
-
-    tg = TreeGrapher()
-    tg.graph_tree(n)
