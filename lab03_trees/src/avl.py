@@ -78,6 +78,9 @@ def make_avl(array) -> AVLNode:
     :param array: An array of items supporting __le__, __ge__, __lt__, and __gt__
     :return: New BST's root node
     """
+    if len(array) == 0:
+        raise AttributeError("Cannot create a tree from an empty list")
+
     root = AVLNode(array[0])
     for key in array[1:]:
         root.insert(key)
