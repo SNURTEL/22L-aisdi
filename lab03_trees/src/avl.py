@@ -70,3 +70,16 @@ class AVLNode(Node):
     def delete(self, key):
         super().delete(key)
         self = self.balance()
+
+
+def make_avl(array) -> AVLNode:
+    """
+    Builds an AVL from a given array and returns its root
+    :param array: An array of items supporting __le__, __ge__, __lt__, and __gt__
+    :return: New BST's root node
+    """
+    root = AVLNode(array[0])
+    for key in array[1:]:
+        root.insert(key)
+
+    return root
