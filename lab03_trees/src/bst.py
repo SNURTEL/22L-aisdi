@@ -1,4 +1,5 @@
 from __future__ import annotations
+from abc import abstractmethod
 from typing import List
 
 
@@ -40,13 +41,15 @@ class Node:
             else:
                 current = current.r_child
 
-        new_node = Node(key)
+        new_node = type(self)(key)
         new_node.parent = parent
 
         if key < parent.key:
             parent.l_child = new_node
         else:
             parent.r_child = new_node
+
+        parent.recalculate_height()
 
         return self
 
@@ -105,6 +108,10 @@ class Node:
             if self.r_child:
                 result = result + self.r_child.traverse_inorder()
         return result
+
+    @abstractmethod
+    def recalculate_height(self):
+        pass
 
 
 def transfer_data(source: Node, target: Node) -> None:
