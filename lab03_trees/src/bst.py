@@ -1,36 +1,5 @@
 from typing import List
-
-
-class Node:
-    """
-    Class representing a node in a binary search tree
-    """
-
-    def __init__(self, key):
-        """
-        Inits class Node
-        :param key: Node's key
-        """
-        self.l_child = None
-        self.r_child = None
-        self.parent = None
-        self.key = key
-        # self.value = value
-
-    def __repr__(self):
-        if self.l_child:
-            l_key = self.l_child.key
-        else:
-            l_key = 'null'
-        if self.r_child:
-            r_key = self.r_child.key
-        else:
-            r_key = 'null'
-        if self.parent:
-            parent_key = self.parent.key
-        else:
-            parent_key = 'null'
-        return f"{l_key} <= {self.key} < {r_key}  (parent: {parent_key})"
+from node import Node
 
 
 def make_bst(array) -> Node:
