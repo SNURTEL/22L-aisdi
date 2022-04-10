@@ -72,24 +72,21 @@ class Node:
         """
         to_delete = self.find(key)
 
-        if to_delete.l_child:
-            if to_delete.r_child:
-                next = to_delete.r_child
-                while next.l_child:
-                    next = next.l_child
+        if to_delete.l_child and to_delete.r_child:
+            next = to_delete.r_child
+            while next.l_child:
+                next = next.l_child
 
-                to_delete.key = next.key  # other attributes would have to be rewritten as well
-
-                next.delete(next.key)
-
+            to_delete.key = next.key  # other attributes would have to be rewritten as well
+            if not next.r_child and not next.l_child:
+                del next
             else:
-                transfer_data(to_delete.l_child, to_delete)
+                next.delete(next.key)
+        elif to_delete.l_child and not to_delete.r_child:
+            transfer_data(to_delete.l_child, to_delete)
         elif to_delete.r_child:
             transfer_data(to_delete.r_child, to_delete)
         else:
-            if to_delete == self:
-                del self
-
             if to_delete.parent.l_child == to_delete:
                 to_delete.parent.l_child = None
             else:
