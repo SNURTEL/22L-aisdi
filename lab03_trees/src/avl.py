@@ -1,5 +1,4 @@
-from copy import copy
-from lab03_trees.src.bst import Node, transfer_data
+from lab03_trees.src import Node
 
 
 class AVLNode(Node):
@@ -29,28 +28,42 @@ class AVLNode(Node):
         return self.get_r_child_height() - self.get_l_child_height()
 
     def rotate_right(self):
-        old_self = copy(self)
-        new_root: AVLNode = old_self.l_child
-        t23 = new_root.r_child
-        new_root.r_child = old_self
-        old_self.l_child = t23
-        new_root.parent = old_self.parent
-        old_self.parent = new_root
-        old_self.recalculate_height()
-        new_root.recalculate_height()
-        transfer_data(new_root, self)
+        t1 = self.l_child.l_child
+        t23 = self.l_child.r_child
+        t4 = self.r_child
+        new_root_key = self.l_child.key
+        self.r_child = AVLNode(self.key)
+        self.r_child.parent = self
+        self.key = new_root_key
+        self.l_child = t1
+        self.r_child.l_child = t23
+        self.r_child.r_child = t4
+        if t1:
+            t1.parent = self
+        if t23:
+            t23.parent = self.r_child
+        if t4:
+            t4.parent = self.r_child
+        self.r_child.recalculate_height()
 
     def rotate_left(self):
-        old_self = copy(self)
-        new_root: AVLNode = old_self.r_child
-        t23 = new_root.l_child
-        new_root.l_child = old_self
-        old_self.r_child = t23
-        new_root.parent = old_self.parent
-        old_self.parent = new_root
-        old_self.recalculate_height()
-        new_root.recalculate_height()
-        transfer_data(new_root, self)
+        t1 = self.l_child
+        t23 = self.r_child.l_child
+        t4 = self.r_child.r_child
+        new_root_key = self.r_child.key
+        self.l_child = AVLNode(self.key)
+        self.l_child.parent = self
+        self.key = new_root_key
+        self.r_child = t4
+        self.l_child.r_child = t23
+        self.l_child.l_child = t1
+        if t1:
+            t1.parent = self.l_child
+        if t23:
+            t23.parent = self.l_child
+        if t4:
+            t4.parent = self
+        self.l_child.recalculate_height()
 
     def balance(self):
         balance_factor = self.get_balance_factor()
@@ -65,11 +78,11 @@ class AVLNode(Node):
 
     def insert(self, key):
         super().insert(key)
-        self = self.balance()
+        self.balance()
 
     def delete(self, key):
         super().delete(key)
-        self = self.balance()
+        self.balance()
 
 
 def make_avl(array) -> AVLNode:
