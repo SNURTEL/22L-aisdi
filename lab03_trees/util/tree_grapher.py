@@ -1,6 +1,6 @@
 import plotly.graph_objects as go
 from typing import Tuple, List, Union
-from src import Node
+from lab03_trees.src import Node
 
 
 class TreeGrapher:

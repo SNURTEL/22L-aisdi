@@ -1,0 +1,3082 @@
+{
+    "machine_info": {
+        "node": "DESKTOP-0FO8O0U",
+        "processor": "x86_64",
+        "machine": "x86_64",
+        "python_compiler": "GCC 9.3.0",
+        "python_implementation": "CPython",
+        "python_implementation_version": "3.9.5",
+        "python_version": "3.9.5",
+        "python_build": [
+            "default",
+            "May 19 2021 11:32:47"
+        ],
+        "release": "5.10.60.1-microsoft-standard-WSL2",
+        "system": "Linux",
+        "cpu": {
+            "python_version": "3.9.5.final.0 (64 bit)",
+            "cpuinfo_version": [
+                8,
+                0,
+                0
+            ],
+            "cpuinfo_version_string": "8.0.0",
+            "arch": "X86_64",
+            "bits": 64,
+            "count": 8,
+            "arch_string_raw": "x86_64",
+            "vendor_id_raw": "GenuineIntel",
+            "brand_raw": "Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz",
+            "hz_advertised_friendly": "1.6000 GHz",
+            "hz_actual_friendly": "1.8000 GHz",
+            "hz_advertised": [
+                1600000000,
+                0
+            ],
+            "hz_actual": [
+                1800004000,
+                0
+            ],
+            "stepping": 11,
+            "model": 142,
+            "family": 6,
+            "flags": [
+                "3dnowprefetch",
+                "abm",
+                "adx",
+                "aes",
+                "apic",
+                "arch_capabilities",
+                "avx",
+                "avx2",
+                "bmi1",
+                "bmi2",
+                "clflush",
+                "clflushopt",
+                "cmov",
+                "constant_tsc",
+                "cpuid",
+                "cx16",
+                "cx8",
+                "de",
+                "erms",
+                "f16c",
+                "flush_l1d",
+                "fma",
+                "fpu",
+                "fsgsbase",
+                "fxsr",
+                "ht",
+                "hypervisor",
+                "ibpb",
+                "ibrs",
+                "invpcid",
+                "invpcid_single",
+                "lahf_lm",
+                "lm",
+                "mca",
+                "mce",
+                "mmx",
+                "movbe",
+                "msr",
+                "mtrr",
+                "nopl",
+                "nx",
+                "osxsave",
+                "pae",
+                "pat",
+                "pcid",
+                "pclmulqdq",
+                "pdpe1gb",
+                "pge",
+                "pni",
+                "popcnt",
+                "pse",
+                "pse36",
+                "rdrand",
+                "rdrnd",
+                "rdseed",
+                "rdtscp",
+                "rep_good",
+                "sep",
+                "smap",
+                "smep",
+                "ss",
+                "ssbd",
+                "sse",
+                "sse2",
+                "sse4_1",
+                "sse4_2",
+                "ssse3",
+                "stibp",
+                "syscall",
+                "tsc",
+                "vme",
+                "xgetbv1",
+                "xsave",
+                "xsavec",
+                "xsaveopt",
+                "xsaves",
+                "xtopology"
+            ],
+            "l3_cache_size": 6291456,
+            "l2_cache_size": "1 MiB",
+            "l1_data_cache_size": "128 KiB",
+            "l1_instruction_cache_size": "128 KiB",
+            "l2_cache_line_size": 256,
+            "l2_cache_associativity": 6
+        }
+    },
+    "commit_info": {
+        "id": "1f62a5b60fe30352c86f5a65d502a733e5b49b4b",
+        "time": "2022-04-11T15:57:22+02:00",
+        "author_time": "2022-04-11T15:57:22+02:00",
+        "dirty": true,
+        "project": "22l-aisdi-kowalczewski-owienko",
+        "branch": "benchmark"
+    },
+    "benchmarks": [
+        {
+            "group": null,
+            "name": "test_benchmark_make_tree[make_avl-1000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_make_tree[make_avl-1000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 1000
+            },
+            "param": "make_avl-1000",
+            "extra_info": {
+                "friendly_name": "Tree creation",
+                "function": "make_avl",
+                "num_elements": 1000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.01496267318725586,
+                "max": 0.01653265953063965,
+                "mean": 0.015755462646484374,
+                "stddev": 0.0006180402690849233,
+                "rounds": 5,
+                "median": 0.015587329864501953,
+                "iqr": 0.0009230375289916992,
+                "q1": 0.015360891819000244,
+                "q3": 0.016283929347991943,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.01496267318725586,
+                "hd15iqr": 0.01653265953063965,
+                "ops": 63.4700498765193,
+                "total": 0.07877731323242188,
+                "data": [
+                    0.016201019287109375,
+                    0.01496267318725586,
+                    0.015493631362915039,
+                    0.01653265953063965,
+                    0.015587329864501953
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_tree[make_avl-2000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_make_tree[make_avl-2000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 2000
+            },
+            "param": "make_avl-2000",
+            "extra_info": {
+                "friendly_name": "Tree creation",
+                "function": "make_avl",
+                "num_elements": 2000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.02024364471435547,
+                "max": 0.0383915901184082,
+                "mean": 0.02857236862182617,
+                "stddev": 0.00690338102193666,
+                "rounds": 5,
+                "median": 0.027333498001098633,
+                "iqr": 0.009654104709625244,
+                "q1": 0.023837268352508545,
+                "q3": 0.03349137306213379,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.02024364471435547,
+                "hd15iqr": 0.0383915901184082,
+                "ops": 34.99884847615011,
+                "total": 0.14286184310913086,
+                "data": [
+                    0.0383915901184082,
+                    0.031857967376708984,
+                    0.02503514289855957,
+                    0.027333498001098633,
+                    0.02024364471435547
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_tree[make_avl-3000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_make_tree[make_avl-3000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 3000
+            },
+            "param": "make_avl-3000",
+            "extra_info": {
+                "friendly_name": "Tree creation",
+                "function": "make_avl",
+                "num_elements": 3000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.019813060760498047,
+                "max": 0.023728609085083008,
+                "mean": 0.021610307693481445,
+                "stddev": 0.0016915370691797087,
+                "rounds": 5,
+                "median": 0.021453380584716797,
+                "iqr": 0.0030162930488586426,
+                "q1": 0.020080745220184326,
+                "q3": 0.02309703826904297,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.019813060760498047,
+                "hd15iqr": 0.023728609085083008,
+                "ops": 46.27421386978405,
+                "total": 0.10805153846740723,
+                "data": [
+                    0.023728609085083008,
+                    0.02288651466369629,
+                    0.021453380584716797,
+                    0.020169973373413086,
+                    0.019813060760498047
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_tree[make_avl-4000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_make_tree[make_avl-4000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 4000
+            },
+            "param": "make_avl-4000",
+            "extra_info": {
+                "friendly_name": "Tree creation",
+                "function": "make_avl",
+                "num_elements": 4000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.027941226959228516,
+                "max": 0.056218862533569336,
+                "mean": 0.042357778549194335,
+                "stddev": 0.012577687041436131,
+                "rounds": 5,
+                "median": 0.04159069061279297,
+                "iqr": 0.023202717304229736,
+                "q1": 0.031182944774627686,
+                "q3": 0.05438566207885742,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.027941226959228516,
+                "hd15iqr": 0.056218862533569336,
+                "ops": 23.608414658445785,
+                "total": 0.21178889274597168,
+                "data": [
+                    0.03226351737976074,
+                    0.056218862533569336,
+                    0.05377459526062012,
+                    0.04159069061279297,
+                    0.027941226959228516
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_tree[make_avl-5000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_make_tree[make_avl-5000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 5000
+            },
+            "param": "make_avl-5000",
+            "extra_info": {
+                "friendly_name": "Tree creation",
+                "function": "make_avl",
+                "num_elements": 5000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.04183030128479004,
+                "max": 0.04965829849243164,
+                "mean": 0.04536890983581543,
+                "stddev": 0.003003110735883079,
+                "rounds": 5,
+                "median": 0.04443359375,
+                "iqr": 0.004146754741668701,
+                "q1": 0.04345858097076416,
+                "q3": 0.04760533571243286,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.04183030128479004,
+                "hd15iqr": 0.04965829849243164,
+                "ops": 22.04152587353054,
+                "total": 0.22684454917907715,
+                "data": [
+                    0.04400134086608887,
+                    0.04183030128479004,
+                    0.0469210147857666,
+                    0.04965829849243164,
+                    0.04443359375
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_tree[make_avl-6000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_make_tree[make_avl-6000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 6000
+            },
+            "param": "make_avl-6000",
+            "extra_info": {
+                "friendly_name": "Tree creation",
+                "function": "make_avl",
+                "num_elements": 6000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.056199073791503906,
+                "max": 0.10196065902709961,
+                "mean": 0.07294416427612305,
+                "stddev": 0.017808321842789424,
+                "rounds": 5,
+                "median": 0.06621980667114258,
+                "iqr": 0.021252989768981934,
+                "q1": 0.0617714524269104,
+                "q3": 0.08302444219589233,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.056199073791503906,
+                "hd15iqr": 0.10196065902709961,
+                "ops": 13.70911586860598,
+                "total": 0.36472082138061523,
+                "data": [
+                    0.10196065902709961,
+                    0.0636289119720459,
+                    0.06621980667114258,
+                    0.056199073791503906,
+                    0.07671236991882324
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_tree[make_avl-7000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_make_tree[make_avl-7000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 7000
+            },
+            "param": "make_avl-7000",
+            "extra_info": {
+                "friendly_name": "Tree creation",
+                "function": "make_avl",
+                "num_elements": 7000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.07544636726379395,
+                "max": 0.08459973335266113,
+                "mean": 0.07864594459533691,
+                "stddev": 0.003509181190952915,
+                "rounds": 5,
+                "median": 0.07805442810058594,
+                "iqr": 0.0032855868339538574,
+                "q1": 0.07653641700744629,
+                "q3": 0.07982200384140015,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.07544636726379395,
+                "hd15iqr": 0.08459973335266113,
+                "ops": 12.715213799584678,
+                "total": 0.39322972297668457,
+                "data": [
+                    0.07544636726379395,
+                    0.07689976692199707,
+                    0.08459973335266113,
+                    0.07822942733764648,
+                    0.07805442810058594
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_tree[make_avl-8000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_make_tree[make_avl-8000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 8000
+            },
+            "param": "make_avl-8000",
+            "extra_info": {
+                "friendly_name": "Tree creation",
+                "function": "make_avl",
+                "num_elements": 8000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.08641910552978516,
+                "max": 0.09631180763244629,
+                "mean": 0.08935770988464356,
+                "stddev": 0.003965638582264873,
+                "rounds": 5,
+                "median": 0.0881197452545166,
+                "iqr": 0.0032383203506469727,
+                "q1": 0.08719891309738159,
+                "q3": 0.09043723344802856,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.08641910552978516,
+                "hd15iqr": 0.09631180763244629,
+                "ops": 11.190976148459391,
+                "total": 0.4467885494232178,
+                "data": [
+                    0.08745884895324707,
+                    0.0881197452545166,
+                    0.08641910552978516,
+                    0.09631180763244629,
+                    0.08847904205322266
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_tree[make_avl-9000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_make_tree[make_avl-9000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 9000
+            },
+            "param": "make_avl-9000",
+            "extra_info": {
+                "friendly_name": "Tree creation",
+                "function": "make_avl",
+                "num_elements": 9000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.09357380867004395,
+                "max": 0.14226603507995605,
+                "mean": 0.11155133247375489,
+                "stddev": 0.018476322501298725,
+                "rounds": 5,
+                "median": 0.10552334785461426,
+                "iqr": 0.01888716220855713,
+                "q1": 0.1011839509010315,
+                "q3": 0.12007111310958862,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.09357380867004395,
+                "hd15iqr": 0.14226603507995605,
+                "ops": 8.96448278854288,
+                "total": 0.5577566623687744,
+                "data": [
+                    0.11267280578613281,
+                    0.10552334785461426,
+                    0.14226603507995605,
+                    0.09357380867004395,
+                    0.10372066497802734
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_tree[make_avl-10000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_make_tree[make_avl-10000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 10000
+            },
+            "param": "make_avl-10000",
+            "extra_info": {
+                "friendly_name": "Tree creation",
+                "function": "make_avl",
+                "num_elements": 10000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.10698699951171875,
+                "max": 0.12247037887573242,
+                "mean": 0.11703329086303711,
+                "stddev": 0.005876810954241154,
+                "rounds": 5,
+                "median": 0.11847543716430664,
+                "iqr": 0.004666566848754883,
+                "q1": 0.11531150341033936,
+                "q3": 0.11997807025909424,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.11808633804321289,
+                "hd15iqr": 0.12247037887573242,
+                "ops": 8.544577296132688,
+                "total": 0.5851664543151855,
+                "data": [
+                    0.11914730072021484,
+                    0.12247037887573242,
+                    0.11847543716430664,
+                    0.11808633804321289,
+                    0.10698699951171875
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_tree[make_bst-1000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_make_tree[make_bst-1000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 1000
+            },
+            "param": "make_bst-1000",
+            "extra_info": {
+                "friendly_name": "Tree creation",
+                "function": "make_bst",
+                "num_elements": 1000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.0016434192657470703,
+                "max": 0.002016782760620117,
+                "mean": 0.0017972946166992187,
+                "stddev": 0.0001390300896973693,
+                "rounds": 5,
+                "median": 0.0017707347869873047,
+                "iqr": 0.00016039609909057617,
+                "q1": 0.001710653305053711,
+                "q3": 0.0018710494041442871,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.0016434192657470703,
+                "hd15iqr": 0.002016782760620117,
+                "ops": 556.3918072800594,
+                "total": 0.008986473083496094,
+                "data": [
+                    0.0018224716186523438,
+                    0.002016782760620117,
+                    0.0016434192657470703,
+                    0.0017707347869873047,
+                    0.0017330646514892578
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_tree[make_bst-2000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_make_tree[make_bst-2000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 2000
+            },
+            "param": "make_bst-2000",
+            "extra_info": {
+                "friendly_name": "Tree creation",
+                "function": "make_bst",
+                "num_elements": 2000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.0041615962982177734,
+                "max": 0.006318569183349609,
+                "mean": 0.005129480361938476,
+                "stddev": 0.0008092772586276291,
+                "rounds": 5,
+                "median": 0.005042076110839844,
+                "iqr": 0.0010721087455749512,
+                "q1": 0.004570901393890381,
+                "q3": 0.005643010139465332,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.0041615962982177734,
+                "hd15iqr": 0.006318569183349609,
+                "ops": 194.95152129251764,
+                "total": 0.025647401809692383,
+                "data": [
+                    0.0041615962982177734,
+                    0.005417823791503906,
+                    0.00470733642578125,
+                    0.005042076110839844,
+                    0.006318569183349609
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_tree[make_bst-3000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_make_tree[make_bst-3000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 3000
+            },
+            "param": "make_bst-3000",
+            "extra_info": {
+                "friendly_name": "Tree creation",
+                "function": "make_bst",
+                "num_elements": 3000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.0058574676513671875,
+                "max": 0.008861780166625977,
+                "mean": 0.007475137710571289,
+                "stddev": 0.001328872646434629,
+                "rounds": 5,
+                "median": 0.0072174072265625,
+                "iqr": 0.002372920513153076,
+                "q1": 0.0064430832862854,
+                "q3": 0.008816003799438477,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.0058574676513671875,
+                "hd15iqr": 0.008861780166625977,
+                "ops": 133.7767996682933,
+                "total": 0.037375688552856445,
+                "data": [
+                    0.008800745010375977,
+                    0.008861780166625977,
+                    0.0072174072265625,
+                    0.006638288497924805,
+                    0.0058574676513671875
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_tree[make_bst-4000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_make_tree[make_bst-4000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 4000
+            },
+            "param": "make_bst-4000",
+            "extra_info": {
+                "friendly_name": "Tree creation",
+                "function": "make_bst",
+                "num_elements": 4000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.008246898651123047,
+                "max": 0.010417461395263672,
+                "mean": 0.00943603515625,
+                "stddev": 0.0007931414041474102,
+                "rounds": 5,
+                "median": 0.009389162063598633,
+                "iqr": 0.0008854269981384277,
+                "q1": 0.00906282663345337,
+                "q3": 0.009948253631591797,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.008246898651123047,
+                "hd15iqr": 0.010417461395263672,
+                "ops": 105.97671410090557,
+                "total": 0.04718017578125,
+                "data": [
+                    0.009334802627563477,
+                    0.009791851043701172,
+                    0.008246898651123047,
+                    0.009389162063598633,
+                    0.010417461395263672
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_tree[make_bst-5000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_make_tree[make_bst-5000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 5000
+            },
+            "param": "make_bst-5000",
+            "extra_info": {
+                "friendly_name": "Tree creation",
+                "function": "make_bst",
+                "num_elements": 5000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.010306119918823242,
+                "max": 0.03232121467590332,
+                "mean": 0.01841878890991211,
+                "stddev": 0.010267389602091007,
+                "rounds": 5,
+                "median": 0.012511730194091797,
+                "iqr": 0.017488956451416016,
+                "q1": 0.010442018508911133,
+                "q3": 0.02793097496032715,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.010306119918823242,
+                "hd15iqr": 0.03232121467590332,
+                "ops": 54.29238615476221,
+                "total": 0.09209394454956055,
+                "data": [
+                    0.026467561721801758,
+                    0.03232121467590332,
+                    0.012511730194091797,
+                    0.010306119918823242,
+                    0.01048731803894043
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_tree[make_bst-6000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_make_tree[make_bst-6000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 6000
+            },
+            "param": "make_bst-6000",
+            "extra_info": {
+                "friendly_name": "Tree creation",
+                "function": "make_bst",
+                "num_elements": 6000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.013110160827636719,
+                "max": 0.015668869018554688,
+                "mean": 0.013799810409545898,
+                "stddev": 0.0010711108582334879,
+                "rounds": 5,
+                "median": 0.013402700424194336,
+                "iqr": 0.0010591745376586914,
+                "q1": 0.013124287128448486,
+                "q3": 0.014183461666107178,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.013110160827636719,
+                "hd15iqr": 0.015668869018554688,
+                "ops": 72.46476366865582,
+                "total": 0.06899905204772949,
+                "data": [
+                    0.015668869018554688,
+                    0.013688325881958008,
+                    0.013402700424194336,
+                    0.013128995895385742,
+                    0.013110160827636719
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_tree[make_bst-7000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_make_tree[make_bst-7000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 7000
+            },
+            "param": "make_bst-7000",
+            "extra_info": {
+                "friendly_name": "Tree creation",
+                "function": "make_bst",
+                "num_elements": 7000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.016063213348388672,
+                "max": 0.017011165618896484,
+                "mean": 0.016586732864379884,
+                "stddev": 0.0003878498152431497,
+                "rounds": 5,
+                "median": 0.016523361206054688,
+                "iqr": 0.0006198287010192871,
+                "q1": 0.01632535457611084,
+                "q3": 0.016945183277130127,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.016063213348388672,
+                "hd15iqr": 0.017011165618896484,
+                "ops": 60.2891484523457,
+                "total": 0.08293366432189941,
+                "data": [
+                    0.016523361206054688,
+                    0.017011165618896484,
+                    0.016923189163208008,
+                    0.016412734985351562,
+                    0.016063213348388672
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_tree[make_bst-8000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_make_tree[make_bst-8000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 8000
+            },
+            "param": "make_bst-8000",
+            "extra_info": {
+                "friendly_name": "Tree creation",
+                "function": "make_bst",
+                "num_elements": 8000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.018532514572143555,
+                "max": 0.02303791046142578,
+                "mean": 0.019924116134643555,
+                "stddev": 0.0018127660588713869,
+                "rounds": 5,
+                "median": 0.019350051879882812,
+                "iqr": 0.0018938183784484863,
+                "q1": 0.018761932849884033,
+                "q3": 0.02065575122833252,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.018532514572143555,
+                "hd15iqr": 0.02303791046142578,
+                "ops": 50.19043219996219,
+                "total": 0.09962058067321777,
+                "data": [
+                    0.02303791046142578,
+                    0.019861698150634766,
+                    0.019350051879882812,
+                    0.01883840560913086,
+                    0.018532514572143555
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_tree[make_bst-9000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_make_tree[make_bst-9000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 9000
+            },
+            "param": "make_bst-9000",
+            "extra_info": {
+                "friendly_name": "Tree creation",
+                "function": "make_bst",
+                "num_elements": 9000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.020369529724121094,
+                "max": 0.027061939239501953,
+                "mean": 0.02303600311279297,
+                "stddev": 0.002853448278079592,
+                "rounds": 5,
+                "median": 0.022350788116455078,
+                "iqr": 0.0047751665115356445,
+                "q1": 0.020565509796142578,
+                "q3": 0.025340676307678223,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.020369529724121094,
+                "hd15iqr": 0.027061939239501953,
+                "ops": 43.41030842475678,
+                "total": 0.11518001556396484,
+                "data": [
+                    0.027061939239501953,
+                    0.022350788116455078,
+                    0.024766921997070312,
+                    0.020369529724121094,
+                    0.020630836486816406
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_tree[make_bst-10000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_make_tree[make_bst-10000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 10000
+            },
+            "param": "make_bst-10000",
+            "extra_info": {
+                "friendly_name": "Tree creation",
+                "function": "make_bst",
+                "num_elements": 10000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.023649930953979492,
+                "max": 0.031317949295043945,
+                "mean": 0.026196765899658202,
+                "stddev": 0.003024377211795284,
+                "rounds": 5,
+                "median": 0.025046586990356445,
+                "iqr": 0.0032321810722351074,
+                "q1": 0.02436840534210205,
+                "q3": 0.027600586414337158,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.023649930953979492,
+                "hd15iqr": 0.031317949295043945,
+                "ops": 38.17265092303044,
+                "total": 0.13098382949829102,
+                "data": [
+                    0.026361465454101562,
+                    0.025046586990356445,
+                    0.02460789680480957,
+                    0.023649930953979492,
+                    0.031317949295043945
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_find[make_avl-1000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_find[make_avl-1000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 1000
+            },
+            "param": "make_avl-1000",
+            "extra_info": {
+                "friendly_name": "Finding an element",
+                "function": "make_avl",
+                "num_elements": 1000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.0013463497161865234,
+                "max": 0.0014698505401611328,
+                "mean": 0.0014261245727539063,
+                "stddev": 5.378852075019013e-05,
+                "rounds": 5,
+                "median": 0.0014579296112060547,
+                "iqr": 8.147954940795898e-05,
+                "q1": 0.0013824701309204102,
+                "q3": 0.0014639496803283691,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.0013463497161865234,
+                "hd15iqr": 0.0014698505401611328,
+                "ops": 701.201016450448,
+                "total": 0.007130622863769531,
+                "data": [
+                    0.0014619827270507812,
+                    0.001394510269165039,
+                    0.0013463497161865234,
+                    0.0014698505401611328,
+                    0.0014579296112060547
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_find[make_avl-2000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_find[make_avl-2000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 2000
+            },
+            "param": "make_avl-2000",
+            "extra_info": {
+                "friendly_name": "Finding an element",
+                "function": "make_avl",
+                "num_elements": 2000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.003263235092163086,
+                "max": 0.004133701324462891,
+                "mean": 0.0035445690155029297,
+                "stddev": 0.00039496673242150253,
+                "rounds": 5,
+                "median": 0.0032851696014404297,
+                "iqr": 0.0005990266799926758,
+                "q1": 0.003265380859375,
+                "q3": 0.0038644075393676758,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.003263235092163086,
+                "hd15iqr": 0.004133701324462891,
+                "ops": 282.1217461491895,
+                "total": 0.01772284507751465,
+                "data": [
+                    0.004133701324462891,
+                    0.0037746429443359375,
+                    0.003263235092163086,
+                    0.0032851696014404297,
+                    0.0032660961151123047
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_find[make_avl-3000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_find[make_avl-3000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 3000
+            },
+            "param": "make_avl-3000",
+            "extra_info": {
+                "friendly_name": "Finding an element",
+                "function": "make_avl",
+                "num_elements": 3000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.0050966739654541016,
+                "max": 0.0060176849365234375,
+                "mean": 0.005490398406982422,
+                "stddev": 0.00047359429584877433,
+                "rounds": 5,
+                "median": 0.0052068233489990234,
+                "iqr": 0.0008775591850280762,
+                "q1": 0.005124568939208984,
+                "q3": 0.0060021281242370605,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.0050966739654541016,
+                "hd15iqr": 0.0060176849365234375,
+                "ops": 182.1361449340814,
+                "total": 0.02745199203491211,
+                "data": [
+                    0.0052068233489990234,
+                    0.0059969425201416016,
+                    0.0060176849365234375,
+                    0.0050966739654541016,
+                    0.005133867263793945
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_find[make_avl-4000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_find[make_avl-4000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 4000
+            },
+            "param": "make_avl-4000",
+            "extra_info": {
+                "friendly_name": "Finding an element",
+                "function": "make_avl",
+                "num_elements": 4000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.005571603775024414,
+                "max": 0.008461236953735352,
+                "mean": 0.007138824462890625,
+                "stddev": 0.0010347611011301868,
+                "rounds": 5,
+                "median": 0.007291078567504883,
+                "iqr": 0.0009607672691345215,
+                "q1": 0.006662547588348389,
+                "q3": 0.00762331485748291,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.005571603775024414,
+                "hd15iqr": 0.008461236953735352,
+                "ops": 140.07908517687292,
+                "total": 0.035694122314453125,
+                "data": [
+                    0.00734400749206543,
+                    0.007291078567504883,
+                    0.007026195526123047,
+                    0.008461236953735352,
+                    0.005571603775024414
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_find[make_avl-5000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_find[make_avl-5000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 5000
+            },
+            "param": "make_avl-5000",
+            "extra_info": {
+                "friendly_name": "Finding an element",
+                "function": "make_avl",
+                "num_elements": 5000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.006594657897949219,
+                "max": 0.008572578430175781,
+                "mean": 0.007505273818969727,
+                "stddev": 0.0008539720784699106,
+                "rounds": 5,
+                "median": 0.007129669189453125,
+                "iqr": 0.0014334321022033691,
+                "q1": 0.006890237331390381,
+                "q3": 0.00832366943359375,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.006594657897949219,
+                "hd15iqr": 0.008572578430175781,
+                "ops": 133.2396424328291,
+                "total": 0.03752636909484863,
+                "data": [
+                    0.008240699768066406,
+                    0.008572578430175781,
+                    0.006594657897949219,
+                    0.0069887638092041016,
+                    0.007129669189453125
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_find[make_avl-6000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_find[make_avl-6000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 6000
+            },
+            "param": "make_avl-6000",
+            "extra_info": {
+                "friendly_name": "Finding an element",
+                "function": "make_avl",
+                "num_elements": 6000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.009424686431884766,
+                "max": 0.011498689651489258,
+                "mean": 0.010510921478271484,
+                "stddev": 0.0007644734383984166,
+                "rounds": 5,
+                "median": 0.010518789291381836,
+                "iqr": 0.0009658932685852051,
+                "q1": 0.010049641132354736,
+                "q3": 0.011015534400939941,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.009424686431884766,
+                "hd15iqr": 0.011498689651489258,
+                "ops": 95.13913714104251,
+                "total": 0.05255460739135742,
+                "data": [
+                    0.009424686431884766,
+                    0.010257959365844727,
+                    0.011498689651489258,
+                    0.010518789291381836,
+                    0.010854482650756836
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_find[make_avl-7000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_find[make_avl-7000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 7000
+            },
+            "param": "make_avl-7000",
+            "extra_info": {
+                "friendly_name": "Finding an element",
+                "function": "make_avl",
+                "num_elements": 7000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.013489961624145508,
+                "max": 0.02113056182861328,
+                "mean": 0.016024971008300783,
+                "stddev": 0.003457649776641568,
+                "rounds": 5,
+                "median": 0.013828277587890625,
+                "iqr": 0.00533604621887207,
+                "q1": 0.013538062572479248,
+                "q3": 0.01887410879135132,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.013489961624145508,
+                "hd15iqr": 0.02113056182861328,
+                "ops": 62.40260899579847,
+                "total": 0.0801248550415039,
+                "data": [
+                    0.02113056182861328,
+                    0.013489961624145508,
+                    0.013828277587890625,
+                    0.013554096221923828,
+                    0.018121957778930664
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_find[make_avl-8000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_find[make_avl-8000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 8000
+            },
+            "param": "make_avl-8000",
+            "extra_info": {
+                "friendly_name": "Finding an element",
+                "function": "make_avl",
+                "num_elements": 8000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.01569366455078125,
+                "max": 0.016379594802856445,
+                "mean": 0.01613326072692871,
+                "stddev": 0.0003362224162916606,
+                "rounds": 5,
+                "median": 0.016368627548217773,
+                "iqr": 0.000571131706237793,
+                "q1": 0.015807747840881348,
+                "q3": 0.01637887954711914,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.01569366455078125,
+                "hd15iqr": 0.016379594802856445,
+                "ops": 61.98375002586164,
+                "total": 0.08066630363464355,
+                "data": [
+                    0.016379594802856445,
+                    0.01637864112854004,
+                    0.016368627548217773,
+                    0.015845775604248047,
+                    0.01569366455078125
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_find[make_avl-9000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_find[make_avl-9000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 9000
+            },
+            "param": "make_avl-9000",
+            "extra_info": {
+                "friendly_name": "Finding an element",
+                "function": "make_avl",
+                "num_elements": 9000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.013747215270996094,
+                "max": 0.014527559280395508,
+                "mean": 0.014038896560668946,
+                "stddev": 0.0003128459059988064,
+                "rounds": 5,
+                "median": 0.014029741287231445,
+                "iqr": 0.00043201446533203125,
+                "q1": 0.013777077198028564,
+                "q3": 0.014209091663360596,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.013747215270996094,
+                "hd15iqr": 0.014527559280395508,
+                "ops": 71.23066942465958,
+                "total": 0.07019448280334473,
+                "data": [
+                    0.013747215270996094,
+                    0.013787031173706055,
+                    0.014029741287231445,
+                    0.014102935791015625,
+                    0.014527559280395508
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_find[make_avl-10000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_find[make_avl-10000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 10000
+            },
+            "param": "make_avl-10000",
+            "extra_info": {
+                "friendly_name": "Finding an element",
+                "function": "make_avl",
+                "num_elements": 10000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.017822742462158203,
+                "max": 0.023894548416137695,
+                "mean": 0.020351362228393555,
+                "stddev": 0.002237894763819428,
+                "rounds": 5,
+                "median": 0.019790172576904297,
+                "iqr": 0.0023841261863708496,
+                "q1": 0.019116103649139404,
+                "q3": 0.021500229835510254,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.017822742462158203,
+                "hd15iqr": 0.023894548416137695,
+                "ops": 49.136759926803954,
+                "total": 0.10175681114196777,
+                "data": [
+                    0.023894548416137695,
+                    0.017822742462158203,
+                    0.019547224044799805,
+                    0.020702123641967773,
+                    0.019790172576904297
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_find[make_bst-1000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_find[make_bst-1000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 1000
+            },
+            "param": "make_bst-1000",
+            "extra_info": {
+                "friendly_name": "Finding an element",
+                "function": "make_bst",
+                "num_elements": 1000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.0012598037719726562,
+                "max": 0.0016193389892578125,
+                "mean": 0.0013619422912597655,
+                "stddev": 0.00014997860905427432,
+                "rounds": 5,
+                "median": 0.0012841224670410156,
+                "iqr": 0.0001589059829711914,
+                "q1": 0.0012728571891784668,
+                "q3": 0.0014317631721496582,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.0012598037719726562,
+                "hd15iqr": 0.0016193389892578125,
+                "ops": 734.2455010153351,
+                "total": 0.006809711456298828,
+                "data": [
+                    0.0012598037719726562,
+                    0.0012772083282470703,
+                    0.0012841224670410156,
+                    0.0016193389892578125,
+                    0.0013692378997802734
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_find[make_bst-2000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_find[make_bst-2000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 2000
+            },
+            "param": "make_bst-2000",
+            "extra_info": {
+                "friendly_name": "Finding an element",
+                "function": "make_bst",
+                "num_elements": 2000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.0030837059020996094,
+                "max": 0.006154775619506836,
+                "mean": 0.0037552356719970704,
+                "stddev": 0.0013436385543324947,
+                "rounds": 5,
+                "median": 0.003165006637573242,
+                "iqr": 0.0009063482284545898,
+                "q1": 0.0030913949012756348,
+                "q3": 0.003997743129730225,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.0030837059020996094,
+                "hd15iqr": 0.006154775619506836,
+                "ops": 266.29487130648994,
+                "total": 0.01877617835998535,
+                "data": [
+                    0.0030939579010009766,
+                    0.006154775619506836,
+                    0.0030837059020996094,
+                    0.003165006637573242,
+                    0.0032787322998046875
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_find[make_bst-3000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_find[make_bst-3000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 3000
+            },
+            "param": "make_bst-3000",
+            "extra_info": {
+                "friendly_name": "Finding an element",
+                "function": "make_bst",
+                "num_elements": 3000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.003667593002319336,
+                "max": 0.006459712982177734,
+                "mean": 0.004631328582763672,
+                "stddev": 0.0011186909234317491,
+                "rounds": 5,
+                "median": 0.00454401969909668,
+                "iqr": 0.0013889670372009277,
+                "q1": 0.0037534236907958984,
+                "q3": 0.005142390727996826,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.003667593002319336,
+                "hd15iqr": 0.006459712982177734,
+                "ops": 215.92076272058975,
+                "total": 0.02315664291381836,
+                "data": [
+                    0.006459712982177734,
+                    0.00454401969909668,
+                    0.0047032833099365234,
+                    0.003782033920288086,
+                    0.003667593002319336
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_find[make_bst-4000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_find[make_bst-4000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 4000
+            },
+            "param": "make_bst-4000",
+            "extra_info": {
+                "friendly_name": "Finding an element",
+                "function": "make_bst",
+                "num_elements": 4000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.005201101303100586,
+                "max": 0.006259918212890625,
+                "mean": 0.0057159423828125,
+                "stddev": 0.00040003122947135627,
+                "rounds": 5,
+                "median": 0.005739450454711914,
+                "iqr": 0.000559389591217041,
+                "q1": 0.0054201483726501465,
+                "q3": 0.0059795379638671875,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.005201101303100586,
+                "hd15iqr": 0.006259918212890625,
+                "ops": 174.94927923117993,
+                "total": 0.0285797119140625,
+                "data": [
+                    0.005886077880859375,
+                    0.005739450454711914,
+                    0.0054931640625,
+                    0.006259918212890625,
+                    0.005201101303100586
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_find[make_bst-5000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_find[make_bst-5000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 5000
+            },
+            "param": "make_bst-5000",
+            "extra_info": {
+                "friendly_name": "Finding an element",
+                "function": "make_bst",
+                "num_elements": 5000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.007298946380615234,
+                "max": 0.008161783218383789,
+                "mean": 0.0076942920684814455,
+                "stddev": 0.00042670096884651784,
+                "rounds": 5,
+                "median": 0.007523775100708008,
+                "iqr": 0.000815272331237793,
+                "q1": 0.007332563400268555,
+                "q3": 0.008147835731506348,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.007298946380615234,
+                "hd15iqr": 0.008161783218383789,
+                "ops": 129.96647269166652,
+                "total": 0.03847146034240723,
+                "data": [
+                    0.008143186569213867,
+                    0.007298946380615234,
+                    0.007343769073486328,
+                    0.008161783218383789,
+                    0.007523775100708008
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_find[make_bst-6000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_find[make_bst-6000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 6000
+            },
+            "param": "make_bst-6000",
+            "extra_info": {
+                "friendly_name": "Finding an element",
+                "function": "make_bst",
+                "num_elements": 6000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.009320259094238281,
+                "max": 0.011955738067626953,
+                "mean": 0.010012960433959961,
+                "stddev": 0.0010929641104165883,
+                "rounds": 5,
+                "median": 0.009618997573852539,
+                "iqr": 0.0007107257843017578,
+                "q1": 0.009492814540863037,
+                "q3": 0.010203540325164795,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.009320259094238281,
+                "hd15iqr": 0.011955738067626953,
+                "ops": 99.8705634158305,
+                "total": 0.050064802169799805,
+                "data": [
+                    0.009619474411010742,
+                    0.009320259094238281,
+                    0.011955738067626953,
+                    0.009550333023071289,
+                    0.009618997573852539
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_find[make_bst-7000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_find[make_bst-7000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 7000
+            },
+            "param": "make_bst-7000",
+            "extra_info": {
+                "friendly_name": "Finding an element",
+                "function": "make_bst",
+                "num_elements": 7000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.01013803482055664,
+                "max": 0.012534618377685547,
+                "mean": 0.011629724502563476,
+                "stddev": 0.0009174686081618894,
+                "rounds": 5,
+                "median": 0.011658668518066406,
+                "iqr": 0.0010320544242858887,
+                "q1": 0.011249542236328125,
+                "q3": 0.012281596660614014,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.01013803482055664,
+                "hd15iqr": 0.012534618377685547,
+                "ops": 85.98655967985961,
+                "total": 0.05814862251281738,
+                "data": [
+                    0.011658668518066406,
+                    0.012534618377685547,
+                    0.012197256088256836,
+                    0.011620044708251953,
+                    0.01013803482055664
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_find[make_bst-8000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_find[make_bst-8000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 8000
+            },
+            "param": "make_bst-8000",
+            "extra_info": {
+                "friendly_name": "Finding an element",
+                "function": "make_bst",
+                "num_elements": 8000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.011447429656982422,
+                "max": 0.014465570449829102,
+                "mean": 0.013004779815673828,
+                "stddev": 0.0014173747510668854,
+                "rounds": 5,
+                "median": 0.013780355453491211,
+                "iqr": 0.002479374408721924,
+                "q1": 0.01149839162826538,
+                "q3": 0.013977766036987305,
+                "iqr_outliers": 0,
+                "stddev_outliers": 3,
+                "outliers": "3;0",
+                "ld15iqr": 0.011447429656982422,
+                "hd15iqr": 0.014465570449829102,
+                "ops": 76.89480438528948,
+                "total": 0.06502389907836914,
+                "data": [
+                    0.014465570449829102,
+                    0.013815164566040039,
+                    0.013780355453491211,
+                    0.011447429656982422,
+                    0.011515378952026367
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_find[make_bst-9000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_find[make_bst-9000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 9000
+            },
+            "param": "make_bst-9000",
+            "extra_info": {
+                "friendly_name": "Finding an element",
+                "function": "make_bst",
+                "num_elements": 9000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.013595342636108398,
+                "max": 0.017119407653808594,
+                "mean": 0.014937019348144532,
+                "stddev": 0.0013373644345165167,
+                "rounds": 5,
+                "median": 0.014879703521728516,
+                "iqr": 0.0014433860778808594,
+                "q1": 0.014026641845703125,
+                "q3": 0.015470027923583984,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.013595342636108398,
+                "hd15iqr": 0.017119407653808594,
+                "ops": 66.94776090815063,
+                "total": 0.07468509674072266,
+                "data": [
+                    0.014170408248901367,
+                    0.014920234680175781,
+                    0.014879703521728516,
+                    0.017119407653808594,
+                    0.013595342636108398
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_find[make_bst-10000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_find[make_bst-10000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 10000
+            },
+            "param": "make_bst-10000",
+            "extra_info": {
+                "friendly_name": "Finding an element",
+                "function": "make_bst",
+                "num_elements": 10000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.014821767807006836,
+                "max": 0.04019522666931152,
+                "mean": 0.0209348201751709,
+                "stddev": 0.010907696646971027,
+                "rounds": 5,
+                "median": 0.01544809341430664,
+                "iqr": 0.00936800241470337,
+                "q1": 0.01502150297164917,
+                "q3": 0.02438950538635254,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.014821767807006836,
+                "hd15iqr": 0.04019522666931152,
+                "ops": 47.76730784561595,
+                "total": 0.10467410087585449,
+                "data": [
+                    0.04019522666931152,
+                    0.015088081359863281,
+                    0.01912093162536621,
+                    0.014821767807006836,
+                    0.01544809341430664
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_delete[make_avl-1000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_delete[make_avl-1000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 1000
+            },
+            "param": "make_avl-1000",
+            "extra_info": {
+                "friendly_name": "Deleting an element",
+                "function": "make_avl",
+                "num_elements": 1000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.010695695877075195,
+                "max": 0.015292167663574219,
+                "mean": 0.012993907928466797,
+                "stddev": 0.0019293860597426446,
+                "rounds": 5,
+                "median": 0.012749195098876953,
+                "iqr": 0.0033322572708129883,
+                "q1": 0.011419534683227539,
+                "q3": 0.014751791954040527,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.010695695877075195,
+                "hd15iqr": 0.015292167663574219,
+                "ops": 76.95914158428195,
+                "total": 0.06496953964233398,
+                "data": [
+                    0.010695695877075195,
+                    0.01166081428527832,
+                    0.014571666717529297,
+                    0.012749195098876953,
+                    0.015292167663574219
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_delete[make_avl-2000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_delete[make_avl-2000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 2000
+            },
+            "param": "make_avl-2000",
+            "extra_info": {
+                "friendly_name": "Deleting an element",
+                "function": "make_avl",
+                "num_elements": 2000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.019582271575927734,
+                "max": 0.023882150650024414,
+                "mean": 0.022285270690917968,
+                "stddev": 0.001675305708742697,
+                "rounds": 5,
+                "median": 0.02302384376525879,
+                "iqr": 0.001998007297515869,
+                "q1": 0.021285831928253174,
+                "q3": 0.023283839225769043,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.019582271575927734,
+                "hd15iqr": 0.023882150650024414,
+                "ops": 44.87268805792586,
+                "total": 0.11142635345458984,
+                "data": [
+                    0.019582271575927734,
+                    0.023882150650024414,
+                    0.02185368537902832,
+                    0.02302384376525879,
+                    0.023084402084350586
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_delete[make_avl-3000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_delete[make_avl-3000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 3000
+            },
+            "param": "make_avl-3000",
+            "extra_info": {
+                "friendly_name": "Deleting an element",
+                "function": "make_avl",
+                "num_elements": 3000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.033624887466430664,
+                "max": 0.056258201599121094,
+                "mean": 0.043534469604492185,
+                "stddev": 0.010126348941289038,
+                "rounds": 5,
+                "median": 0.038588523864746094,
+                "iqr": 0.017438054084777832,
+                "q1": 0.03596663475036621,
+                "q3": 0.05340468883514404,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.033624887466430664,
+                "hd15iqr": 0.056258201599121094,
+                "ops": 22.970303970277683,
+                "total": 0.21767234802246094,
+                "data": [
+                    0.033624887466430664,
+                    0.03674721717834473,
+                    0.038588523864746094,
+                    0.056258201599121094,
+                    0.05245351791381836
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_delete[make_avl-4000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_delete[make_avl-4000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 4000
+            },
+            "param": "make_avl-4000",
+            "extra_info": {
+                "friendly_name": "Deleting an element",
+                "function": "make_avl",
+                "num_elements": 4000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.05164313316345215,
+                "max": 0.05964207649230957,
+                "mean": 0.05626072883605957,
+                "stddev": 0.0033514917263116725,
+                "rounds": 5,
+                "median": 0.057671546936035156,
+                "iqr": 0.0053820013999938965,
+                "q1": 0.05334973335266113,
+                "q3": 0.05873173475265503,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.05164313316345215,
+                "hd15iqr": 0.05964207649230957,
+                "ops": 17.774387582392343,
+                "total": 0.28130364418029785,
+                "data": [
+                    0.05164313316345215,
+                    0.05391860008239746,
+                    0.05964207649230957,
+                    0.058428287506103516,
+                    0.057671546936035156
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_delete[make_avl-5000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_delete[make_avl-5000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 5000
+            },
+            "param": "make_avl-5000",
+            "extra_info": {
+                "friendly_name": "Deleting an element",
+                "function": "make_avl",
+                "num_elements": 5000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.06665992736816406,
+                "max": 0.0845179557800293,
+                "mean": 0.07201614379882812,
+                "stddev": 0.007125667901360711,
+                "rounds": 5,
+                "median": 0.06941032409667969,
+                "iqr": 0.005536317825317383,
+                "q1": 0.06843876838684082,
+                "q3": 0.0739750862121582,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.06665992736816406,
+                "hd15iqr": 0.0845179557800293,
+                "ops": 13.885775428262688,
+                "total": 0.3600807189941406,
+                "data": [
+                    0.0845179557800293,
+                    0.0690317153930664,
+                    0.06665992736816406,
+                    0.07046079635620117,
+                    0.06941032409667969
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_delete[make_avl-6000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_delete[make_avl-6000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 6000
+            },
+            "param": "make_avl-6000",
+            "extra_info": {
+                "friendly_name": "Deleting an element",
+                "function": "make_avl",
+                "num_elements": 6000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.05682802200317383,
+                "max": 0.09360766410827637,
+                "mean": 0.07284760475158691,
+                "stddev": 0.017979091873711252,
+                "rounds": 5,
+                "median": 0.06271791458129883,
+                "iqr": 0.03263169527053833,
+                "q1": 0.05914527177810669,
+                "q3": 0.09177696704864502,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.05682802200317383,
+                "hd15iqr": 0.09360766410827637,
+                "ops": 13.727287306288762,
+                "total": 0.36423802375793457,
+                "data": [
+                    0.09116673469543457,
+                    0.09360766410827637,
+                    0.06271791458129883,
+                    0.05991768836975098,
+                    0.05682802200317383
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_delete[make_avl-7000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_delete[make_avl-7000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 7000
+            },
+            "param": "make_avl-7000",
+            "extra_info": {
+                "friendly_name": "Deleting an element",
+                "function": "make_avl",
+                "num_elements": 7000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.07044529914855957,
+                "max": 0.1153266429901123,
+                "mean": 0.08517065048217773,
+                "stddev": 0.018048882079814955,
+                "rounds": 5,
+                "median": 0.08296442031860352,
+                "iqr": 0.02097141742706299,
+                "q1": 0.07165461778640747,
+                "q3": 0.09262603521347046,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.07044529914855957,
+                "hd15iqr": 0.1153266429901123,
+                "ops": 11.74113376308255,
+                "total": 0.42585325241088867,
+                "data": [
+                    0.07044529914855957,
+                    0.07205772399902344,
+                    0.08296442031860352,
+                    0.1153266429901123,
+                    0.08505916595458984
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_delete[make_avl-8000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_delete[make_avl-8000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 8000
+            },
+            "param": "make_avl-8000",
+            "extra_info": {
+                "friendly_name": "Deleting an element",
+                "function": "make_avl",
+                "num_elements": 8000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.09433937072753906,
+                "max": 0.1284022331237793,
+                "mean": 0.10550394058227539,
+                "stddev": 0.01362594056945531,
+                "rounds": 5,
+                "median": 0.1021585464477539,
+                "iqr": 0.01581132411956787,
+                "q1": 0.09591937065124512,
+                "q3": 0.11173069477081299,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.09433937072753906,
+                "hd15iqr": 0.1284022331237793,
+                "ops": 9.47831895643905,
+                "total": 0.527519702911377,
+                "data": [
+                    0.10617351531982422,
+                    0.1284022331237793,
+                    0.1021585464477539,
+                    0.09433937072753906,
+                    0.09644603729248047
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_delete[make_avl-9000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_delete[make_avl-9000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 9000
+            },
+            "param": "make_avl-9000",
+            "extra_info": {
+                "friendly_name": "Deleting an element",
+                "function": "make_avl",
+                "num_elements": 9000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.11159610748291016,
+                "max": 0.12240266799926758,
+                "mean": 0.11590456962585449,
+                "stddev": 0.004574363228472154,
+                "rounds": 5,
+                "median": 0.11341190338134766,
+                "iqr": 0.007029831409454346,
+                "q1": 0.1127769947052002,
+                "q3": 0.11980682611465454,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.11159610748291016,
+                "hd15iqr": 0.12240266799926758,
+                "ops": 8.627787525789948,
+                "total": 0.5795228481292725,
+                "data": [
+                    0.1189415454864502,
+                    0.11341190338134766,
+                    0.12240266799926758,
+                    0.11159610748291016,
+                    0.11317062377929688
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_delete[make_avl-10000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_delete[make_avl-10000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_avl at 0x7f34f20d2550>]",
+                "num_elements": 10000
+            },
+            "param": "make_avl-10000",
+            "extra_info": {
+                "friendly_name": "Deleting an element",
+                "function": "make_avl",
+                "num_elements": 10000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.11410880088806152,
+                "max": 0.1419541835784912,
+                "mean": 0.12661194801330566,
+                "stddev": 0.01012707015211597,
+                "rounds": 5,
+                "median": 0.12540411949157715,
+                "iqr": 0.011167764663696289,
+                "q1": 0.12077122926712036,
+                "q3": 0.13193899393081665,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.11410880088806152,
+                "hd15iqr": 0.1419541835784912,
+                "ops": 7.898148758400826,
+                "total": 0.6330597400665283,
+                "data": [
+                    0.11410880088806152,
+                    0.1419541835784912,
+                    0.1286005973815918,
+                    0.12540411949157715,
+                    0.12299203872680664
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_delete[make_bst-1000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_delete[make_bst-1000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 1000
+            },
+            "param": "make_bst-1000",
+            "extra_info": {
+                "friendly_name": "Deleting an element",
+                "function": "make_bst",
+                "num_elements": 1000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.001895904541015625,
+                "max": 0.0024306774139404297,
+                "mean": 0.0021527767181396484,
+                "stddev": 0.00023473611357693294,
+                "rounds": 5,
+                "median": 0.0021257400512695312,
+                "iqr": 0.00042694807052612305,
+                "q1": 0.0019441843032836914,
+                "q3": 0.0023711323738098145,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.001895904541015625,
+                "hd15iqr": 0.0024306774139404297,
+                "ops": 464.5163576760361,
+                "total": 0.010763883590698242,
+                "data": [
+                    0.0021257400512695312,
+                    0.001960277557373047,
+                    0.0023512840270996094,
+                    0.0024306774139404297,
+                    0.001895904541015625
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_delete[make_bst-2000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_delete[make_bst-2000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 2000
+            },
+            "param": "make_bst-2000",
+            "extra_info": {
+                "friendly_name": "Deleting an element",
+                "function": "make_bst",
+                "num_elements": 2000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.0037729740142822266,
+                "max": 0.004901885986328125,
+                "mean": 0.004128456115722656,
+                "stddev": 0.00046779733263792534,
+                "rounds": 5,
+                "median": 0.0038766860961914062,
+                "iqr": 0.0005699396133422852,
+                "q1": 0.0038334131240844727,
+                "q3": 0.004403352737426758,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.0037729740142822266,
+                "hd15iqr": 0.004901885986328125,
+                "ops": 242.2212982212982,
+                "total": 0.02064228057861328,
+                "data": [
+                    0.004237174987792969,
+                    0.004901885986328125,
+                    0.0038535594940185547,
+                    0.0038766860961914062,
+                    0.0037729740142822266
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_delete[make_bst-3000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_delete[make_bst-3000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 3000
+            },
+            "param": "make_bst-3000",
+            "extra_info": {
+                "friendly_name": "Deleting an element",
+                "function": "make_bst",
+                "num_elements": 3000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.006186485290527344,
+                "max": 0.0077419281005859375,
+                "mean": 0.006627988815307617,
+                "stddev": 0.0006381110677067626,
+                "rounds": 5,
+                "median": 0.006403923034667969,
+                "iqr": 0.000606834888458252,
+                "q1": 0.006240487098693848,
+                "q3": 0.0068473219871521,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.006186485290527344,
+                "hd15iqr": 0.0077419281005859375,
+                "ops": 150.8753300383456,
+                "total": 0.033139944076538086,
+                "data": [
+                    0.0077419281005859375,
+                    0.006186485290527344,
+                    0.006403923034667969,
+                    0.006258487701416016,
+                    0.00654911994934082
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_delete[make_bst-4000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_delete[make_bst-4000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 4000
+            },
+            "param": "make_bst-4000",
+            "extra_info": {
+                "friendly_name": "Deleting an element",
+                "function": "make_bst",
+                "num_elements": 4000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.008512020111083984,
+                "max": 0.010031938552856445,
+                "mean": 0.008969974517822266,
+                "stddev": 0.0006235725107012701,
+                "rounds": 5,
+                "median": 0.008816719055175781,
+                "iqr": 0.0007030963897705078,
+                "q1": 0.008524894714355469,
+                "q3": 0.009227991104125977,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.008512020111083984,
+                "hd15iqr": 0.010031938552856445,
+                "ops": 111.48303688189077,
+                "total": 0.04484987258911133,
+                "data": [
+                    0.008816719055175781,
+                    0.00896000862121582,
+                    0.008529186248779297,
+                    0.008512020111083984,
+                    0.010031938552856445
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_delete[make_bst-5000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_delete[make_bst-5000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 5000
+            },
+            "param": "make_bst-5000",
+            "extra_info": {
+                "friendly_name": "Deleting an element",
+                "function": "make_bst",
+                "num_elements": 5000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.009927749633789062,
+                "max": 0.01310110092163086,
+                "mean": 0.011870908737182616,
+                "stddev": 0.0014923088191597068,
+                "rounds": 5,
+                "median": 0.01283121109008789,
+                "iqr": 0.002525150775909424,
+                "q1": 0.010426461696624756,
+                "q3": 0.01295161247253418,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.009927749633789062,
+                "hd15iqr": 0.01310110092163086,
+                "ops": 84.23954914822596,
+                "total": 0.059354543685913086,
+                "data": [
+                    0.012901782989501953,
+                    0.01283121109008789,
+                    0.01059269905090332,
+                    0.009927749633789062,
+                    0.01310110092163086
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_delete[make_bst-6000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_delete[make_bst-6000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 6000
+            },
+            "param": "make_bst-6000",
+            "extra_info": {
+                "friendly_name": "Deleting an element",
+                "function": "make_bst",
+                "num_elements": 6000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.012596368789672852,
+                "max": 0.031155109405517578,
+                "mean": 0.018143367767333985,
+                "stddev": 0.007585528924936812,
+                "rounds": 5,
+                "median": 0.015506744384765625,
+                "iqr": 0.008233308792114258,
+                "q1": 0.013149261474609375,
+                "q3": 0.021382570266723633,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.012596368789672852,
+                "hd15iqr": 0.031155109405517578,
+                "ops": 55.11655899961629,
+                "total": 0.09071683883666992,
+                "data": [
+                    0.018125057220458984,
+                    0.013333559036254883,
+                    0.031155109405517578,
+                    0.012596368789672852,
+                    0.015506744384765625
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_delete[make_bst-7000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_delete[make_bst-7000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 7000
+            },
+            "param": "make_bst-7000",
+            "extra_info": {
+                "friendly_name": "Deleting an element",
+                "function": "make_bst",
+                "num_elements": 7000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.01371145248413086,
+                "max": 0.016141653060913086,
+                "mean": 0.014615774154663086,
+                "stddev": 0.0009499195659968589,
+                "rounds": 5,
+                "median": 0.01446843147277832,
+                "iqr": 0.0012160539627075195,
+                "q1": 0.01390761137008667,
+                "q3": 0.01512366533279419,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.01371145248413086,
+                "hd15iqr": 0.016141653060913086,
+                "ops": 68.41922907524918,
+                "total": 0.07307887077331543,
+                "data": [
+                    0.016141653060913086,
+                    0.013972997665405273,
+                    0.01371145248413086,
+                    0.01478433609008789,
+                    0.01446843147277832
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_delete[make_bst-8000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_delete[make_bst-8000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 8000
+            },
+            "param": "make_bst-8000",
+            "extra_info": {
+                "friendly_name": "Deleting an element",
+                "function": "make_bst",
+                "num_elements": 8000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.017919301986694336,
+                "max": 0.01896524429321289,
+                "mean": 0.01840529441833496,
+                "stddev": 0.00046230489398388716,
+                "rounds": 5,
+                "median": 0.018355846405029297,
+                "iqr": 0.0008447766304016113,
+                "q1": 0.017982959747314453,
+                "q3": 0.018827736377716064,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.017919301986694336,
+                "hd15iqr": 0.01896524429321289,
+                "ops": 54.33219253498175,
+                "total": 0.0920264720916748,
+                "data": [
+                    0.018004179000854492,
+                    0.017919301986694336,
+                    0.01896524429321289,
+                    0.018355846405029297,
+                    0.01878190040588379
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_delete[make_bst-9000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_delete[make_bst-9000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 9000
+            },
+            "param": "make_bst-9000",
+            "extra_info": {
+                "friendly_name": "Deleting an element",
+                "function": "make_bst",
+                "num_elements": 9000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.020609140396118164,
+                "max": 0.042270660400390625,
+                "mean": 0.025639438629150392,
+                "stddev": 0.009337994039308866,
+                "rounds": 5,
+                "median": 0.02224564552307129,
+                "iqr": 0.0067961812019348145,
+                "q1": 0.020613789558410645,
+                "q3": 0.02740997076034546,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.020609140396118164,
+                "hd15iqr": 0.042270660400390625,
+                "ops": 39.00241399447273,
+                "total": 0.12819719314575195,
+                "data": [
+                    0.042270660400390625,
+                    0.02245640754699707,
+                    0.020615339279174805,
+                    0.020609140396118164,
+                    0.02224564552307129
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_delete[make_bst-10000]",
+            "fullname": "test_benchmark_trees.py::test_benchmark_delete[make_bst-10000]",
+            "params": {
+                "make_function": "UNSERIALIZABLE[<function make_bst at 0x7f34f20d24c0>]",
+                "num_elements": 10000
+            },
+            "param": "make_bst-10000",
+            "extra_info": {
+                "friendly_name": "Deleting an element",
+                "function": "make_bst",
+                "num_elements": 10000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.019123554229736328,
+                "max": 0.025387048721313477,
+                "mean": 0.020691299438476564,
+                "stddev": 0.0026433729765007385,
+                "rounds": 5,
+                "median": 0.01963210105895996,
+                "iqr": 0.0020157694816589355,
+                "q1": 0.01929861307144165,
+                "q3": 0.021314382553100586,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.019123554229736328,
+                "hd15iqr": 0.025387048721313477,
+                "ops": 48.329492450360426,
+                "total": 0.10345649719238281,
+                "data": [
+                    0.025387048721313477,
+                    0.01995682716369629,
+                    0.01963210105895996,
+                    0.019123554229736328,
+                    0.019356966018676758
+                ],
+                "iterations": 1
+            }
+        }
+    ],
+    "datetime": "2022-04-11T15:02:25.479034",
+    "version": "3.4.1"
+}
