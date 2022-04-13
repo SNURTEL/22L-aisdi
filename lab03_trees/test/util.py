@@ -14,4 +14,13 @@ def assert_is_tree_valid(root: Node):
     inorder = root.traverse_inorder()
     assert inorder == sorted(inorder, key=(lambda n: n.key))
     if isinstance(root, AVLNode):
-        assert -1 <= root.get_balance_factor() <= 1
+        assert_is_avl_tree_valid(root)
+
+
+def assert_is_avl_tree_valid(node: AVLNode):
+    if node.l_child:
+        assert_is_avl_tree_valid(node.l_child)
+    if node.r_child:
+        assert_is_avl_tree_valid(node.r_child)
+    node.recalculate_height()
+    assert -1 <= node.get_balance_factor() <= 1
