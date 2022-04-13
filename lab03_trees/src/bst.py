@@ -50,6 +50,7 @@ class Node:
             parent.r_child = new_node
 
         parent.recalculate_height()
+        parent.balance()
 
         return self
 
@@ -96,6 +97,7 @@ class Node:
                 to_delete.parent.r_child = None
         if to_delete.parent:
             to_delete.parent.recalculate_height()
+            to_delete.parent.balance()
 
     def traverse_inorder(self) -> List[Node]:
         """
@@ -110,6 +112,10 @@ class Node:
             if self.r_child:
                 result = result + self.r_child.traverse_inorder()
         return result
+
+    @abstractmethod
+    def balance(self):
+        pass
 
     @abstractmethod
     def recalculate_height(self):

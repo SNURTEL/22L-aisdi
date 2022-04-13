@@ -19,7 +19,7 @@ class AVLNode(Node):
 
     def recalculate_height(self):
         parent = self
-        while parent.parent:
+        while parent:
             parent.height = 1 + max(parent.get_l_child_height(),
                                     parent.get_r_child_height())
             parent = parent.parent
@@ -66,23 +66,19 @@ class AVLNode(Node):
         self.l_child.recalculate_height()
 
     def balance(self):
-        balance_factor = self.get_balance_factor()
-        if balance_factor >= 2:
-            if self.r_child.get_balance_factor() <= 0:
-                self.r_child.rotate_right()
-            self.rotate_left()
-        elif balance_factor <= -2:
-            if self.l_child.get_balance_factor() >= 0:
-                self.l_child.rotate_left()
-            self.rotate_right()
-
-    def insert(self, key):
-        super().insert(key)
-        self.balance()
-
-    def delete(self, key):
-        super().delete(key)
-        self.balance()
+        parent = self
+        while parent:
+            if parent.r_child or parent.l_child:
+                balance_factor = parent.get_balance_factor()
+                if balance_factor >= 2:
+                    if parent.r_child.get_balance_factor() <= -1:
+                        parent.r_child.rotate_right()
+                    parent.rotate_left()
+                elif balance_factor <= -2:
+                    if parent.l_child.get_balance_factor() >= 1:
+                        parent.l_child.rotate_left()
+                    parent.rotate_right()
+            parent = parent.parent
 
 
 def make_avl(array) -> AVLNode:
