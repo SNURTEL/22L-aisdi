@@ -4,8 +4,6 @@ import json
 from types import SimpleNamespace
 from operator import attrgetter
 
-from typing import Dict, List
-
 
 class BenchmarkPlotter:
     def __init__(self, results_json_path: str, stat: str):

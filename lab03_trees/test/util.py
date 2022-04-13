@@ -1,6 +1,7 @@
 import random
 from lab03_trees.src import Node, AVLNode
-from .conftest import BST_RANDOM_RANGE_LOWER, BST_RANDOM_RANGE_UPPER, BST_RANDOM_NUM_SAMPLES, BST_RANDOM_NUM_DATASETS, BST_INVALID_FIND_TEST_ITERATIONS
+from .conftest import (BST_RANDOM_RANGE_LOWER, BST_RANDOM_RANGE_UPPER,
+                       BST_RANDOM_NUM_SAMPLES, BST_RANDOM_NUM_DATASETS)
 
 
 def make_random_datasets(make_func, num_samples=BST_RANDOM_NUM_SAMPLES):

@@ -1,16 +1,19 @@
 import time
 import pytest
 import random
-from lab03_trees.src.avl import make_avl
-from lab03_trees.src.bst import make_bst
-from lab03_trees.test.conftest import BENCHMARK_DATASET_RANGE_UPPER, BENCHMARK_DATASET_SAMPLE_SIZE, BENCHMARK_MAKE_FUNCTIONS, BENCHMARK_SAMPLE_SIZES
+from lab03_trees.test.conftest import (BENCHMARK_DATASET_RANGE_UPPER,
+                                       BENCHMARK_DATASET_SAMPLE_SIZE,
+                                       BENCHMARK_MAKE_FUNCTIONS,
+                                       BENCHMARK_SAMPLE_SIZES)
 
 
 def generate_random_dataset():
-    return random.sample(range(1, BENCHMARK_DATASET_RANGE_UPPER), BENCHMARK_DATASET_SAMPLE_SIZE)
+    return random.sample(range(1, BENCHMARK_DATASET_RANGE_UPPER),
+                         BENCHMARK_DATASET_SAMPLE_SIZE)
 
 
 DATASET = generate_random_dataset()
+
 
 @pytest.mark.benchmark(
     timer=time.time,

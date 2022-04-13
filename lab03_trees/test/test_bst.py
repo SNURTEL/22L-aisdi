@@ -2,7 +2,9 @@ import pytest
 import random
 from lab03_trees.src import make_bst
 from lab03_trees.test.util import assert_is_tree_valid, make_random_datasets
-from .conftest import BST_RANDOM_RANGE_LOWER, BST_RANDOM_RANGE_UPPER, BST_INVALID_FIND_TEST_ITERATIONS
+from .conftest import (BST_RANDOM_RANGE_LOWER,
+                       BST_RANDOM_RANGE_UPPER,
+                       BST_INVALID_FIND_TEST_ITERATIONS)
 
 
 def test_make_empty_bst():
@@ -27,7 +29,8 @@ def test_bst_find(bst_and_keys):
 @pytest.mark.parametrize('bst_and_keys', make_random_datasets(make_bst, BST_INVALID_FIND_TEST_ITERATIONS))
 def test_bst_find_non_existent(bst_and_keys):
     bst, keys = bst_and_keys
-    invalid_key = random.choice([x for x in range(BST_RANDOM_RANGE_LOWER, BST_RANDOM_RANGE_UPPER) if x not in keys])
+    invalid_key = random.choice([x for x in range(
+        BST_RANDOM_RANGE_LOWER, BST_RANDOM_RANGE_UPPER) if x not in keys])
     with pytest.raises(AttributeError):  # should this be a KeyError?
         bst.find(invalid_key)
 
