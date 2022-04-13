@@ -2,7 +2,8 @@ import pytest
 import random
 from lab03_trees.src import make_avl, make_avl
 from lab03_trees.test.util import assert_is_tree_valid, make_random_datasets
-from .conftest import BST_RANDOM_RANGE_LOWER, BST_RANDOM_RANGE_UPPER, BST_INVALID_FIND_TEST_ITERATIONS
+from .conftest import (BST_RANDOM_RANGE_LOWER, BST_RANDOM_RANGE_UPPER,
+                       BST_INVALID_FIND_TEST_ITERATIONS)
 
 
 def test_make_empty_avl():
