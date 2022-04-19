@@ -1,6 +1,8 @@
 from lab04_heaps.src.heap import Heap
 
 
+# NOTE: This code has not been tested yet. Use MaxKHeap instead
+
 class Max2Heap(Heap):
     @property
     def array(self):
