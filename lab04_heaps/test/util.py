@@ -9,7 +9,7 @@ class ExtendedMaxKHeap(MaxKHeap):
         if self._is_leaf(root_idx):
             return
 
-        for child_idx in [self._get_k_child_idx(k, root_idx) for k in range(self._children_count)]:
+        for child_idx in [self._get_kth_child_idx(k, root_idx) for k in range(self._children_count)]:
             if self._is_leaf(child_idx):
                 return
 
@@ -23,5 +23,5 @@ class ExtendedMaxKHeap(MaxKHeap):
 
 
 def make_random_arrays(min_length, max_length, min_val, max_val, array_count):
-    return [np.random.choice(range(min_val, max_val), size=random.randint(min_length, max_length), replace=True) for _
+    return [list(np.random.choice(range(min_val, max_val), size=random.randint(min_length, max_length), replace=True)) for _
             in range(array_count)]
