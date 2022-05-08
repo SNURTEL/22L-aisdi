@@ -1,7 +1,7 @@
 import time
 import pytest
 
-from lab04_heaps.test.conftest import (BENCHMARK_DATASET_RANGE_UPPER, BENCHMARK_DATASET_SAMPLE_SIZE, BENCHMARK_ROUNDS)
+from lab04_heaps.test.conftest import (BENCHMARK_DATASET_RANGE_UPPER, BENCHMARK_ROUNDS)
 from lab04_heaps.test.util import make_random_arrays, ExtendedMaxKHeap
 
 DATASET = make_random_arrays(110000, 110000, 1, BENCHMARK_DATASET_RANGE_UPPER, 1)[0]
@@ -42,4 +42,3 @@ def test_benchmark_pop_from_heap(num_children, sample_size, benchmark):
         return (sample_size, test_heap), {}
 
     benchmark.pedantic(pop_n_elements, setup=setup, rounds=BENCHMARK_ROUNDS)
-

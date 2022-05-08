@@ -23,5 +23,5 @@ class ExtendedMaxKHeap(MaxKHeap):
 
 
 def make_random_arrays(min_length, max_length, min_val, max_val, array_count):
-    return [list(np.random.choice(range(min_val, max_val), size=random.randint(min_length, max_length), replace=True)) for _
-            in range(array_count)]
+    return [list(np.random.choice(range(min_val, max_val), size=random.randint(min_length, max_length), replace=True))
+            for _ in range(array_count)]
