@@ -44,3 +44,8 @@ class AbstractHeap(ABC):
     @abstractmethod
     def get_raw_data(self) -> List[C]:
         """Get the underlying data storage."""
+
+    @property
+    @abstractmethod
+    def num_children(self):
+        """asdasda"""

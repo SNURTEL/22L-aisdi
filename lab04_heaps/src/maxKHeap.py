@@ -74,3 +74,7 @@ class MaxKHeap(AbstractHeap):
 
     def peek(self) -> C:
         return self._array[0]
+
+    @property
+    def num_children(self):
+        return self._children_count

@@ -1,0 +1,1688 @@
+{
+    "machine_info": {
+        "node": "tomek-zenbook",
+        "processor": "x86_64",
+        "machine": "x86_64",
+        "python_compiler": "GCC 11.2.0",
+        "python_implementation": "CPython",
+        "python_implementation_version": "3.9.7",
+        "python_version": "3.9.7",
+        "python_build": [
+            "default",
+            "Sep 10 2021 14:59:43"
+        ],
+        "release": "5.14.0-1032-oem",
+        "system": "Linux",
+        "cpu": {
+            "python_version": "3.9.7.final.0 (64 bit)",
+            "cpuinfo_version": [
+                8,
+                0,
+                0
+            ],
+            "cpuinfo_version_string": "8.0.0",
+            "arch": "X86_64",
+            "bits": 64,
+            "count": 8,
+            "arch_string_raw": "x86_64",
+            "vendor_id_raw": "GenuineIntel",
+            "brand_raw": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+            "hz_advertised_friendly": "2.4000 GHz",
+            "hz_actual_friendly": "2.4000 GHz",
+            "hz_advertised": [
+                2400000000,
+                0
+            ],
+            "hz_actual": [
+                2400000000,
+                0
+            ],
+            "stepping": 1,
+            "model": 140,
+            "family": 6,
+            "flags": [
+                "3dnowprefetch",
+                "abm",
+                "acpi",
+                "adx",
+                "aes",
+                "aperfmperf",
+                "apic",
+                "arat",
+                "arch_capabilities",
+                "arch_perfmon",
+                "art",
+                "avx",
+                "avx2",
+                "avx512_bitalg",
+                "avx512_vbmi2",
+                "avx512_vnni",
+                "avx512_vp2intersect",
+                "avx512_vpopcntdq",
+                "avx512bitalg",
+                "avx512bw",
+                "avx512cd",
+                "avx512dq",
+                "avx512f",
+                "avx512ifma",
+                "avx512vbmi",
+                "avx512vbmi2",
+                "avx512vl",
+                "avx512vnni",
+                "avx512vpopcntdq",
+                "bmi1",
+                "bmi2",
+                "bts",
+                "cat_l2",
+                "cdp_l2",
+                "clflush",
+                "clflushopt",
+                "clwb",
+                "cmov",
+                "constant_tsc",
+                "cpuid",
+                "cpuid_fault",
+                "cx16",
+                "cx8",
+                "de",
+                "ds_cpl",
+                "dtes64",
+                "dtherm",
+                "dts",
+                "epb",
+                "ept",
+                "ept_ad",
+                "erms",
+                "est",
+                "f16c",
+                "flexpriority",
+                "flush_l1d",
+                "fma",
+                "fpu",
+                "fsgsbase",
+                "fsrm",
+                "fxsr",
+                "gfni",
+                "ht",
+                "hwp",
+                "hwp_act_window",
+                "hwp_epp",
+                "hwp_notify",
+                "hwp_pkg_req",
+                "ibpb",
+                "ibrs",
+                "ibrs_enhanced",
+                "ida",
+                "intel_pt",
+                "invpcid",
+                "invpcid_single",
+                "lahf_lm",
+                "lm",
+                "mca",
+                "mce",
+                "md_clear",
+                "mmx",
+                "monitor",
+                "movbe",
+                "movdir64b",
+                "movdiri",
+                "msr",
+                "mtrr",
+                "nonstop_tsc",
+                "nopl",
+                "nx",
+                "ospke",
+                "osxsave",
+                "pae",
+                "pat",
+                "pbe",
+                "pcid",
+                "pclmulqdq",
+                "pdcm",
+                "pdpe1gb",
+                "pebs",
+                "pge",
+                "pku",
+                "pln",
+                "pni",
+                "popcnt",
+                "pqe",
+                "pse",
+                "pse36",
+                "pts",
+                "rdpid",
+                "rdrand",
+                "rdrnd",
+                "rdseed",
+                "rdt_a",
+                "rdtscp",
+                "rep_good",
+                "sdbg",
+                "sep",
+                "sha",
+                "sha_ni",
+                "smap",
+                "smep",
+                "split_lock_detect",
+                "ss",
+                "ssbd",
+                "sse",
+                "sse2",
+                "sse4_1",
+                "sse4_2",
+                "ssse3",
+                "stibp",
+                "syscall",
+                "tm",
+                "tm2",
+                "tpr_shadow",
+                "tsc",
+                "tsc_adjust",
+                "tsc_deadline_timer",
+                "tsc_known_freq",
+                "tscdeadline",
+                "umip",
+                "vaes",
+                "vme",
+                "vmx",
+                "vnmi",
+                "vpclmulqdq",
+                "vpid",
+                "x2apic",
+                "xgetbv1",
+                "xsave",
+                "xsavec",
+                "xsaveopt",
+                "xsaves",
+                "xtopology",
+                "xtpr"
+            ],
+            "l3_cache_size": 8388608,
+            "l2_cache_size": 65536,
+            "l2_cache_line_size": 256,
+            "l2_cache_associativity": 7
+        }
+    },
+    "commit_info": {
+        "id": "b7272b404439ee2b4c81d59b7eb9af6079230b4e",
+        "time": "2022-04-25T13:23:57+02:00",
+        "author_time": "2022-04-25T13:23:57+02:00",
+        "dirty": true,
+        "project": "22l-aisdi-kowalczewski-owienko",
+        "branch": "heaps"
+    },
+    "benchmarks": [
+        {
+            "group": null,
+            "name": "test_benchmark_make_heap[2-1000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_make_heap[2-1000]",
+            "params": {
+                "num_children": 2,
+                "sample_size": 1000
+            },
+            "param": "2-1000",
+            "extra_info": {
+                "friendly_name": "Building a heap",
+                "series_name": "2-ary heap",
+                "x_val": 1000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.0010371208190917969,
+                "max": 0.0011186599731445312,
+                "mean": 0.0010669708251953125,
+                "stddev": 3.298432936972051e-05,
+                "rounds": 5,
+                "median": 0.0010516643524169922,
+                "iqr": 4.488229751586914e-05,
+                "q1": 0.0010448098182678223,
+                "q3": 0.0010896921157836914,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.0010371208190917969,
+                "hd15iqr": 0.0011186599731445312,
+                "ops": 937.2327493743296,
+                "total": 0.0053348541259765625,
+                "data": [
+                    0.0011186599731445312,
+                    0.0010800361633300781,
+                    0.0010371208190917969,
+                    0.0010516643524169922,
+                    0.001047372817993164
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_heap[2-3000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_make_heap[2-3000]",
+            "params": {
+                "num_children": 2,
+                "sample_size": 3000
+            },
+            "param": "2-3000",
+            "extra_info": {
+                "friendly_name": "Building a heap",
+                "series_name": "2-ary heap",
+                "x_val": 3000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.0031714439392089844,
+                "max": 0.003862619400024414,
+                "mean": 0.0033896446228027345,
+                "stddev": 0.0002971921490989628,
+                "rounds": 5,
+                "median": 0.003239154815673828,
+                "iqr": 0.0004190206527709961,
+                "q1": 0.0031728744506835938,
+                "q3": 0.00359189510345459,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.0031714439392089844,
+                "hd15iqr": 0.003862619400024414,
+                "ops": 295.0161775877107,
+                "total": 0.016948223114013672,
+                "data": [
+                    0.003173351287841797,
+                    0.0031714439392089844,
+                    0.003239154815673828,
+                    0.003862619400024414,
+                    0.0035016536712646484
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_heap[2-5000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_make_heap[2-5000]",
+            "params": {
+                "num_children": 2,
+                "sample_size": 5000
+            },
+            "param": "2-5000",
+            "extra_info": {
+                "friendly_name": "Building a heap",
+                "series_name": "2-ary heap",
+                "x_val": 5000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.0057108402252197266,
+                "max": 0.006277799606323242,
+                "mean": 0.005910921096801758,
+                "stddev": 0.00022016076878844095,
+                "rounds": 5,
+                "median": 0.005815982818603516,
+                "iqr": 0.0002345442771911621,
+                "q1": 0.005787551403045654,
+                "q3": 0.006022095680236816,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.0057108402252197266,
+                "hd15iqr": 0.006277799606323242,
+                "ops": 169.17837061656488,
+                "total": 0.02955460548400879,
+                "data": [
+                    0.005815982818603516,
+                    0.005936861038208008,
+                    0.006277799606323242,
+                    0.005813121795654297,
+                    0.0057108402252197266
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_heap[2-7000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_make_heap[2-7000]",
+            "params": {
+                "num_children": 2,
+                "sample_size": 7000
+            },
+            "param": "2-7000",
+            "extra_info": {
+                "friendly_name": "Building a heap",
+                "series_name": "2-ary heap",
+                "x_val": 7000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.007398128509521484,
+                "max": 0.008574724197387695,
+                "mean": 0.0077838897705078125,
+                "stddev": 0.00046730199638410537,
+                "rounds": 5,
+                "median": 0.007665872573852539,
+                "iqr": 0.0005169510841369629,
+                "q1": 0.00746840238571167,
+                "q3": 0.007985353469848633,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.007398128509521484,
+                "hd15iqr": 0.008574724197387695,
+                "ops": 128.4704729233031,
+                "total": 0.03891944885253906,
+                "data": [
+                    0.007665872573852539,
+                    0.0074918270111083984,
+                    0.008574724197387695,
+                    0.007398128509521484,
+                    0.007788896560668945
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_heap[2-9000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_make_heap[2-9000]",
+            "params": {
+                "num_children": 2,
+                "sample_size": 9000
+            },
+            "param": "2-9000",
+            "extra_info": {
+                "friendly_name": "Building a heap",
+                "series_name": "2-ary heap",
+                "x_val": 9000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.009561538696289062,
+                "max": 0.010881423950195312,
+                "mean": 0.00988306999206543,
+                "stddev": 0.0005657880502372405,
+                "rounds": 5,
+                "median": 0.00961613655090332,
+                "iqr": 0.0004980564117431641,
+                "q1": 0.00956493616104126,
+                "q3": 0.010062992572784424,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.009561538696289062,
+                "hd15iqr": 0.010881423950195312,
+                "ops": 101.1831344716616,
+                "total": 0.04941534996032715,
+                "data": [
+                    0.009790182113647461,
+                    0.010881423950195312,
+                    0.009561538696289062,
+                    0.00961613655090332,
+                    0.009566068649291992
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_heap[3-1000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_make_heap[3-1000]",
+            "params": {
+                "num_children": 3,
+                "sample_size": 1000
+            },
+            "param": "3-1000",
+            "extra_info": {
+                "friendly_name": "Building a heap",
+                "series_name": "3-ary heap",
+                "x_val": 1000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.000583648681640625,
+                "max": 0.0006077289581298828,
+                "mean": 0.0005918502807617188,
+                "stddev": 9.391997518536825e-06,
+                "rounds": 5,
+                "median": 0.0005905628204345703,
+                "iqr": 9.59634780883789e-06,
+                "q1": 0.0005856156349182129,
+                "q3": 0.0005952119827270508,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.000583648681640625,
+                "hd15iqr": 0.0006077289581298828,
+                "ops": 1689.6165001611344,
+                "total": 0.0029592514038085938,
+                "data": [
+                    0.0006077289581298828,
+                    0.0005910396575927734,
+                    0.000583648681640625,
+                    0.0005862712860107422,
+                    0.0005905628204345703
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_heap[3-3000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_make_heap[3-3000]",
+            "params": {
+                "num_children": 3,
+                "sample_size": 3000
+            },
+            "param": "3-3000",
+            "extra_info": {
+                "friendly_name": "Building a heap",
+                "series_name": "3-ary heap",
+                "x_val": 3000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.001775979995727539,
+                "max": 0.0018458366394042969,
+                "mean": 0.0018102645874023438,
+                "stddev": 3.125712127426181e-05,
+                "rounds": 5,
+                "median": 0.0017955303192138672,
+                "iqr": 5.358457565307617e-05,
+                "q1": 0.0017886757850646973,
+                "q3": 0.0018422603607177734,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.001775979995727539,
+                "hd15iqr": 0.0018458366394042969,
+                "ops": 552.4054367295332,
+                "total": 0.009051322937011719,
+                "data": [
+                    0.00179290771484375,
+                    0.0017955303192138672,
+                    0.0018458366394042969,
+                    0.001775979995727539,
+                    0.0018410682678222656
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_heap[3-5000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_make_heap[3-5000]",
+            "params": {
+                "num_children": 3,
+                "sample_size": 5000
+            },
+            "param": "3-5000",
+            "extra_info": {
+                "friendly_name": "Building a heap",
+                "series_name": "3-ary heap",
+                "x_val": 5000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.002947568893432617,
+                "max": 0.005202531814575195,
+                "mean": 0.003683614730834961,
+                "stddev": 0.0010191404896954198,
+                "rounds": 5,
+                "median": 0.0030405521392822266,
+                "iqr": 0.0015600919723510742,
+                "q1": 0.0029489994049072266,
+                "q3": 0.004509091377258301,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.002947568893432617,
+                "hd15iqr": 0.005202531814575195,
+                "ops": 271.47247284824795,
+                "total": 0.018418073654174805,
+                "data": [
+                    0.004277944564819336,
+                    0.005202531814575195,
+                    0.0030405521392822266,
+                    0.0029494762420654297,
+                    0.002947568893432617
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_heap[3-7000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_make_heap[3-7000]",
+            "params": {
+                "num_children": 3,
+                "sample_size": 7000
+            },
+            "param": "3-7000",
+            "extra_info": {
+                "friendly_name": "Building a heap",
+                "series_name": "3-ary heap",
+                "x_val": 7000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.004144191741943359,
+                "max": 0.005131244659423828,
+                "mean": 0.004509544372558594,
+                "stddev": 0.00037745579036030776,
+                "rounds": 5,
+                "median": 0.0043735504150390625,
+                "iqr": 0.00041162967681884766,
+                "q1": 0.004290640354156494,
+                "q3": 0.004702270030975342,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.004144191741943359,
+                "hd15iqr": 0.005131244659423828,
+                "ops": 221.75189273780822,
+                "total": 0.02254772186279297,
+                "data": [
+                    0.005131244659423828,
+                    0.00455927848815918,
+                    0.004339456558227539,
+                    0.004144191741943359,
+                    0.0043735504150390625
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_heap[3-9000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_make_heap[3-9000]",
+            "params": {
+                "num_children": 3,
+                "sample_size": 9000
+            },
+            "param": "3-9000",
+            "extra_info": {
+                "friendly_name": "Building a heap",
+                "series_name": "3-ary heap",
+                "x_val": 9000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.005420207977294922,
+                "max": 0.006323337554931641,
+                "mean": 0.0058688163757324215,
+                "stddev": 0.00034444387490262414,
+                "rounds": 5,
+                "median": 0.005808353424072266,
+                "iqr": 0.0004889965057373047,
+                "q1": 0.0056455135345458984,
+                "q3": 0.006134510040283203,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.005420207977294922,
+                "hd15iqr": 0.006323337554931641,
+                "ops": 170.39210906904566,
+                "total": 0.02934408187866211,
+                "data": [
+                    0.005808353424072266,
+                    0.005420207977294922,
+                    0.006323337554931641,
+                    0.005720615386962891,
+                    0.006071567535400391
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_heap[4-1000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_make_heap[4-1000]",
+            "params": {
+                "num_children": 4,
+                "sample_size": 1000
+            },
+            "param": "4-1000",
+            "extra_info": {
+                "friendly_name": "Building a heap",
+                "series_name": "4-ary heap",
+                "x_val": 1000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.0004172325134277344,
+                "max": 0.0004458427429199219,
+                "mean": 0.0004276275634765625,
+                "stddev": 1.204261659854616e-05,
+                "rounds": 5,
+                "median": 0.00042128562927246094,
+                "iqr": 1.7702579498291016e-05,
+                "q1": 0.00041919946670532227,
+                "q3": 0.0004369020462036133,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.0004172325134277344,
+                "hd15iqr": 0.0004458427429199219,
+                "ops": 2338.4834968777877,
+                "total": 0.0021381378173828125,
+                "data": [
+                    0.00043392181396484375,
+                    0.00042128562927246094,
+                    0.0004172325134277344,
+                    0.00041985511779785156,
+                    0.0004458427429199219
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_heap[4-3000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_make_heap[4-3000]",
+            "params": {
+                "num_children": 4,
+                "sample_size": 3000
+            },
+            "param": "4-3000",
+            "extra_info": {
+                "friendly_name": "Building a heap",
+                "series_name": "4-ary heap",
+                "x_val": 3000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.0012502670288085938,
+                "max": 0.0013873577117919922,
+                "mean": 0.0012934207916259766,
+                "stddev": 5.611124402089001e-05,
+                "rounds": 5,
+                "median": 0.0012726783752441406,
+                "iqr": 6.824731826782227e-05,
+                "q1": 0.0012543797492980957,
+                "q3": 0.001322627067565918,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.0012502670288085938,
+                "hd15iqr": 0.0013873577117919922,
+                "ops": 773.1435944700461,
+                "total": 0.006467103958129883,
+                "data": [
+                    0.0013010501861572266,
+                    0.0012502670288085938,
+                    0.0013873577117919922,
+                    0.0012726783752441406,
+                    0.0012557506561279297
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_heap[4-5000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_make_heap[4-5000]",
+            "params": {
+                "num_children": 4,
+                "sample_size": 5000
+            },
+            "param": "4-5000",
+            "extra_info": {
+                "friendly_name": "Building a heap",
+                "series_name": "4-ary heap",
+                "x_val": 5000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.0021011829376220703,
+                "max": 0.0027990341186523438,
+                "mean": 0.002353191375732422,
+                "stddev": 0.0002869842267762541,
+                "rounds": 5,
+                "median": 0.0023119449615478516,
+                "iqr": 0.00042051076889038086,
+                "q1": 0.0021099448204040527,
+                "q3": 0.0025304555892944336,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.0021011829376220703,
+                "hd15iqr": 0.0027990341186523438,
+                "ops": 424.9548125633232,
+                "total": 0.01176595687866211,
+                "data": [
+                    0.002440929412841797,
+                    0.0021011829376220703,
+                    0.002112865447998047,
+                    0.0023119449615478516,
+                    0.0027990341186523438
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_heap[4-7000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_make_heap[4-7000]",
+            "params": {
+                "num_children": 4,
+                "sample_size": 7000
+            },
+            "param": "4-7000",
+            "extra_info": {
+                "friendly_name": "Building a heap",
+                "series_name": "4-ary heap",
+                "x_val": 7000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.0030469894409179688,
+                "max": 0.0038824081420898438,
+                "mean": 0.003297758102416992,
+                "stddev": 0.0003368022739073945,
+                "rounds": 5,
+                "median": 0.0031452178955078125,
+                "iqr": 0.00031131505966186523,
+                "q1": 0.003115832805633545,
+                "q3": 0.00342714786529541,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.0030469894409179688,
+                "hd15iqr": 0.0038824081420898438,
+                "ops": 303.23631053080584,
+                "total": 0.01648879051208496,
+                "data": [
+                    0.0032753944396972656,
+                    0.0031452178955078125,
+                    0.0031387805938720703,
+                    0.0030469894409179688,
+                    0.0038824081420898438
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_make_heap[4-9000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_make_heap[4-9000]",
+            "params": {
+                "num_children": 4,
+                "sample_size": 9000
+            },
+            "param": "4-9000",
+            "extra_info": {
+                "friendly_name": "Building a heap",
+                "series_name": "4-ary heap",
+                "x_val": 9000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.003834962844848633,
+                "max": 0.004775047302246094,
+                "mean": 0.004288911819458008,
+                "stddev": 0.00044172010965900236,
+                "rounds": 5,
+                "median": 0.00404667854309082,
+                "iqr": 0.0007730722427368164,
+                "q1": 0.003985166549682617,
+                "q3": 0.004758238792419434,
+                "iqr_outliers": 0,
+                "stddev_outliers": 3,
+                "outliers": "3;0",
+                "ld15iqr": 0.003834962844848633,
+                "hd15iqr": 0.004775047302246094,
+                "ops": 233.15937517371728,
+                "total": 0.02144455909729004,
+                "data": [
+                    0.004035234451293945,
+                    0.00404667854309082,
+                    0.003834962844848633,
+                    0.004752635955810547,
+                    0.004775047302246094
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pop_from_heap[2-1000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_pop_from_heap[2-1000]",
+            "params": {
+                "num_children": 2,
+                "sample_size": 1000
+            },
+            "param": "2-1000",
+            "extra_info": {
+                "friendly_name": "Extracting the top element",
+                "series_name": "2-ary heap",
+                "x_val": 1000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.018707275390625,
+                "max": 0.04492974281311035,
+                "mean": 0.02573075294494629,
+                "stddev": 0.010948919273096162,
+                "rounds": 5,
+                "median": 0.0228574275970459,
+                "iqr": 0.009920358657836914,
+                "q1": 0.018804192543029785,
+                "q3": 0.0287245512008667,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.018707275390625,
+                "hd15iqr": 0.04492974281311035,
+                "ops": 38.864000681970225,
+                "total": 0.12865376472473145,
+                "data": [
+                    0.018707275390625,
+                    0.018836498260498047,
+                    0.04492974281311035,
+                    0.0228574275970459,
+                    0.02332282066345215
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pop_from_heap[2-3000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_pop_from_heap[2-3000]",
+            "params": {
+                "num_children": 2,
+                "sample_size": 3000
+            },
+            "param": "2-3000",
+            "extra_info": {
+                "friendly_name": "Extracting the top element",
+                "series_name": "2-ary heap",
+                "x_val": 3000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.05668044090270996,
+                "max": 0.06488752365112305,
+                "mean": 0.05921030044555664,
+                "stddev": 0.003496131734012491,
+                "rounds": 5,
+                "median": 0.05712008476257324,
+                "iqr": 0.004501163959503174,
+                "q1": 0.056956708431243896,
+                "q3": 0.06145787239074707,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.05668044090270996,
+                "hd15iqr": 0.06488752365112305,
+                "ops": 16.88895331513292,
+                "total": 0.2960515022277832,
+                "data": [
+                    0.06031465530395508,
+                    0.057048797607421875,
+                    0.05712008476257324,
+                    0.05668044090270996,
+                    0.06488752365112305
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pop_from_heap[2-5000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_pop_from_heap[2-5000]",
+            "params": {
+                "num_children": 2,
+                "sample_size": 5000
+            },
+            "param": "2-5000",
+            "extra_info": {
+                "friendly_name": "Extracting the top element",
+                "series_name": "2-ary heap",
+                "x_val": 5000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.09493041038513184,
+                "max": 0.09646105766296387,
+                "mean": 0.09578580856323242,
+                "stddev": 0.0007849133671084727,
+                "rounds": 5,
+                "median": 0.09614896774291992,
+                "iqr": 0.0015091896057128906,
+                "q1": 0.09494006633758545,
+                "q3": 0.09644925594329834,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.09493041038513184,
+                "hd15iqr": 0.09646105766296387,
+                "ops": 10.439959895936527,
+                "total": 0.4789290428161621,
+                "data": [
+                    0.09614896774291992,
+                    0.09646105766296387,
+                    0.09494328498840332,
+                    0.09644532203674316,
+                    0.09493041038513184
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pop_from_heap[2-7000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_pop_from_heap[2-7000]",
+            "params": {
+                "num_children": 2,
+                "sample_size": 7000
+            },
+            "param": "2-7000",
+            "extra_info": {
+                "friendly_name": "Extracting the top element",
+                "series_name": "2-ary heap",
+                "x_val": 7000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.1323390007019043,
+                "max": 0.13350129127502441,
+                "mean": 0.13274741172790527,
+                "stddev": 0.0005192310830359168,
+                "rounds": 5,
+                "median": 0.1324455738067627,
+                "iqr": 0.0008221864700317383,
+                "q1": 0.13236314058303833,
+                "q3": 0.13318532705307007,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.1323390007019043,
+                "hd15iqr": 0.13350129127502441,
+                "ops": 7.533103560992344,
+                "total": 0.6637370586395264,
+                "data": [
+                    0.13350129127502441,
+                    0.13308000564575195,
+                    0.1324455738067627,
+                    0.1323390007019043,
+                    0.132371187210083
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pop_from_heap[2-9000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_pop_from_heap[2-9000]",
+            "params": {
+                "num_children": 2,
+                "sample_size": 9000
+            },
+            "param": "2-9000",
+            "extra_info": {
+                "friendly_name": "Extracting the top element",
+                "series_name": "2-ary heap",
+                "x_val": 9000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.16998982429504395,
+                "max": 0.17251944541931152,
+                "mean": 0.1718623161315918,
+                "stddev": 0.0010572240139241173,
+                "rounds": 5,
+                "median": 0.1723494529724121,
+                "iqr": 0.0008172988891601562,
+                "q1": 0.17157483100891113,
+                "q3": 0.1723921298980713,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.1721031665802002,
+                "hd15iqr": 0.17251944541931152,
+                "ops": 5.818611214539425,
+                "total": 0.859311580657959,
+                "data": [
+                    0.1721031665802002,
+                    0.1723496913909912,
+                    0.16998982429504395,
+                    0.1723494529724121,
+                    0.17251944541931152
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pop_from_heap[3-1000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_pop_from_heap[3-1000]",
+            "params": {
+                "num_children": 3,
+                "sample_size": 1000
+            },
+            "param": "3-1000",
+            "extra_info": {
+                "friendly_name": "Extracting the top element",
+                "series_name": "3-ary heap",
+                "x_val": 1000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.012896537780761719,
+                "max": 0.018614530563354492,
+                "mean": 0.015190935134887696,
+                "stddev": 0.0029990373434138906,
+                "rounds": 5,
+                "median": 0.013064861297607422,
+                "iqr": 0.0053945183753967285,
+                "q1": 0.013008654117584229,
+                "q3": 0.018403172492980957,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.012896537780761719,
+                "hd15iqr": 0.018614530563354492,
+                "ops": 65.82873214324951,
+                "total": 0.07595467567443848,
+                "data": [
+                    0.013046026229858398,
+                    0.018614530563354492,
+                    0.018332719802856445,
+                    0.013064861297607422,
+                    0.012896537780761719
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pop_from_heap[3-3000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_pop_from_heap[3-3000]",
+            "params": {
+                "num_children": 3,
+                "sample_size": 3000
+            },
+            "param": "3-3000",
+            "extra_info": {
+                "friendly_name": "Extracting the top element",
+                "series_name": "3-ary heap",
+                "x_val": 3000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.03905081748962402,
+                "max": 0.0531919002532959,
+                "mean": 0.042460298538208006,
+                "stddev": 0.006054407450176535,
+                "rounds": 5,
+                "median": 0.03986310958862305,
+                "iqr": 0.005006372928619385,
+                "q1": 0.0391005277633667,
+                "q3": 0.044106900691986084,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.03905081748962402,
+                "hd15iqr": 0.0531919002532959,
+                "ops": 23.55141236466219,
+                "total": 0.21230149269104004,
+                "data": [
+                    0.03986310958862305,
+                    0.03905081748962402,
+                    0.03911709785461426,
+                    0.0531919002532959,
+                    0.04107856750488281
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pop_from_heap[3-5000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_pop_from_heap[3-5000]",
+            "params": {
+                "num_children": 3,
+                "sample_size": 5000
+            },
+            "param": "3-5000",
+            "extra_info": {
+                "friendly_name": "Extracting the top element",
+                "series_name": "3-ary heap",
+                "x_val": 5000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.06557846069335938,
+                "max": 0.06861162185668945,
+                "mean": 0.0665517807006836,
+                "stddev": 0.001236823002402309,
+                "rounds": 5,
+                "median": 0.06621217727661133,
+                "iqr": 0.0015336275100708008,
+                "q1": 0.06564068794250488,
+                "q3": 0.06717431545257568,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.06557846069335938,
+                "hd15iqr": 0.06861162185668945,
+                "ops": 15.025893965144173,
+                "total": 0.33275890350341797,
+                "data": [
+                    0.06861162185668945,
+                    0.06621217727661133,
+                    0.06566143035888672,
+                    0.06557846069335938,
+                    0.0666952133178711
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pop_from_heap[3-7000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_pop_from_heap[3-7000]",
+            "params": {
+                "num_children": 3,
+                "sample_size": 7000
+            },
+            "param": "3-7000",
+            "extra_info": {
+                "friendly_name": "Extracting the top element",
+                "series_name": "3-ary heap",
+                "x_val": 7000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.09449577331542969,
+                "max": 0.13095688819885254,
+                "mean": 0.12079830169677734,
+                "stddev": 0.015501986118468538,
+                "rounds": 5,
+                "median": 0.1288595199584961,
+                "iqr": 0.0178987979888916,
+                "q1": 0.11286193132400513,
+                "q3": 0.13076072931289673,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.09449577331542969,
+                "hd15iqr": 0.13095688819885254,
+                "ops": 8.278262077807655,
+                "total": 0.6039915084838867,
+                "data": [
+                    0.13095688819885254,
+                    0.13069534301757812,
+                    0.1288595199584961,
+                    0.11898398399353027,
+                    0.09449577331542969
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pop_from_heap[3-9000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_pop_from_heap[3-9000]",
+            "params": {
+                "num_children": 3,
+                "sample_size": 9000
+            },
+            "param": "3-9000",
+            "extra_info": {
+                "friendly_name": "Extracting the top element",
+                "series_name": "3-ary heap",
+                "x_val": 9000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.11809301376342773,
+                "max": 0.12433624267578125,
+                "mean": 0.11974215507507324,
+                "stddev": 0.0026297113833110655,
+                "rounds": 5,
+                "median": 0.11850690841674805,
+                "iqr": 0.002538025379180908,
+                "q1": 0.11820012331008911,
+                "q3": 0.12073814868927002,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.11809301376342773,
+                "hd15iqr": 0.12433624267578125,
+                "ops": 8.35127778828636,
+                "total": 0.5987107753753662,
+                "data": [
+                    0.11823582649230957,
+                    0.11953878402709961,
+                    0.12433624267578125,
+                    0.11850690841674805,
+                    0.11809301376342773
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pop_from_heap[4-1000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_pop_from_heap[4-1000]",
+            "params": {
+                "num_children": 4,
+                "sample_size": 1000
+            },
+            "param": "4-1000",
+            "extra_info": {
+                "friendly_name": "Extracting the top element",
+                "series_name": "4-ary heap",
+                "x_val": 1000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.010927438735961914,
+                "max": 0.011159420013427734,
+                "mean": 0.011028051376342773,
+                "stddev": 9.018212300723046e-05,
+                "rounds": 5,
+                "median": 0.01100778579711914,
+                "iqr": 0.00013059377670288086,
+                "q1": 0.01096266508102417,
+                "q3": 0.01109325885772705,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.010927438735961914,
+                "hd15iqr": 0.011159420013427734,
+                "ops": 90.67785104313047,
+                "total": 0.05514025688171387,
+                "data": [
+                    0.011071205139160156,
+                    0.010974407196044922,
+                    0.010927438735961914,
+                    0.011159420013427734,
+                    0.01100778579711914
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pop_from_heap[4-3000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_pop_from_heap[4-3000]",
+            "params": {
+                "num_children": 4,
+                "sample_size": 3000
+            },
+            "param": "4-3000",
+            "extra_info": {
+                "friendly_name": "Extracting the top element",
+                "series_name": "4-ary heap",
+                "x_val": 3000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.033109426498413086,
+                "max": 0.04584527015686035,
+                "mean": 0.040964269638061525,
+                "stddev": 0.006561661755218729,
+                "rounds": 5,
+                "median": 0.04563021659851074,
+                "iqr": 0.011635780334472656,
+                "q1": 0.03414011001586914,
+                "q3": 0.0457758903503418,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.033109426498413086,
+                "hd15iqr": 0.04584527015686035,
+                "ops": 24.411517862651223,
+                "total": 0.20482134819030762,
+                "data": [
+                    0.033109426498413086,
+                    0.03448367118835449,
+                    0.04584527015686035,
+                    0.04563021659851074,
+                    0.045752763748168945
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pop_from_heap[4-5000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_pop_from_heap[4-5000]",
+            "params": {
+                "num_children": 4,
+                "sample_size": 5000
+            },
+            "param": "4-5000",
+            "extra_info": {
+                "friendly_name": "Extracting the top element",
+                "series_name": "4-ary heap",
+                "x_val": 5000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.07601189613342285,
+                "max": 0.07729053497314453,
+                "mean": 0.07646803855895996,
+                "stddev": 0.0004983126942841038,
+                "rounds": 5,
+                "median": 0.07625532150268555,
+                "iqr": 0.0005607008934020996,
+                "q1": 0.07617586851119995,
+                "q3": 0.07673656940460205,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.07601189613342285,
+                "hd15iqr": 0.07729053497314453,
+                "ops": 13.077359101200948,
+                "total": 0.3823401927947998,
+                "data": [
+                    0.07729053497314453,
+                    0.07625532150268555,
+                    0.07601189613342285,
+                    0.07623052597045898,
+                    0.07655191421508789
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pop_from_heap[4-7000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_pop_from_heap[4-7000]",
+            "params": {
+                "num_children": 4,
+                "sample_size": 7000
+            },
+            "param": "4-7000",
+            "extra_info": {
+                "friendly_name": "Extracting the top element",
+                "series_name": "4-ary heap",
+                "x_val": 7000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.07679390907287598,
+                "max": 0.07754802703857422,
+                "mean": 0.07706079483032227,
+                "stddev": 0.00030651050245947834,
+                "rounds": 5,
+                "median": 0.07705903053283691,
+                "iqr": 0.00040918588638305664,
+                "q1": 0.07680177688598633,
+                "q3": 0.07721096277236938,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.07679390907287598,
+                "hd15iqr": 0.07754802703857422,
+                "ops": 12.97676726799754,
+                "total": 0.38530397415161133,
+                "data": [
+                    0.07754802703857422,
+                    0.07680439949035645,
+                    0.07679390907287598,
+                    0.07709860801696777,
+                    0.07705903053283691
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pop_from_heap[4-9000]",
+            "fullname": "test_benchmark_heaps.py::test_benchmark_pop_from_heap[4-9000]",
+            "params": {
+                "num_children": 4,
+                "sample_size": 9000
+            },
+            "param": "4-9000",
+            "extra_info": {
+                "friendly_name": "Extracting the top element",
+                "series_name": "4-ary heap",
+                "x_val": 9000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.09867119789123535,
+                "max": 0.13875722885131836,
+                "mean": 0.128098726272583,
+                "stddev": 0.0170197299060836,
+                "rounds": 5,
+                "median": 0.13729047775268555,
+                "iqr": 0.017427265644073486,
+                "q1": 0.12063044309616089,
+                "q3": 0.13805770874023438,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.09867119789123535,
+                "hd15iqr": 0.13875722885131836,
+                "ops": 7.806478870618014,
+                "total": 0.640493631362915,
+                "data": [
+                    0.09867119789123535,
+                    0.12795019149780273,
+                    0.13782453536987305,
+                    0.13875722885131836,
+                    0.13729047775268555
+                ],
+                "iterations": 1
+            }
+        }
+    ],
+    "datetime": "2022-05-08T20:53:24.857958",
+    "version": "3.4.1"
+}
