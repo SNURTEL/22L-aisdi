@@ -1,4 +1,3 @@
-import enum
 from io import StringIO
 import math
 from lab04_heaps.src.maxKHeap import MaxKHeap
@@ -7,7 +6,7 @@ from lab04_heaps.src.maxKHeap import MaxKHeap
 class ConsoleHeapGrapher:
     def __init__(self):
         self._buffer = StringIO()
-        self._total_width = 60  # maybe generate based on contents?
+        self._total_width = 70  # maybe generate based on contents?
         self._fill_char = " "
 
     def graph_tree(self, tree: MaxKHeap):
