@@ -1,0 +1,7 @@
+pytest
+pytest-benchmark
+aspectlib
+matplotlib
+plotly
+numpy
+typing-extensions
