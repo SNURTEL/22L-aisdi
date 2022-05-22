@@ -1,0 +1,493 @@
+{
+    "machine_info": {
+        "node": "DESKTOP-TOMEK",
+        "processor": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel",
+        "machine": "AMD64",
+        "python_compiler": "MSC v.1929 64 bit (AMD64)",
+        "python_implementation": "CPython",
+        "python_implementation_version": "3.10.4",
+        "python_version": "3.10.4",
+        "python_build": [
+            "tags/v3.10.4:9d38120",
+            "Mar 23 2022 23:13:41"
+        ],
+        "release": "10",
+        "system": "Windows",
+        "cpu": {
+            "python_version": "3.10.4.final.0 (64 bit)",
+            "cpuinfo_version": [
+                8,
+                0,
+                0
+            ],
+            "cpuinfo_version_string": "8.0.0",
+            "arch": "X86_64",
+            "bits": 64,
+            "count": 12,
+            "arch_string_raw": "AMD64",
+            "vendor_id_raw": "GenuineIntel",
+            "brand_raw": "Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz",
+            "hz_advertised_friendly": "3.2000 GHz",
+            "hz_actual_friendly": "3.1920 GHz",
+            "hz_advertised": [
+                3200000000,
+                0
+            ],
+            "hz_actual": [
+                3192000000,
+                0
+            ],
+            "l2_cache_size": 1572864,
+            "stepping": 10,
+            "model": 158,
+            "family": 6,
+            "l3_cache_size": 12582912,
+            "flags": [
+                "3dnow",
+                "3dnowprefetch",
+                "abm",
+                "acpi",
+                "adx",
+                "aes",
+                "apic",
+                "avx",
+                "avx2",
+                "bmi1",
+                "bmi2",
+                "clflush",
+                "clflushopt",
+                "cmov",
+                "cx16",
+                "cx8",
+                "de",
+                "dtes64",
+                "dts",
+                "erms",
+                "est",
+                "f16c",
+                "fma",
+                "fpu",
+                "fxsr",
+                "hle",
+                "ht",
+                "hypervisor",
+                "ia64",
+                "invpcid",
+                "lahf_lm",
+                "mca",
+                "mce",
+                "mmx",
+                "movbe",
+                "mpx",
+                "msr",
+                "mtrr",
+                "osxsave",
+                "pae",
+                "pat",
+                "pbe",
+                "pcid",
+                "pclmulqdq",
+                "pdcm",
+                "pge",
+                "pni",
+                "popcnt",
+                "pse",
+                "pse36",
+                "rdrnd",
+                "rdseed",
+                "rtm",
+                "sep",
+                "serial",
+                "smap",
+                "smep",
+                "ss",
+                "sse",
+                "sse2",
+                "sse4_1",
+                "sse4_2",
+                "ssse3",
+                "tm",
+                "tm2",
+                "tsc",
+                "vme",
+                "x2apic",
+                "xsave",
+                "xtpr"
+            ],
+            "l2_cache_line_size": 256,
+            "l2_cache_associativity": 6
+        }
+    },
+    "commit_info": {
+        "id": "065b3aa089005f5d5cac174a51958472b6daf5fc",
+        "time": "2022-05-22T13:06:58+02:00",
+        "author_time": "2022-05-22T13:06:58+02:00",
+        "dirty": true,
+        "project": "22l-aisdi-kowalczewski-owienko",
+        "branch": "main"
+    },
+    "benchmarks": [
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_n-5]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_n-5]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_n at 0x00000203E3A0F490>]",
+                "num_words": 5
+            },
+            "param": "find_n-5",
+            "extra_info": {},
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.520033597946167,
+                "max": 0.6489672660827637,
+                "mean": 0.5949993133544922,
+                "stddev": 0.05351911970458373,
+                "rounds": 5,
+                "median": 0.6219971179962158,
+                "iqr": 0.08173233270645142,
+                "q1": 0.5492584109306335,
+                "q3": 0.630990743637085,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.520033597946167,
+                "hd15iqr": 0.6489672660827637,
+                "ops": 1.680674208449404,
+                "total": 2.974996566772461,
+                "data": [
+                    0.520033597946167,
+                    0.6489672660827637,
+                    0.6249985694885254,
+                    0.5590000152587891,
+                    0.6219971179962158
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_n-10]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_n-10]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_n at 0x00000203E3A0F490>]",
+                "num_words": 10
+            },
+            "param": "find_n-10",
+            "extra_info": {},
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 1.0209717750549316,
+                "max": 1.2000012397766113,
+                "mean": 1.1023986339569092,
+                "stddev": 0.08043413962717785,
+                "rounds": 5,
+                "median": 1.0809998512268066,
+                "iqr": 0.1467708945274353,
+                "q1": 1.0329937934875488,
+                "q3": 1.1797646880149841,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 1.0209717750549316,
+                "hd15iqr": 1.2000012397766113,
+                "ops": 0.9071128802206845,
+                "total": 5.511993169784546,
+                "data": [
+                    1.0809998512268066,
+                    1.2000012397766113,
+                    1.037001132965088,
+                    1.1730191707611084,
+                    1.0209717750549316
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_n-15]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_n-15]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_n at 0x00000203E3A0F490>]",
+                "num_words": 15
+            },
+            "param": "find_n-15",
+            "extra_info": {},
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 1.55299973487854,
+                "max": 1.7959671020507812,
+                "mean": 1.6436036586761475,
+                "stddev": 0.09234543062715683,
+                "rounds": 5,
+                "median": 1.6260087490081787,
+                "iqr": 0.10045909881591797,
+                "q1": 1.5845323204994202,
+                "q3": 1.6849914193153381,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 1.55299973487854,
+                "hd15iqr": 1.7959671020507812,
+                "ops": 0.6084191859279854,
+                "total": 8.218018293380737,
+                "data": [
+                    1.6479995250701904,
+                    1.5950431823730469,
+                    1.7959671020507812,
+                    1.55299973487854,
+                    1.6260087490081787
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_n-20]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_n-20]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_n at 0x00000203E3A0F490>]",
+                "num_words": 20
+            },
+            "param": "find_n-20",
+            "extra_info": {},
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 2.160999059677124,
+                "max": 2.330010414123535,
+                "mean": 2.2580082416534424,
+                "stddev": 0.07250256969235641,
+                "rounds": 5,
+                "median": 2.2959988117218018,
+                "iqr": 0.11652803421020508,
+                "q1": 2.1917495131492615,
+                "q3": 2.3082775473594666,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 2.160999059677124,
+                "hd15iqr": 2.330010414123535,
+                "ops": 0.44286817982016885,
+                "total": 11.290041208267212,
+                "data": [
+                    2.2959988117218018,
+                    2.2019996643066406,
+                    2.160999059677124,
+                    2.330010414123535,
+                    2.3010332584381104
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_kr-5]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_kr-5]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_kr at 0x00000203E3A0EE60>]",
+                "num_words": 5
+            },
+            "param": "find_kr-5",
+            "extra_info": {},
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 0.7640061378479004,
+                "max": 0.9539978504180908,
+                "mean": 0.8476085186004638,
+                "stddev": 0.06867899005523109,
+                "rounds": 5,
+                "median": 0.8470258712768555,
+                "iqr": 0.0662422776222229,
+                "q1": 0.8090091347694397,
+                "q3": 0.8752514123916626,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 0.7640061378479004,
+                "hd15iqr": 0.9539978504180908,
+                "ops": 1.1797899361030002,
+                "total": 4.238042593002319,
+                "data": [
+                    0.8490025997161865,
+                    0.9539978504180908,
+                    0.8240101337432861,
+                    0.8470258712768555,
+                    0.7640061378479004
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_kr-10]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_kr-10]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_kr at 0x00000203E3A0EE60>]",
+                "num_words": 10
+            },
+            "param": "find_kr-10",
+            "extra_info": {},
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 1.5500025749206543,
+                "max": 1.7549967765808105,
+                "mean": 1.612606143951416,
+                "stddev": 0.0834687081311134,
+                "rounds": 5,
+                "median": 1.5989990234375,
+                "iqr": 0.08947288990020752,
+                "q1": 1.5530256032943726,
+                "q3": 1.64249849319458,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 1.5500025749206543,
+                "hd15iqr": 1.7549967765808105,
+                "ops": 0.6201142193032149,
+                "total": 8.06303071975708,
+                "data": [
+                    1.5989990234375,
+                    1.5500025749206543,
+                    1.7549967765808105,
+                    1.60499906539917,
+                    1.5540332794189453
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_kr-15]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_kr-15]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_kr at 0x00000203E3A0EE60>]",
+                "num_words": 15
+            },
+            "param": "find_kr-15",
+            "extra_info": {},
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 2.309032678604126,
+                "max": 2.4560019969940186,
+                "mean": 2.3785415649414063,
+                "stddev": 0.053457588372567026,
+                "rounds": 5,
+                "median": 2.3756706714630127,
+                "iqr": 0.06224459409713745,
+                "q1": 2.346507966518402,
+                "q3": 2.4087525606155396,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 2.309032678604126,
+                "hd15iqr": 2.4560019969940186,
+                "ops": 0.4204256989827438,
+                "total": 11.892707824707031,
+                "data": [
+                    2.358999729156494,
+                    2.4560019969940186,
+                    2.3756706714630127,
+                    2.39300274848938,
+                    2.309032678604126
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_kr-20]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_kr-20]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_kr at 0x00000203E3A0EE60>]",
+                "num_words": 20
+            },
+            "param": "find_kr-20",
+            "extra_info": {},
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 3.236996650695801,
+                "max": 3.5159993171691895,
+                "mean": 3.355198621749878,
+                "stddev": 0.10437801440408301,
+                "rounds": 5,
+                "median": 3.3260324001312256,
+                "iqr": 0.12597191333770752,
+                "q1": 3.29250031709671,
+                "q3": 3.4184722304344177,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 3.236996650695801,
+                "hd15iqr": 3.5159993171691895,
+                "ops": 0.29804494837282025,
+                "total": 16.77599310874939,
+                "data": [
+                    3.3260324001312256,
+                    3.3110015392303467,
+                    3.385963201522827,
+                    3.236996650695801,
+                    3.5159993171691895
+                ],
+                "iterations": 1
+            }
+        }
+    ],
+    "datetime": "2022-05-22T13:48:58.565181",
+    "version": "3.4.1"
+}
