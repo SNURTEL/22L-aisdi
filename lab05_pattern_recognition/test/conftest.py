@@ -12,6 +12,12 @@ BENCHMARK_SAMPLE_SIZES = list(range(5, 25, 5))
 RESULTS_JSON_PATH = './.benchmarks/report.json'  # must match pytest.ini
 STAT = 'mean'
 
+# comparison tests
+COMPARISON_DATASET_ALPHABET = "ab"
+COMPARISON_TEXT_SIZES = list(range(0, 100, 2))
+COMPARISON_PATTERN_SIZES = list(range(0, 100, 2))
+DATASETS_PER_SIZE = 5
+
 
 def pytest_unconfigure(config):
     """Runs after executing all tests, plot benchmark results from a specified file"""
