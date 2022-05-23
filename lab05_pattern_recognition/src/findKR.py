@@ -19,12 +19,13 @@ def find_kr(pattern: str, text: str) -> List[int]:
     search_window_hash = h(int_repr(text[:len(pattern)]))
 
     found = []
+    first_digit_weight_multiplier = (base ** (len(pattern) - 1))
     for i in range(len(pattern), len(text)):
         if pattern_hash == search_window_hash and text[i - len(pattern): i] == pattern:
             found.append(i - len(pattern))
 
         # shift the window one digit right
-        first_digit_only = ord(text[i - len(pattern)]) * (base ** (len(pattern) - 1))
+        first_digit_only = ord(text[i - len(pattern)]) * first_digit_weight_multiplier
         new_last_digit = ord(text[i])
         search_window_hash = h((search_window_hash - first_digit_only) * base + new_last_digit)
 
