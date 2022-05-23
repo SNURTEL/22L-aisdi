@@ -30,7 +30,7 @@ class BenchmarkPlotter:
         plt.legend()
         plt.title(label=f"{function_name}: {self.stat} stat")
         plt.xlabel("Number of words")
-        plt.ylabel("Time [ms]")
+        plt.ylabel("Time [s]")
 
     def _save_results_to_file(self, filename: str) -> None:
         """Saves the plot to a .png file"""

@@ -1,0 +1,1621 @@
+{
+    "machine_info": {
+        "node": "Jani-Komp",
+        "processor": "x86_64",
+        "machine": "x86_64",
+        "python_compiler": "GCC 11.2.0",
+        "python_implementation": "CPython",
+        "python_implementation_version": "3.10.4",
+        "python_version": "3.10.4",
+        "python_build": [
+            "main",
+            "Apr  2 2022 09:04:19"
+        ],
+        "release": "5.10.16.3-microsoft-standard-WSL2",
+        "system": "Linux",
+        "cpu": {
+            "python_version": "3.10.4.final.0 (64 bit)",
+            "cpuinfo_version": [
+                8,
+                0,
+                0
+            ],
+            "cpuinfo_version_string": "8.0.0",
+            "arch": "X86_64",
+            "bits": 64,
+            "count": 12,
+            "arch_string_raw": "x86_64",
+            "vendor_id_raw": "GenuineIntel",
+            "brand_raw": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+            "hz_advertised_friendly": "3.7000 GHz",
+            "hz_actual_friendly": "3.6960 GHz",
+            "hz_advertised": [
+                3700000000,
+                0
+            ],
+            "hz_actual": [
+                3695997000,
+                0
+            ],
+            "stepping": 10,
+            "model": 158,
+            "family": 6,
+            "flags": [
+                "3dnowprefetch",
+                "abm",
+                "adx",
+                "aes",
+                "apic",
+                "arch_capabilities",
+                "avx",
+                "avx2",
+                "bmi1",
+                "bmi2",
+                "clflush",
+                "clflushopt",
+                "cmov",
+                "constant_tsc",
+                "cpuid",
+                "cx16",
+                "cx8",
+                "de",
+                "ept",
+                "ept_ad",
+                "erms",
+                "f16c",
+                "flush_l1d",
+                "fma",
+                "fpu",
+                "fsgsbase",
+                "fxsr",
+                "hle",
+                "ht",
+                "hypervisor",
+                "ibpb",
+                "ibrs",
+                "invpcid",
+                "invpcid_single",
+                "lahf_lm",
+                "lm",
+                "mca",
+                "mce",
+                "mmx",
+                "movbe",
+                "msr",
+                "mtrr",
+                "nopl",
+                "nx",
+                "osxsave",
+                "pae",
+                "pat",
+                "pcid",
+                "pclmulqdq",
+                "pdpe1gb",
+                "pge",
+                "pni",
+                "popcnt",
+                "pse",
+                "pse36",
+                "pti",
+                "rdrand",
+                "rdrnd",
+                "rdseed",
+                "rdtscp",
+                "rep_good",
+                "rtm",
+                "sep",
+                "smap",
+                "smep",
+                "ss",
+                "ssbd",
+                "sse",
+                "sse2",
+                "sse4_1",
+                "sse4_2",
+                "ssse3",
+                "stibp",
+                "syscall",
+                "tpr_shadow",
+                "tsc",
+                "vme",
+                "vmx",
+                "vnmi",
+                "vpid",
+                "xgetbv1",
+                "xsave",
+                "xsavec",
+                "xsaveopt",
+                "xsaves",
+                "xtopology"
+            ],
+            "l3_cache_size": 12582912,
+            "l2_cache_size": "1.5 MiB (6 instances)",
+            "l1_data_cache_size": "192 KiB (6 instances)",
+            "l1_instruction_cache_size": "192 KiB (6 instances)",
+            "l2_cache_line_size": 256,
+            "l2_cache_associativity": 6
+        }
+    },
+    "commit_info": {
+        "id": "f5b9b5f0f4d546911dc4d86d7c0402609b16b2d2",
+        "time": "2022-05-23T01:54:38+02:00",
+        "author_time": "2022-05-23T01:54:38+02:00",
+        "dirty": true,
+        "project": "22l-aisdi-kowalczewski-owienko",
+        "branch": "pattern-recognition"
+    },
+    "benchmarks": [
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_n-100]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_n-100]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_n at 0x7f9d4310e200>]",
+                "num_words": 100
+            },
+            "param": "find_n-100",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_n",
+                "x_val": 100
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 8.203466176986694,
+                "max": 8.234826803207397,
+                "mean": 8.22158317565918,
+                "stddev": 0.012911784371095492,
+                "rounds": 5,
+                "median": 8.2249276638031,
+                "iqr": 0.02086871862411499,
+                "q1": 8.211112976074219,
+                "q3": 8.231981694698334,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 8.203466176986694,
+                "hd15iqr": 8.234826803207397,
+                "ops": 0.1216310750173519,
+                "total": 41.1079158782959,
+                "data": [
+                    8.231033325195312,
+                    8.234826803207397,
+                    8.213661909103394,
+                    8.203466176986694,
+                    8.2249276638031
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_n-200]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_n-200]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_n at 0x7f9d4310e200>]",
+                "num_words": 200
+            },
+            "param": "find_n-200",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_n",
+                "x_val": 200
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 14.376013278961182,
+                "max": 16.452266454696655,
+                "mean": 15.481288480758668,
+                "stddev": 1.010023004480821,
+                "rounds": 5,
+                "median": 15.715534448623657,
+                "iqr": 1.9641668796539307,
+                "q1": 14.444937109947205,
+                "q3": 16.409103989601135,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 14.376013278961182,
+                "hd15iqr": 16.452266454696655,
+                "ops": 0.06459410670131732,
+                "total": 77.40644240379333,
+                "data": [
+                    16.452266454696655,
+                    16.394716501235962,
+                    15.715534448623657,
+                    14.376013278961182,
+                    14.467911720275879
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_n-300]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_n-300]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_n at 0x7f9d4310e200>]",
+                "num_words": 300
+            },
+            "param": "find_n-300",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_n",
+                "x_val": 300
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 21.578758478164673,
+                "max": 21.6645610332489,
+                "mean": 21.61842546463013,
+                "stddev": 0.03403670890078371,
+                "rounds": 5,
+                "median": 21.60531234741211,
+                "iqr": 0.050264716148376465,
+                "q1": 21.596593379974365,
+                "q3": 21.64685809612274,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 21.578758478164673,
+                "hd15iqr": 21.6645610332489,
+                "ops": 0.046256837790342245,
+                "total": 108.09212732315063,
+                "data": [
+                    21.64095711708069,
+                    21.602538347244263,
+                    21.6645610332489,
+                    21.578758478164673,
+                    21.60531234741211
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_n-400]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_n-400]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_n at 0x7f9d4310e200>]",
+                "num_words": 400
+            },
+            "param": "find_n-400",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_n",
+                "x_val": 400
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 28.76236891746521,
+                "max": 28.937191247940063,
+                "mean": 28.823017597198486,
+                "stddev": 0.06742163699109097,
+                "rounds": 5,
+                "median": 28.803387880325317,
+                "iqr": 0.06763643026351929,
+                "q1": 28.78317928314209,
+                "q3": 28.85081571340561,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 28.76236891746521,
+                "hd15iqr": 28.937191247940063,
+                "ops": 0.03469449361531102,
+                "total": 144.11508798599243,
+                "data": [
+                    28.79011607170105,
+                    28.937191247940063,
+                    28.82202386856079,
+                    28.803387880325317,
+                    28.76236891746521
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_n-500]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_n-500]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_n at 0x7f9d4310e200>]",
+                "num_words": 500
+            },
+            "param": "find_n-500",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_n",
+                "x_val": 500
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 35.88710141181946,
+                "max": 35.9701623916626,
+                "mean": 35.938156604766846,
+                "stddev": 0.03138312999880469,
+                "rounds": 5,
+                "median": 35.946733236312866,
+                "iqr": 0.035003483295440674,
+                "q1": 35.92220097780228,
+                "q3": 35.95720446109772,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 35.88710141181946,
+                "hd15iqr": 35.9701623916626,
+                "ops": 0.027825578562573235,
+                "total": 179.69078302383423,
+                "data": [
+                    35.88710141181946,
+                    35.93390083312988,
+                    35.9701623916626,
+                    35.952885150909424,
+                    35.946733236312866
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_n-600]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_n-600]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_n at 0x7f9d4310e200>]",
+                "num_words": 600
+            },
+            "param": "find_n-600",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_n",
+                "x_val": 600
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 43.03378391265869,
+                "max": 43.178083419799805,
+                "mean": 43.09886531829834,
+                "stddev": 0.059579713613534466,
+                "rounds": 5,
+                "median": 43.09093236923218,
+                "iqr": 0.09976482391357422,
+                "q1": 43.04842358827591,
+                "q3": 43.148188412189484,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 43.03378391265869,
+                "hd15iqr": 43.178083419799805,
+                "ops": 0.023202466993381222,
+                "total": 215.4943265914917,
+                "data": [
+                    43.09093236923218,
+                    43.178083419799805,
+                    43.13822340965271,
+                    43.03378391265869,
+                    43.053303480148315
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_n-700]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_n-700]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_n at 0x7f9d4310e200>]",
+                "num_words": 700
+            },
+            "param": "find_n-700",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_n",
+                "x_val": 700
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 50.24703621864319,
+                "max": 50.30894589424133,
+                "mean": 50.28119874000549,
+                "stddev": 0.02690380728650102,
+                "rounds": 5,
+                "median": 50.2864146232605,
+                "iqr": 0.04782932996749878,
+                "q1": 50.25693196058273,
+                "q3": 50.30476129055023,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 50.24703621864319,
+                "hd15iqr": 50.30894589424133,
+                "ops": 0.019888149548120553,
+                "total": 251.40599370002747,
+                "data": [
+                    50.3033664226532,
+                    50.26023054122925,
+                    50.30894589424133,
+                    50.2864146232605,
+                    50.24703621864319
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_n-800]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_n-800]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_n at 0x7f9d4310e200>]",
+                "num_words": 800
+            },
+            "param": "find_n-800",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_n",
+                "x_val": 800
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 57.36560916900635,
+                "max": 57.48526120185852,
+                "mean": 57.43101239204407,
+                "stddev": 0.05211255044026752,
+                "rounds": 5,
+                "median": 57.42621970176697,
+                "iqr": 0.09259283542633057,
+                "q1": 57.38930183649063,
+                "q3": 57.48189467191696,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 57.36560916900635,
+                "hd15iqr": 57.48526120185852,
+                "ops": 0.017412195229532995,
+                "total": 287.15506196022034,
+                "data": [
+                    57.397199392318726,
+                    57.480772495269775,
+                    57.48526120185852,
+                    57.42621970176697,
+                    57.36560916900635
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_n-900]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_n-900]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_n at 0x7f9d4310e200>]",
+                "num_words": 900
+            },
+            "param": "find_n-900",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_n",
+                "x_val": 900
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 64.58769822120667,
+                "max": 65.2680184841156,
+                "mean": 64.75743417739868,
+                "stddev": 0.28681815851910947,
+                "rounds": 5,
+                "median": 64.64471650123596,
+                "iqr": 0.20054370164871216,
+                "q1": 64.61421936750412,
+                "q3": 64.81476306915283,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 64.58769822120667,
+                "hd15iqr": 65.2680184841156,
+                "ops": 0.01544224246532941,
+                "total": 323.7871708869934,
+                "data": [
+                    64.66367793083191,
+                    64.58769822120667,
+                    64.64471650123596,
+                    65.2680184841156,
+                    64.62305974960327
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_n-1000]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_n-1000]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_n at 0x7f9d4310e200>]",
+                "num_words": 1000
+            },
+            "param": "find_n-1000",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_n",
+                "x_val": 1000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 71.83128118515015,
+                "max": 71.93227124214172,
+                "mean": 71.90507659912109,
+                "stddev": 0.04250731606663469,
+                "rounds": 5,
+                "median": 71.92391180992126,
+                "iqr": 0.043678224086761475,
+                "q1": 71.88782447576523,
+                "q3": 71.93150269985199,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 71.83128118515015,
+                "hd15iqr": 71.93227124214172,
+                "ops": 0.013907223902633645,
+                "total": 359.52538299560547,
+                "data": [
+                    71.93124651908875,
+                    71.92391180992126,
+                    71.90667223930359,
+                    71.83128118515015,
+                    71.93227124214172
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_kr-100]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_kr-100]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_kr at 0x7f9d4310e3b0>]",
+                "num_words": 100
+            },
+            "param": "find_kr-100",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_kr",
+                "x_val": 100
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 24.194875478744507,
+                "max": 24.34451174736023,
+                "mean": 24.26058187484741,
+                "stddev": 0.06419255422948578,
+                "rounds": 5,
+                "median": 24.282010316848755,
+                "iqr": 0.10344201326370239,
+                "q1": 24.19626933336258,
+                "q3": 24.29971134662628,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 24.194875478744507,
+                "hd15iqr": 24.34451174736023,
+                "ops": 0.04121912677769562,
+                "total": 121.30290937423706,
+                "data": [
+                    24.282010316848755,
+                    24.196733951568604,
+                    24.34451174736023,
+                    24.284777879714966,
+                    24.194875478744507
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_kr-200]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_kr-200]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_kr at 0x7f9d4310e3b0>]",
+                "num_words": 200
+            },
+            "param": "find_kr-200",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_kr",
+                "x_val": 200
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 44.532448291778564,
+                "max": 49.89933180809021,
+                "mean": 47.318932676315306,
+                "stddev": 2.6773478026030673,
+                "rounds": 5,
+                "median": 47.7258563041687,
+                "iqr": 5.3194164633750916,
+                "q1": 44.5581493973732,
+                "q3": 49.87756586074829,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 44.532448291778564,
+                "hd15iqr": 49.89933180809021,
+                "ops": 0.02113319010892511,
+                "total": 236.59466338157654,
+                "data": [
+                    49.87031054496765,
+                    49.89933180809021,
+                    47.7258563041687,
+                    44.56671643257141,
+                    44.532448291778564
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_kr-300]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_kr-300]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_kr at 0x7f9d4310e3b0>]",
+                "num_words": 300
+            },
+            "param": "find_kr-300",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_kr",
+                "x_val": 300
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 66.63196921348572,
+                "max": 66.83337020874023,
+                "mean": 66.73732929229736,
+                "stddev": 0.07928624922532718,
+                "rounds": 5,
+                "median": 66.76034688949585,
+                "iqr": 0.1190643310546875,
+                "q1": 66.67149531841278,
+                "q3": 66.79055964946747,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 66.63196921348572,
+                "hd15iqr": 66.83337020874023,
+                "ops": 0.014984117743462312,
+                "total": 333.6866464614868,
+                "data": [
+                    66.76034688949585,
+                    66.77628946304321,
+                    66.6846706867218,
+                    66.63196921348572,
+                    66.83337020874023
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_kr-400]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_kr-400]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_kr at 0x7f9d4310e3b0>]",
+                "num_words": 400
+            },
+            "param": "find_kr-400",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_kr",
+                "x_val": 400
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 89.05312252044678,
+                "max": 89.33157134056091,
+                "mean": 89.14920125007629,
+                "stddev": 0.11041993597590961,
+                "rounds": 5,
+                "median": 89.11213850975037,
+                "iqr": 0.13408517837524414,
+                "q1": 89.07448434829712,
+                "q3": 89.20856952667236,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 89.05312252044678,
+                "hd15iqr": 89.33157134056091,
+                "ops": 0.011217150417252271,
+                "total": 445.74600625038147,
+                "data": [
+                    89.08160495758057,
+                    89.33157134056091,
+                    89.05312252044678,
+                    89.11213850975037,
+                    89.16756892204285
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_kr-500]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_kr-500]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_kr at 0x7f9d4310e3b0>]",
+                "num_words": 500
+            },
+            "param": "find_kr-500",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_kr",
+                "x_val": 500
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 111.05719208717346,
+                "max": 111.2479817867279,
+                "mean": 111.11783452033997,
+                "stddev": 0.07721022666262572,
+                "rounds": 5,
+                "median": 111.08320569992065,
+                "iqr": 0.08770185708999634,
+                "q1": 111.06959319114685,
+                "q3": 111.15729504823685,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 111.05719208717346,
+                "hd15iqr": 111.2479817867279,
+                "ops": 0.008999455436804353,
+                "total": 555.5891726016998,
+                "data": [
+                    111.07372689247131,
+                    111.2479817867279,
+                    111.05719208717346,
+                    111.08320569992065,
+                    111.1270661354065
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_kr-600]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_kr-600]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_kr at 0x7f9d4310e3b0>]",
+                "num_words": 600
+            },
+            "param": "find_kr-600",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_kr",
+                "x_val": 600
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 133.0344033241272,
+                "max": 133.18838357925415,
+                "mean": 133.1222969532013,
+                "stddev": 0.06938270604606261,
+                "rounds": 5,
+                "median": 133.15664267539978,
+                "iqr": 0.11999952793121338,
+                "q1": 133.05486929416656,
+                "q3": 133.17486882209778,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 133.0344033241272,
+                "hd15iqr": 133.18838357925415,
+                "ops": 0.0075118896149421665,
+                "total": 665.6114847660065,
+                "data": [
+                    133.0344033241272,
+                    133.15664267539978,
+                    133.18838357925415,
+                    133.0616912841797,
+                    133.17036390304565
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_kr-700]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_kr-700]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_kr at 0x7f9d4310e3b0>]",
+                "num_words": 700
+            },
+            "param": "find_kr-700",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_kr",
+                "x_val": 700
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 155.26804423332214,
+                "max": 156.9064657688141,
+                "mean": 155.60935649871826,
+                "stddev": 0.7255395408284773,
+                "rounds": 5,
+                "median": 155.27321529388428,
+                "iqr": 0.4529033899307251,
+                "q1": 155.27000850439072,
+                "q3": 155.72291189432144,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 155.26804423332214,
+                "hd15iqr": 156.9064657688141,
+                "ops": 0.006426348790975412,
+                "total": 778.0467824935913,
+                "data": [
+                    155.26804423332214,
+                    155.27066326141357,
+                    155.32839393615723,
+                    156.9064657688141,
+                    155.27321529388428
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_kr-800]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_kr-800]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_kr at 0x7f9d4310e3b0>]",
+                "num_words": 800
+            },
+            "param": "find_kr-800",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_kr",
+                "x_val": 800
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 177.64895725250244,
+                "max": 181.1368911266327,
+                "mean": 178.43650817871094,
+                "stddev": 1.5124070323608072,
+                "rounds": 5,
+                "median": 177.80921363830566,
+                "iqr": 1.0118694305419922,
+                "q1": 177.6876009106636,
+                "q3": 178.6994703412056,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 177.64895725250244,
+                "hd15iqr": 181.1368911266327,
+                "ops": 0.005604234302760857,
+                "total": 892.1825408935547,
+                "data": [
+                    177.88699674606323,
+                    177.64895725250244,
+                    177.80921363830566,
+                    177.70048213005066,
+                    181.1368911266327
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_kr-900]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_kr-900]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_kr at 0x7f9d4310e3b0>]",
+                "num_words": 900
+            },
+            "param": "find_kr-900",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_kr",
+                "x_val": 900
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 199.51920676231384,
+                "max": 200.4453318119049,
+                "mean": 199.76177496910094,
+                "stddev": 0.38900396041379925,
+                "rounds": 5,
+                "median": 199.6123549938202,
+                "iqr": 0.3586980104446411,
+                "q1": 199.5282112956047,
+                "q3": 199.88690930604935,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 199.51920676231384,
+                "hd15iqr": 200.4453318119049,
+                "ops": 0.005005962728127939,
+                "total": 998.8088748455048,
+                "data": [
+                    199.53121280670166,
+                    200.4453318119049,
+                    199.51920676231384,
+                    199.70076847076416,
+                    199.6123549938202
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_kr-1000]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_kr-1000]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_kr at 0x7f9d4310e3b0>]",
+                "num_words": 1000
+            },
+            "param": "find_kr-1000",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_kr",
+                "x_val": 1000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 221.55722522735596,
+                "max": 221.71397924423218,
+                "mean": 221.62552766799928,
+                "stddev": 0.064778745457243,
+                "rounds": 5,
+                "median": 221.63014698028564,
+                "iqr": 0.1060030460357666,
+                "q1": 221.5657566189766,
+                "q3": 221.67175966501236,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 221.55722522735596,
+                "hd15iqr": 221.71397924423218,
+                "ops": 0.004512115596620375,
+                "total": 1108.1276383399963,
+                "data": [
+                    221.63014698028564,
+                    221.56860041618347,
+                    221.71397924423218,
+                    221.55722522735596,
+                    221.6576864719391
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_kmp-100]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_kmp-100]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_kmp at 0x7f9d4310e5f0>]",
+                "num_words": 100
+            },
+            "param": "find_kmp-100",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_kmp",
+                "x_val": 100
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 3.6404902935028076,
+                "max": 3.6704063415527344,
+                "mean": 3.656460666656494,
+                "stddev": 0.013173975519000352,
+                "rounds": 5,
+                "median": 3.65718674659729,
+                "iqr": 0.024023592472076416,
+                "q1": 3.644682765007019,
+                "q3": 3.6687063574790955,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 3.6404902935028076,
+                "hd15iqr": 3.6704063415527344,
+                "ops": 0.2734885155798518,
+                "total": 18.28230333328247,
+                "data": [
+                    3.6704063415527344,
+                    3.65718674659729,
+                    3.6404902935028076,
+                    3.668139696121216,
+                    3.646080255508423
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_kmp-200]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_kmp-200]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_kmp at 0x7f9d4310e5f0>]",
+                "num_words": 200
+            },
+            "param": "find_kmp-200",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_kmp",
+                "x_val": 200
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 7.297508001327515,
+                "max": 7.317836761474609,
+                "mean": 7.307082414627075,
+                "stddev": 0.00917459314749746,
+                "rounds": 5,
+                "median": 7.307832479476929,
+                "iqr": 0.017032504081726074,
+                "q1": 7.297989904880524,
+                "q3": 7.31502240896225,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 7.297508001327515,
+                "hd15iqr": 7.317836761474609,
+                "ops": 0.13685352692864572,
+                "total": 36.535412073135376,
+                "data": [
+                    7.307832479476929,
+                    7.317836761474609,
+                    7.31408429145813,
+                    7.297508001327515,
+                    7.298150539398193
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_kmp-300]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_kmp-300]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_kmp at 0x7f9d4310e5f0>]",
+                "num_words": 300
+            },
+            "param": "find_kmp-300",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_kmp",
+                "x_val": 300
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 10.958021879196167,
+                "max": 11.033463954925537,
+                "mean": 11.006713962554931,
+                "stddev": 0.02871095200096996,
+                "rounds": 5,
+                "median": 11.015440940856934,
+                "iqr": 0.026156306266784668,
+                "q1": 10.995848715305328,
+                "q3": 11.022005021572113,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 10.958021879196167,
+                "hd15iqr": 11.033463954925537,
+                "ops": 0.09085363746182745,
+                "total": 55.03356981277466,
+                "data": [
+                    11.018185377120972,
+                    10.958021879196167,
+                    11.033463954925537,
+                    11.015440940856934,
+                    11.008457660675049
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_kmp-400]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_kmp-400]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_kmp at 0x7f9d4310e5f0>]",
+                "num_words": 400
+            },
+            "param": "find_kmp-400",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_kmp",
+                "x_val": 400
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 14.59847378730774,
+                "max": 14.651873588562012,
+                "mean": 14.630094861984253,
+                "stddev": 0.020034127517714957,
+                "rounds": 5,
+                "median": 14.632365703582764,
+                "iqr": 0.02381986379623413,
+                "q1": 14.619793951511383,
+                "q3": 14.643613815307617,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 14.59847378730774,
+                "hd15iqr": 14.651873588562012,
+                "ops": 0.06835225673064241,
+                "total": 73.15047430992126,
+                "data": [
+                    14.640860557556152,
+                    14.59847378730774,
+                    14.651873588562012,
+                    14.626900672912598,
+                    14.632365703582764
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_kmp-500]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_kmp-500]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_kmp at 0x7f9d4310e5f0>]",
+                "num_words": 500
+            },
+            "param": "find_kmp-500",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_kmp",
+                "x_val": 500
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 18.303821563720703,
+                "max": 18.36368155479431,
+                "mean": 18.341486644744872,
+                "stddev": 0.02485954824780594,
+                "rounds": 5,
+                "median": 18.349855422973633,
+                "iqr": 0.03784835338592529,
+                "q1": 18.32329171895981,
+                "q3": 18.361140072345734,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 18.303821563720703,
+                "hd15iqr": 18.36368155479431,
+                "ops": 0.05452120754271115,
+                "total": 91.70743322372437,
+                "data": [
+                    18.303821563720703,
+                    18.36029291152954,
+                    18.329781770706177,
+                    18.349855422973633,
+                    18.36368155479431
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_kmp-600]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_kmp-600]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_kmp at 0x7f9d4310e5f0>]",
+                "num_words": 600
+            },
+            "param": "find_kmp-600",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_kmp",
+                "x_val": 600
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 21.92213463783264,
+                "max": 22.044092178344727,
+                "mean": 21.97575988769531,
+                "stddev": 0.04548825161324214,
+                "rounds": 5,
+                "median": 21.976240158081055,
+                "iqr": 0.056818485260009766,
+                "q1": 21.94349378347397,
+                "q3": 22.00031226873398,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 21.92213463783264,
+                "hd15iqr": 22.044092178344727,
+                "ops": 0.045504683574556205,
+                "total": 109.87879943847656,
+                "data": [
+                    21.950613498687744,
+                    21.976240158081055,
+                    21.92213463783264,
+                    21.985718965530396,
+                    22.044092178344727
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_kmp-700]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_kmp-700]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_kmp at 0x7f9d4310e5f0>]",
+                "num_words": 700
+            },
+            "param": "find_kmp-700",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_kmp",
+                "x_val": 700
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 25.53994131088257,
+                "max": 25.601665258407593,
+                "mean": 25.567481327056885,
+                "stddev": 0.02480551539980082,
+                "rounds": 5,
+                "median": 25.56670308113098,
+                "iqr": 0.03953510522842407,
+                "q1": 25.54634463787079,
+                "q3": 25.585879743099213,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 25.53994131088257,
+                "hd15iqr": 25.601665258407593,
+                "ops": 0.03911218266704066,
+                "total": 127.83740663528442,
+                "data": [
+                    25.56670308113098,
+                    25.548479080200195,
+                    25.601665258407593,
+                    25.580617904663086,
+                    25.53994131088257
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_kmp-800]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_kmp-800]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_kmp at 0x7f9d4310e5f0>]",
+                "num_words": 800
+            },
+            "param": "find_kmp-800",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_kmp",
+                "x_val": 800
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 29.267138957977295,
+                "max": 29.59880304336548,
+                "mean": 29.402084827423096,
+                "stddev": 0.13366847803434762,
+                "rounds": 5,
+                "median": 29.3675754070282,
+                "iqr": 0.20384091138839722,
+                "q1": 29.297662317752838,
+                "q3": 29.501503229141235,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 29.267138957977295,
+                "hd15iqr": 29.59880304336548,
+                "ops": 0.03401119362349801,
+                "total": 147.01042413711548,
+                "data": [
+                    29.307836771011353,
+                    29.267138957977295,
+                    29.3675754070282,
+                    29.59880304336548,
+                    29.469069957733154
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_kmp-900]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_kmp-900]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_kmp at 0x7f9d4310e5f0>]",
+                "num_words": 900
+            },
+            "param": "find_kmp-900",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_kmp",
+                "x_val": 900
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 32.88632011413574,
+                "max": 32.97806406021118,
+                "mean": 32.93462553024292,
+                "stddev": 0.04059785910428099,
+                "rounds": 5,
+                "median": 32.927021741867065,
+                "iqr": 0.0731002688407898,
+                "q1": 32.9021435379982,
+                "q3": 32.97524380683899,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 32.88632011413574,
+                "hd15iqr": 32.97806406021118,
+                "ops": 0.030363181117141556,
+                "total": 164.6731276512146,
+                "data": [
+                    32.97806406021118,
+                    32.90741801261902,
+                    32.97430372238159,
+                    32.927021741867065,
+                    32.88632011413574
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_benchmark_pattern_recognition[find_kmp-1000]",
+            "fullname": "test_benchmark_pattern_recognition.py::test_benchmark_pattern_recognition[find_kmp-1000]",
+            "params": {
+                "search_function": "UNSERIALIZABLE[<function find_kmp at 0x7f9d4310e5f0>]",
+                "num_words": 1000
+            },
+            "param": "find_kmp-1000",
+            "extra_info": {
+                "friendly_name": "Scanning Tadeusz for all occurrences of the first n words",
+                "series_name": "Using find_kmp",
+                "x_val": 1000
+            },
+            "options": {
+                "disable_gc": true,
+                "timer": "time",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": 100000
+            },
+            "stats": {
+                "min": 36.52071475982666,
+                "max": 36.68898963928223,
+                "mean": 36.6102303981781,
+                "stddev": 0.06186247028004121,
+                "rounds": 5,
+                "median": 36.619083642959595,
+                "iqr": 0.07580375671386719,
+                "q1": 36.571697652339935,
+                "q3": 36.6475014090538,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 36.52071475982666,
+                "hd15iqr": 36.68898963928223,
+                "ops": 0.02731476937249116,
+                "total": 183.0511519908905,
+                "data": [
+                    36.52071475982666,
+                    36.63367199897766,
+                    36.68898963928223,
+                    36.619083642959595,
+                    36.58869194984436
+                ],
+                "iterations": 1
+            }
+        }
+    ],
+    "datetime": "2022-05-23T00:47:01.173033",
+    "version": "3.4.1"
+}
