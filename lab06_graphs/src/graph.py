@@ -59,6 +59,8 @@ class Graph:
             u = self.vertex_queue.get().item
             for v in self._get_adjacent(u):
                 self._relax(u, v)
+            if u == self.dest:
+                break
         return self._get_shortest_path()
 
     def _get_shortest_path(self):
