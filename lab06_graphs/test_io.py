@@ -1,8 +1,7 @@
-from distutils.util import convert_path
-from lib2to3.pytree import convert
 from src.file_console_io import TooLittleChars, convert_vertex_path_to_str, load_weights
 from io import StringIO
 import pytest
+
 
 def test_load_weights_empty():
     fp = StringIO("")

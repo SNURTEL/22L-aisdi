@@ -1,7 +1,6 @@
 import argparse
-from distutils.util import convert_path
 from graph import Graph
-from file_console_io import convert_vertex_path_to_str, load_weights, print_path
+from file_console_io import convert_vertex_path_to_str, load_weights
 
 
 def main():
@@ -13,7 +12,7 @@ def main():
         weights, width, height = load_weights(fp)
     graph = Graph(weights, width, height)
     path = graph.calculate_shortest_path()
-    path_str = convert_vertex_path_to_str(path)
+    path_str = convert_vertex_path_to_str(path, width, height)
     print(path_str)
 
 

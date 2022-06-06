@@ -1,7 +1,6 @@
-import enum
 from io import TextIOWrapper
 from typing import Dict, Tuple
-from unittest import result
+
 
 class TooLittleChars(Exception):
     def __init__(self):
