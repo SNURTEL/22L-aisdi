@@ -63,7 +63,7 @@ class Graph:
 
     def _get_shortest_path(self):
         if self.source == self.dest:
-            return [self.source]
+            return [(self.source, 0)]
         path = []
         curr_vertex = self.dest
         while curr_vertex != self.source:
