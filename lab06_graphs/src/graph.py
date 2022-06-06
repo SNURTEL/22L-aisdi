@@ -67,8 +67,8 @@ class Graph:
         path = []
         curr_vertex = self.dest
         while curr_vertex != self.source:
-            path.append(curr_vertex)
+            path.append((curr_vertex, self.weights[curr_vertex]))
             curr_vertex = self.predecessors[curr_vertex]
-        path.append(self.source)
+        path.append((self.source, 0))
         path.reverse()
         return path

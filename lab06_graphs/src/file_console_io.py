@@ -30,16 +30,17 @@ def load_weights(fp: TextIOWrapper) -> Tuple[Dict[Tuple[int, int], int], int, in
 
 
 def convert_vertex_path_to_str(vertex_path, width, height) -> str:
-    source = vertex_path[0]
-    dest = vertex_path[-1]
+    source = vertex_path[0][0]
+    dest = vertex_path[-1][0]
     vertex_path = vertex_path[1:-1]
+    vertex_dict = {path_element[0]: path_element[1] for path_element in vertex_path}
     result_str = ""
     for row in range(height):
         for column in range(width):
             if (row, column) == source or (row, column) == dest:
                 result_str += "0"
-            elif (row, column) in vertex_path:
-                result_str += "1"
+            elif (row, column) in vertex_dict:
+                result_str += str(vertex_dict[(row, column)])
             else:
                 result_str += " "
         result_str += "\n"

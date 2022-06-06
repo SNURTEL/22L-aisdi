@@ -50,8 +50,8 @@ def test_load_weights_too_little_chars():
 
 
 def test_convert_path_1():
-    assert convert_vertex_path_to_str([(0, 0), (0, 1), (0, 2)], 3, 1) == "010\n"
+    assert convert_vertex_path_to_str([((0, 0), 0), ((0, 1), 1), ((0, 2), 0)], 3, 1) == "010\n"
 
 
 def test_convert_path_2():
-    assert convert_vertex_path_to_str([(0, 0), (0, 1), (1, 1)], 2, 2) == "01\n 0\n"
+    assert convert_vertex_path_to_str([((0, 0), 0), ((0, 1), 9), ((1, 1), 0)], 2, 2) == "09\n 0\n"
